@@ -17,8 +17,8 @@ void EmptyLinkFunctionForGeneratedCodeNavAreaMeta_SwitchByAgent() {}
 	ENGINE_API UClass* Z_Construct_UClass_UNavAreaMeta_SwitchByAgent();
 	ENGINE_API UClass* Z_Construct_UClass_UNavAreaMeta();
 	UPackage* Z_Construct_UPackage__Script_Engine();
-	ENGINE_API UClass* Z_Construct_UClass_UNavArea_NoRegister();
 	COREUOBJECT_API UClass* Z_Construct_UClass_UClass();
+	ENGINE_API UClass* Z_Construct_UClass_UNavArea_NoRegister();
 // End Cross Module References
 	void UNavAreaMeta_SwitchByAgent::StaticRegisterNativesUNavAreaMeta_SwitchByAgent()
 	{

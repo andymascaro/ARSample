@@ -25,8 +25,8 @@ void EmptyLinkFunctionForGeneratedCodeBTFunctionLibrary() {}
 	ENGINE_API UClass* Z_Construct_UClass_AActor_NoRegister();
 	AIMODULE_API UFunction* Z_Construct_UFunction_UBTFunctionLibrary_GetBlackboardValueAsBool();
 	AIMODULE_API UFunction* Z_Construct_UFunction_UBTFunctionLibrary_GetBlackboardValueAsClass();
-	COREUOBJECT_API UClass* Z_Construct_UClass_UObject_NoRegister();
 	COREUOBJECT_API UClass* Z_Construct_UClass_UClass();
+	COREUOBJECT_API UClass* Z_Construct_UClass_UObject_NoRegister();
 	AIMODULE_API UFunction* Z_Construct_UFunction_UBTFunctionLibrary_GetBlackboardValueAsEnum();
 	AIMODULE_API UFunction* Z_Construct_UFunction_UBTFunctionLibrary_GetBlackboardValueAsFloat();
 	AIMODULE_API UFunction* Z_Construct_UFunction_UBTFunctionLibrary_GetBlackboardValueAsInt();

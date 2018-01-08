@@ -17,8 +17,8 @@ void EmptyLinkFunctionForGeneratedCodeEnvQueryGenerator_ActorsOfClass() {}
 	AIMODULE_API UClass* Z_Construct_UClass_UEnvQueryGenerator_ActorsOfClass();
 	AIMODULE_API UClass* Z_Construct_UClass_UEnvQueryGenerator();
 	UPackage* Z_Construct_UPackage__Script_AIModule();
-	AIMODULE_API UClass* Z_Construct_UClass_UEnvQueryContext_NoRegister();
 	COREUOBJECT_API UClass* Z_Construct_UClass_UClass();
+	AIMODULE_API UClass* Z_Construct_UClass_UEnvQueryContext_NoRegister();
 	AIMODULE_API UScriptStruct* Z_Construct_UScriptStruct_FAIDataProviderFloatValue();
 	AIMODULE_API UScriptStruct* Z_Construct_UScriptStruct_FAIDataProviderBoolValue();
 	ENGINE_API UClass* Z_Construct_UClass_AActor_NoRegister();

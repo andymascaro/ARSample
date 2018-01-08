@@ -23,8 +23,8 @@ void EmptyLinkFunctionForGeneratedCodeNavigationSystem() {}
 	ENGINE_API UClass* Z_Construct_UClass_UBlueprintFunctionLibrary();
 	ENGINE_API UFunction* Z_Construct_UFunction_UNavigationSystem_FindPathToActorSynchronously();
 	ENGINE_API UClass* Z_Construct_UClass_UNavigationPath_NoRegister();
-	ENGINE_API UClass* Z_Construct_UClass_UNavigationQueryFilter_NoRegister();
 	COREUOBJECT_API UClass* Z_Construct_UClass_UClass();
+	ENGINE_API UClass* Z_Construct_UClass_UNavigationQueryFilter_NoRegister();
 	ENGINE_API UClass* Z_Construct_UClass_AActor_NoRegister();
 	COREUOBJECT_API UScriptStruct* Z_Construct_UScriptStruct_FVector();
 	COREUOBJECT_API UClass* Z_Construct_UClass_UObject_NoRegister();

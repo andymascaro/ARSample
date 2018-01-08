@@ -17,8 +17,8 @@ void EmptyLinkFunctionForGeneratedCodeEnvQueryGenerator_Donut() {}
 	AIMODULE_API UClass* Z_Construct_UClass_UEnvQueryGenerator_Donut();
 	AIMODULE_API UClass* Z_Construct_UClass_UEnvQueryGenerator_ProjectedPoints();
 	UPackage* Z_Construct_UPackage__Script_AIModule();
-	AIMODULE_API UClass* Z_Construct_UClass_UEnvQueryContext_NoRegister();
 	COREUOBJECT_API UClass* Z_Construct_UClass_UClass();
+	AIMODULE_API UClass* Z_Construct_UClass_UEnvQueryContext_NoRegister();
 	AIMODULE_API UScriptStruct* Z_Construct_UScriptStruct_FAIDataProviderFloatValue();
 	AIMODULE_API UScriptStruct* Z_Construct_UScriptStruct_FEnvDirection();
 	AIMODULE_API UScriptStruct* Z_Construct_UScriptStruct_FAIDataProviderIntValue();

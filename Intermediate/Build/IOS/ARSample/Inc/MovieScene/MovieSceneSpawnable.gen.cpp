@@ -16,8 +16,8 @@ void EmptyLinkFunctionForGeneratedCodeMovieSceneSpawnable() {}
 	MOVIESCENE_API UEnum* Z_Construct_UEnum_MovieScene_ESpawnOwnership();
 	UPackage* Z_Construct_UPackage__Script_MovieScene();
 	MOVIESCENE_API UScriptStruct* Z_Construct_UScriptStruct_FMovieSceneSpawnable();
-	COREUOBJECT_API UClass* Z_Construct_UClass_UObject_NoRegister();
 	COREUOBJECT_API UClass* Z_Construct_UClass_UClass();
+	COREUOBJECT_API UClass* Z_Construct_UClass_UObject_NoRegister();
 	COREUOBJECT_API UScriptStruct* Z_Construct_UScriptStruct_FGuid();
 // End Cross Module References
 	static UEnum* ESpawnOwnership_StaticEnum()

@@ -21,8 +21,8 @@ void EmptyLinkFunctionForGeneratedCodeGameplayTasksComponent() {}
 	GAMEPLAYTASKS_API UClass* Z_Construct_UClass_UGameplayTasksComponent();
 	ENGINE_API UClass* Z_Construct_UClass_UActorComponent();
 	GAMEPLAYTASKS_API UFunction* Z_Construct_UFunction_UGameplayTasksComponent_K2_RunGameplayTask();
-	GAMEPLAYTASKS_API UClass* Z_Construct_UClass_UGameplayTaskResource_NoRegister();
 	COREUOBJECT_API UClass* Z_Construct_UClass_UClass();
+	GAMEPLAYTASKS_API UClass* Z_Construct_UClass_UGameplayTaskResource_NoRegister();
 	GAMEPLAYTASKS_API UClass* Z_Construct_UClass_UGameplayTask_NoRegister();
 	GAMEPLAYTASKS_API UClass* Z_Construct_UClass_UGameplayTaskOwnerInterface_NoRegister();
 	GAMEPLAYTASKS_API UFunction* Z_Construct_UFunction_UGameplayTasksComponent_OnRep_SimulatedTasks();

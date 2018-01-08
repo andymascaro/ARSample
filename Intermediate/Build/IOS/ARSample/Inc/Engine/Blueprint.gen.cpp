@@ -23,8 +23,8 @@ void EmptyLinkFunctionForGeneratedCodeBlueprint() {}
 	COREUOBJECT_API UClass* Z_Construct_UClass_UObject_NoRegister();
 	ENGINE_API UScriptStruct* Z_Construct_UScriptStruct_FBPInterfaceDescription();
 	ENGINE_API UClass* Z_Construct_UClass_UEdGraph_NoRegister();
-	COREUOBJECT_API UClass* Z_Construct_UClass_UInterface();
 	COREUOBJECT_API UClass* Z_Construct_UClass_UClass();
+	COREUOBJECT_API UClass* Z_Construct_UClass_UInterface();
 	ENGINE_API UScriptStruct* Z_Construct_UScriptStruct_FBPVariableDescription();
 	ENGINE_API UScriptStruct* Z_Construct_UScriptStruct_FBPVariableMetaDataEntry();
 	COREUOBJECT_API UEnum* Z_Construct_UEnum_CoreUObject_ELifetimeCondition();

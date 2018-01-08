@@ -18,8 +18,8 @@ void EmptyLinkFunctionForGeneratedCodeAnimationSettings() {}
 	ENGINE_API UClass* Z_Construct_UClass_UDeveloperSettings();
 	UPackage* Z_Construct_UPackage__Script_Engine();
 	ENGINE_API UEnum* Z_Construct_UEnum_Engine_AnimationCompressionFormat();
-	ENGINE_API UClass* Z_Construct_UClass_UAnimCompress_NoRegister();
 	COREUOBJECT_API UClass* Z_Construct_UClass_UClass();
+	ENGINE_API UClass* Z_Construct_UClass_UAnimCompress_NoRegister();
 // End Cross Module References
 	void UAnimationSettings::StaticRegisterNativesUAnimationSettings()
 	{

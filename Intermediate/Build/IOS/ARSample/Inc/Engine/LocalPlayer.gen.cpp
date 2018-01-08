@@ -18,8 +18,8 @@ void EmptyLinkFunctionForGeneratedCodeLocalPlayer() {}
 	ENGINE_API UClass* Z_Construct_UClass_ULocalPlayer();
 	ENGINE_API UClass* Z_Construct_UClass_UPlayer();
 	UPackage* Z_Construct_UPackage__Script_Engine();
-	ENGINE_API UClass* Z_Construct_UClass_APlayerController_NoRegister();
 	COREUOBJECT_API UClass* Z_Construct_UClass_UClass();
+	ENGINE_API UClass* Z_Construct_UClass_APlayerController_NoRegister();
 	ENGINE_API UEnum* Z_Construct_UEnum_Engine_EAspectRatioAxisConstraint();
 	ENGINE_API UClass* Z_Construct_UClass_UGameViewportClient_NoRegister();
 // End Cross Module References

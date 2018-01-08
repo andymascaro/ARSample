@@ -17,8 +17,8 @@ void EmptyLinkFunctionForGeneratedCodeBTDecorator_IsBBEntryOfClass() {}
 	AIMODULE_API UClass* Z_Construct_UClass_UBTDecorator_IsBBEntryOfClass();
 	AIMODULE_API UClass* Z_Construct_UClass_UBTDecorator_BlackboardBase();
 	UPackage* Z_Construct_UPackage__Script_AIModule();
-	COREUOBJECT_API UClass* Z_Construct_UClass_UObject_NoRegister();
 	COREUOBJECT_API UClass* Z_Construct_UClass_UClass();
+	COREUOBJECT_API UClass* Z_Construct_UClass_UObject_NoRegister();
 // End Cross Module References
 	void UBTDecorator_IsBBEntryOfClass::StaticRegisterNativesUBTDecorator_IsBBEntryOfClass()
 	{

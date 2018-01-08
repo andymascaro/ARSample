@@ -30,8 +30,8 @@ void EmptyLinkFunctionForGeneratedCodeGameMode() {}
 	ENGINE_API UFunction* Z_Construct_UFunction_AGameMode_SetBandwidthLimit();
 	ENGINE_API UFunction* Z_Construct_UFunction_AGameMode_StartMatch();
 	ENGINE_API UClass* Z_Construct_UClass_APlayerState_NoRegister();
-	ENGINE_API UClass* Z_Construct_UClass_ULocalMessage_NoRegister();
 	COREUOBJECT_API UClass* Z_Construct_UClass_UClass();
+	ENGINE_API UClass* Z_Construct_UClass_ULocalMessage_NoRegister();
 // End Cross Module References
 	static FName NAME_AGameMode_K2_OnSetMatchState = FName(TEXT("K2_OnSetMatchState"));
 	void AGameMode::K2_OnSetMatchState(FName NewState)

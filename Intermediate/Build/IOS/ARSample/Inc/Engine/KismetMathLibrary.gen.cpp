@@ -69,8 +69,8 @@ void EmptyLinkFunctionForGeneratedCodeKismetMathLibrary() {}
 	ENGINE_API UFunction* Z_Construct_UFunction_UKismetMathLibrary_ClampAxis();
 	ENGINE_API UFunction* Z_Construct_UFunction_UKismetMathLibrary_ClampVectorSize();
 	ENGINE_API UFunction* Z_Construct_UFunction_UKismetMathLibrary_ClassIsChildOf();
-	COREUOBJECT_API UClass* Z_Construct_UClass_UObject_NoRegister();
 	COREUOBJECT_API UClass* Z_Construct_UClass_UClass();
+	COREUOBJECT_API UClass* Z_Construct_UClass_UObject_NoRegister();
 	ENGINE_API UFunction* Z_Construct_UFunction_UKismetMathLibrary_ComposeRotators();
 	ENGINE_API UFunction* Z_Construct_UFunction_UKismetMathLibrary_ComposeTransforms();
 	ENGINE_API UFunction* Z_Construct_UFunction_UKismetMathLibrary_Conv_BoolToByte();

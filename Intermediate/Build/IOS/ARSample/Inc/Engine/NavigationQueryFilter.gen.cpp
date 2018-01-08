@@ -16,8 +16,8 @@ void EmptyLinkFunctionForGeneratedCodeNavigationQueryFilter() {}
 	ENGINE_API UScriptStruct* Z_Construct_UScriptStruct_FNavigationFilterFlags();
 	UPackage* Z_Construct_UPackage__Script_Engine();
 	ENGINE_API UScriptStruct* Z_Construct_UScriptStruct_FNavigationFilterArea();
-	ENGINE_API UClass* Z_Construct_UClass_UNavArea_NoRegister();
 	COREUOBJECT_API UClass* Z_Construct_UClass_UClass();
+	ENGINE_API UClass* Z_Construct_UClass_UNavArea_NoRegister();
 	ENGINE_API UClass* Z_Construct_UClass_UNavigationQueryFilter_NoRegister();
 	ENGINE_API UClass* Z_Construct_UClass_UNavigationQueryFilter();
 	COREUOBJECT_API UClass* Z_Construct_UClass_UObject();

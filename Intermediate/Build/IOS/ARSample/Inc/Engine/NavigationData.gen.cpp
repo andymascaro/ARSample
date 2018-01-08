@@ -16,8 +16,8 @@ void EmptyLinkFunctionForGeneratedCodeNavigationData() {}
 	ENGINE_API UEnum* Z_Construct_UEnum_Engine_ERuntimeGenerationType();
 	UPackage* Z_Construct_UPackage__Script_Engine();
 	ENGINE_API UScriptStruct* Z_Construct_UScriptStruct_FSupportedAreaData();
-	COREUOBJECT_API UClass* Z_Construct_UClass_UObject_NoRegister();
 	COREUOBJECT_API UClass* Z_Construct_UClass_UClass();
+	COREUOBJECT_API UClass* Z_Construct_UClass_UObject_NoRegister();
 	ENGINE_API UClass* Z_Construct_UClass_ANavigationData_NoRegister();
 	ENGINE_API UClass* Z_Construct_UClass_ANavigationData();
 	ENGINE_API UClass* Z_Construct_UClass_AActor();

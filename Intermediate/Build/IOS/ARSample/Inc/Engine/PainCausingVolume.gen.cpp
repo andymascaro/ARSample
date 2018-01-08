@@ -18,8 +18,8 @@ void EmptyLinkFunctionForGeneratedCodePainCausingVolume() {}
 	ENGINE_API UClass* Z_Construct_UClass_APhysicsVolume();
 	UPackage* Z_Construct_UPackage__Script_Engine();
 	ENGINE_API UClass* Z_Construct_UClass_AController_NoRegister();
-	ENGINE_API UClass* Z_Construct_UClass_UDamageType_NoRegister();
 	COREUOBJECT_API UClass* Z_Construct_UClass_UClass();
+	ENGINE_API UClass* Z_Construct_UClass_UDamageType_NoRegister();
 // End Cross Module References
 	void APainCausingVolume::StaticRegisterNativesAPainCausingVolume()
 	{

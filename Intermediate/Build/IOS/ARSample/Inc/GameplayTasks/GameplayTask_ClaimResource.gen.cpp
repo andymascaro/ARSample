@@ -18,8 +18,8 @@ void EmptyLinkFunctionForGeneratedCodeGameplayTask_ClaimResource() {}
 	GAMEPLAYTASKS_API UClass* Z_Construct_UClass_UGameplayTask();
 	UPackage* Z_Construct_UPackage__Script_GameplayTasks();
 	GAMEPLAYTASKS_API UFunction* Z_Construct_UFunction_UGameplayTask_ClaimResource_ClaimResource();
-	GAMEPLAYTASKS_API UClass* Z_Construct_UClass_UGameplayTaskResource_NoRegister();
 	COREUOBJECT_API UClass* Z_Construct_UClass_UClass();
+	GAMEPLAYTASKS_API UClass* Z_Construct_UClass_UGameplayTaskResource_NoRegister();
 	GAMEPLAYTASKS_API UClass* Z_Construct_UClass_UGameplayTaskOwnerInterface_NoRegister();
 	GAMEPLAYTASKS_API UFunction* Z_Construct_UFunction_UGameplayTask_ClaimResource_ClaimResources();
 // End Cross Module References

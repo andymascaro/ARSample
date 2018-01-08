@@ -22,8 +22,8 @@ void EmptyLinkFunctionForGeneratedCodeNavigationTypes() {}
 	ENGINE_API UScriptStruct* Z_Construct_UScriptStruct_FNavDataConfig();
 	ENGINE_API UScriptStruct* Z_Construct_UScriptStruct_FNavAgentProperties();
 	COREUOBJECT_API UScriptStruct* Z_Construct_UScriptStruct_FSoftClassPath();
-	ENGINE_API UClass* Z_Construct_UClass_ANavigationData_NoRegister();
 	COREUOBJECT_API UClass* Z_Construct_UClass_UClass();
+	ENGINE_API UClass* Z_Construct_UClass_ANavigationData_NoRegister();
 	COREUOBJECT_API UScriptStruct* Z_Construct_UScriptStruct_FVector();
 	COREUOBJECT_API UScriptStruct* Z_Construct_UScriptStruct_FColor();
 	ENGINE_API UScriptStruct* Z_Construct_UScriptStruct_FMovementProperties();

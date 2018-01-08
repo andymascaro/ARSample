@@ -18,8 +18,8 @@ void EmptyLinkFunctionForGeneratedCodeNavLinkCustomComponent() {}
 	ENGINE_API UClass* Z_Construct_UClass_UNavRelevantComponent();
 	UPackage* Z_Construct_UPackage__Script_Engine();
 	ENGINE_API UEnum* Z_Construct_UEnum_Engine_ECollisionChannel();
-	ENGINE_API UClass* Z_Construct_UClass_UNavArea_NoRegister();
 	COREUOBJECT_API UClass* Z_Construct_UClass_UClass();
+	ENGINE_API UClass* Z_Construct_UClass_UNavArea_NoRegister();
 	COREUOBJECT_API UScriptStruct* Z_Construct_UScriptStruct_FVector();
 	ENGINE_API UEnum* Z_Construct_UEnum_Engine_ENavLinkDirection();
 	ENGINE_API UClass* Z_Construct_UClass_UNavLinkCustomInterface_NoRegister();

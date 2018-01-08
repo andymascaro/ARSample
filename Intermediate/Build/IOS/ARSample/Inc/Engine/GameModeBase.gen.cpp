@@ -26,8 +26,8 @@ void EmptyLinkFunctionForGeneratedCodeGameModeBase() {}
 	ENGINE_API UClass* Z_Construct_UClass_AActor_NoRegister();
 	ENGINE_API UFunction* Z_Construct_UFunction_AGameModeBase_FindPlayerStart();
 	ENGINE_API UFunction* Z_Construct_UFunction_AGameModeBase_GetDefaultPawnClassForController();
-	COREUOBJECT_API UClass* Z_Construct_UClass_UObject_NoRegister();
 	COREUOBJECT_API UClass* Z_Construct_UClass_UClass();
+	COREUOBJECT_API UClass* Z_Construct_UClass_UObject_NoRegister();
 	ENGINE_API UFunction* Z_Construct_UFunction_AGameModeBase_GetNumPlayers();
 	ENGINE_API UFunction* Z_Construct_UFunction_AGameModeBase_GetNumSpectators();
 	ENGINE_API UFunction* Z_Construct_UFunction_AGameModeBase_HandleStartingNewPlayer();

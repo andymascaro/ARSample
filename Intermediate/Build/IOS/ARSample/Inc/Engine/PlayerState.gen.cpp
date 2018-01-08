@@ -24,8 +24,8 @@ void EmptyLinkFunctionForGeneratedCodePlayerState() {}
 	ENGINE_API UFunction* Z_Construct_UFunction_APlayerState_ReceiveCopyProperties();
 	ENGINE_API UFunction* Z_Construct_UFunction_APlayerState_ReceiveOverrideWith();
 	ENGINE_API UScriptStruct* Z_Construct_UScriptStruct_FUniqueNetIdRepl();
-	ENGINE_API UClass* Z_Construct_UClass_ULocalMessage_NoRegister();
 	COREUOBJECT_API UClass* Z_Construct_UClass_UClass();
+	ENGINE_API UClass* Z_Construct_UClass_ULocalMessage_NoRegister();
 // End Cross Module References
 	static FName NAME_APlayerState_ReceiveCopyProperties = FName(TEXT("ReceiveCopyProperties"));
 	void APlayerState::ReceiveCopyProperties(APlayerState* NewPlayerState)

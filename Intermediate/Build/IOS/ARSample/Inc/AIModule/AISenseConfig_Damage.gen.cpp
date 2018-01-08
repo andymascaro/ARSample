@@ -17,8 +17,8 @@ void EmptyLinkFunctionForGeneratedCodeAISenseConfig_Damage() {}
 	AIMODULE_API UClass* Z_Construct_UClass_UAISenseConfig_Damage();
 	AIMODULE_API UClass* Z_Construct_UClass_UAISenseConfig();
 	UPackage* Z_Construct_UPackage__Script_AIModule();
-	AIMODULE_API UClass* Z_Construct_UClass_UAISense_Damage_NoRegister();
 	COREUOBJECT_API UClass* Z_Construct_UClass_UClass();
+	AIMODULE_API UClass* Z_Construct_UClass_UAISense_Damage_NoRegister();
 // End Cross Module References
 	void UAISenseConfig_Damage::StaticRegisterNativesUAISenseConfig_Damage()
 	{

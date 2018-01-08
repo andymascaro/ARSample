@@ -100,8 +100,8 @@ void EmptyLinkFunctionForGeneratedCodeEngineTypes() {}
 	ENGINE_API UScriptStruct* Z_Construct_UScriptStruct_FRadialDamageParams();
 	ENGINE_API UScriptStruct* Z_Construct_UScriptStruct_FPointDamageEvent();
 	ENGINE_API UScriptStruct* Z_Construct_UScriptStruct_FVector_NetQuantizeNormal();
-	ENGINE_API UClass* Z_Construct_UClass_UDamageType_NoRegister();
 	COREUOBJECT_API UClass* Z_Construct_UClass_UClass();
+	ENGINE_API UClass* Z_Construct_UClass_UDamageType_NoRegister();
 	ENGINE_API UScriptStruct* Z_Construct_UScriptStruct_FMeshBuildSettings();
 	ENGINE_API UClass* Z_Construct_UClass_UStaticMesh_NoRegister();
 	ENGINE_API UScriptStruct* Z_Construct_UScriptStruct_FPOV();

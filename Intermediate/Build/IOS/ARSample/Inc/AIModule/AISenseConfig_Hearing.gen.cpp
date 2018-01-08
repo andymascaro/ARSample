@@ -18,8 +18,8 @@ void EmptyLinkFunctionForGeneratedCodeAISenseConfig_Hearing() {}
 	AIMODULE_API UClass* Z_Construct_UClass_UAISenseConfig();
 	UPackage* Z_Construct_UPackage__Script_AIModule();
 	AIMODULE_API UScriptStruct* Z_Construct_UScriptStruct_FAISenseAffiliationFilter();
-	AIMODULE_API UClass* Z_Construct_UClass_UAISense_Hearing_NoRegister();
 	COREUOBJECT_API UClass* Z_Construct_UClass_UClass();
+	AIMODULE_API UClass* Z_Construct_UClass_UAISense_Hearing_NoRegister();
 // End Cross Module References
 	void UAISenseConfig_Hearing::StaticRegisterNativesUAISenseConfig_Hearing()
 	{

@@ -35,8 +35,8 @@ void EmptyLinkFunctionForGeneratedCodeWorldSettings() {}
 	ENGINE_API UClass* Z_Construct_UClass_USoundMix_NoRegister();
 	ENGINE_API UScriptStruct* Z_Construct_UScriptStruct_FInteriorSettings();
 	ENGINE_API UScriptStruct* Z_Construct_UScriptStruct_FReverbSettings();
-	ENGINE_API UClass* Z_Construct_UClass_AGameNetworkManager_NoRegister();
 	COREUOBJECT_API UClass* Z_Construct_UClass_UClass();
+	ENGINE_API UClass* Z_Construct_UClass_AGameNetworkManager_NoRegister();
 	ENGINE_API UClass* Z_Construct_UClass_AGameModeBase_NoRegister();
 	ENGINE_API UClass* Z_Construct_UClass_UPhysicsCollisionHandler_NoRegister();
 	ENGINE_API UClass* Z_Construct_UClass_ADefaultPhysicsVolume_NoRegister();

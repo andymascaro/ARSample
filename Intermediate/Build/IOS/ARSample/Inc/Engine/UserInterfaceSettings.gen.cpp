@@ -22,8 +22,8 @@ void EmptyLinkFunctionForGeneratedCodeUserInterfaceSettings() {}
 	ENGINE_API UClass* Z_Construct_UClass_UUserInterfaceSettings();
 	ENGINE_API UClass* Z_Construct_UClass_UDeveloperSettings();
 	ENGINE_API UClass* Z_Construct_UClass_UDPICustomScalingRule_NoRegister();
-	COREUOBJECT_API UClass* Z_Construct_UClass_UObject_NoRegister();
 	COREUOBJECT_API UClass* Z_Construct_UClass_UClass();
+	COREUOBJECT_API UClass* Z_Construct_UClass_UObject_NoRegister();
 	ENGINE_API UScriptStruct* Z_Construct_UScriptStruct_FRuntimeFloatCurve();
 	COREUOBJECT_API UScriptStruct* Z_Construct_UScriptStruct_FSoftClassPath();
 	COREUOBJECT_API UEnum* Z_Construct_UEnum_CoreUObject_EMouseCursor();

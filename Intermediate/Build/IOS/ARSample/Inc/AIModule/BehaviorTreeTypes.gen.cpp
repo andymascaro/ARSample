@@ -17,8 +17,8 @@ void EmptyLinkFunctionForGeneratedCodeBehaviorTreeTypes() {}
 	UPackage* Z_Construct_UPackage__Script_AIModule();
 	AIMODULE_API UEnum* Z_Construct_UEnum_AIModule_EBTNodeResult();
 	AIMODULE_API UScriptStruct* Z_Construct_UScriptStruct_FBlackboardKeySelector();
-	AIMODULE_API UClass* Z_Construct_UClass_UBlackboardKeyType_NoRegister();
 	COREUOBJECT_API UClass* Z_Construct_UClass_UClass();
+	AIMODULE_API UClass* Z_Construct_UClass_UBlackboardKeyType_NoRegister();
 	AIMODULE_API UClass* Z_Construct_UClass_UBehaviorTreeTypes_NoRegister();
 	AIMODULE_API UClass* Z_Construct_UClass_UBehaviorTreeTypes();
 	COREUOBJECT_API UClass* Z_Construct_UClass_UObject();

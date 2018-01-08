@@ -18,8 +18,8 @@ void EmptyLinkFunctionForGeneratedCodePawnAction_Move() {}
 	AIMODULE_API UClass* Z_Construct_UClass_UPawnAction_Move_NoRegister();
 	AIMODULE_API UClass* Z_Construct_UClass_UPawnAction_Move();
 	AIMODULE_API UClass* Z_Construct_UClass_UPawnAction();
-	ENGINE_API UClass* Z_Construct_UClass_UNavigationQueryFilter_NoRegister();
 	COREUOBJECT_API UClass* Z_Construct_UClass_UClass();
+	ENGINE_API UClass* Z_Construct_UClass_UNavigationQueryFilter_NoRegister();
 	COREUOBJECT_API UScriptStruct* Z_Construct_UScriptStruct_FVector();
 	ENGINE_API UClass* Z_Construct_UClass_AActor_NoRegister();
 // End Cross Module References

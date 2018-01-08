@@ -18,8 +18,8 @@ void EmptyLinkFunctionForGeneratedCodeEnvQueryTest_Distance() {}
 	AIMODULE_API UClass* Z_Construct_UClass_UEnvQueryTest_Distance_NoRegister();
 	AIMODULE_API UClass* Z_Construct_UClass_UEnvQueryTest_Distance();
 	AIMODULE_API UClass* Z_Construct_UClass_UEnvQueryTest();
-	AIMODULE_API UClass* Z_Construct_UClass_UEnvQueryContext_NoRegister();
 	COREUOBJECT_API UClass* Z_Construct_UClass_UClass();
+	AIMODULE_API UClass* Z_Construct_UClass_UEnvQueryContext_NoRegister();
 // End Cross Module References
 	static UEnum* EEnvTestDistance_StaticEnum()
 	{

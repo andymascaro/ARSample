@@ -28,8 +28,8 @@ void EmptyLinkFunctionForGeneratedCodeGameStateBase() {}
 	ENGINE_API UFunction* Z_Construct_UFunction_AGameStateBase_OnRep_ReplicatedWorldTimeSeconds();
 	ENGINE_API UFunction* Z_Construct_UFunction_AGameStateBase_OnRep_SpectatorClass();
 	ENGINE_API UClass* Z_Construct_UClass_APlayerState_NoRegister();
-	ENGINE_API UClass* Z_Construct_UClass_ASpectatorPawn_NoRegister();
 	COREUOBJECT_API UClass* Z_Construct_UClass_UClass();
+	ENGINE_API UClass* Z_Construct_UClass_ASpectatorPawn_NoRegister();
 	ENGINE_API UClass* Z_Construct_UClass_AGameModeBase_NoRegister();
 // End Cross Module References
 	void AGameStateBase::StaticRegisterNativesAGameStateBase()

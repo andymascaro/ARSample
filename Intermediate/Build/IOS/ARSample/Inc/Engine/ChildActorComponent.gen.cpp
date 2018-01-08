@@ -18,8 +18,8 @@ void EmptyLinkFunctionForGeneratedCodeChildActorComponent() {}
 	ENGINE_API UClass* Z_Construct_UClass_USceneComponent();
 	UPackage* Z_Construct_UPackage__Script_Engine();
 	ENGINE_API UFunction* Z_Construct_UFunction_UChildActorComponent_SetChildActorClass();
-	ENGINE_API UClass* Z_Construct_UClass_AActor_NoRegister();
 	COREUOBJECT_API UClass* Z_Construct_UClass_UClass();
+	ENGINE_API UClass* Z_Construct_UClass_AActor_NoRegister();
 // End Cross Module References
 	void UChildActorComponent::StaticRegisterNativesUChildActorComponent()
 	{

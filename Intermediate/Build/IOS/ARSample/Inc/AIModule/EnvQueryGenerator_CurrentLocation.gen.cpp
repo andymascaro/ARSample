@@ -17,8 +17,8 @@ void EmptyLinkFunctionForGeneratedCodeEnvQueryGenerator_CurrentLocation() {}
 	AIMODULE_API UClass* Z_Construct_UClass_UEnvQueryGenerator_CurrentLocation();
 	AIMODULE_API UClass* Z_Construct_UClass_UEnvQueryGenerator();
 	UPackage* Z_Construct_UPackage__Script_AIModule();
-	AIMODULE_API UClass* Z_Construct_UClass_UEnvQueryContext_NoRegister();
 	COREUOBJECT_API UClass* Z_Construct_UClass_UClass();
+	AIMODULE_API UClass* Z_Construct_UClass_UEnvQueryContext_NoRegister();
 // End Cross Module References
 	void UEnvQueryGenerator_CurrentLocation::StaticRegisterNativesUEnvQueryGenerator_CurrentLocation()
 	{

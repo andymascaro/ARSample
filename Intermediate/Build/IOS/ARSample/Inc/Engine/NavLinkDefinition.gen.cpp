@@ -19,8 +19,8 @@ void EmptyLinkFunctionForGeneratedCodeNavLinkDefinition() {}
 	ENGINE_API UScriptStruct* Z_Construct_UScriptStruct_FNavigationLinkBase();
 	COREUOBJECT_API UScriptStruct* Z_Construct_UScriptStruct_FVector();
 	ENGINE_API UScriptStruct* Z_Construct_UScriptStruct_FNavigationLink();
-	ENGINE_API UClass* Z_Construct_UClass_UNavArea_NoRegister();
 	COREUOBJECT_API UClass* Z_Construct_UClass_UClass();
+	ENGINE_API UClass* Z_Construct_UClass_UNavArea_NoRegister();
 	ENGINE_API UScriptStruct* Z_Construct_UScriptStruct_FNavAgentSelector();
 	ENGINE_API UClass* Z_Construct_UClass_UNavLinkDefinition_NoRegister();
 	ENGINE_API UClass* Z_Construct_UClass_UNavLinkDefinition();

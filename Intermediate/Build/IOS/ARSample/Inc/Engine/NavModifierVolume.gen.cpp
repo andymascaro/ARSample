@@ -18,8 +18,8 @@ void EmptyLinkFunctionForGeneratedCodeNavModifierVolume() {}
 	ENGINE_API UClass* Z_Construct_UClass_AVolume();
 	UPackage* Z_Construct_UPackage__Script_Engine();
 	ENGINE_API UFunction* Z_Construct_UFunction_ANavModifierVolume_SetAreaClass();
-	ENGINE_API UClass* Z_Construct_UClass_UNavArea_NoRegister();
 	COREUOBJECT_API UClass* Z_Construct_UClass_UClass();
+	ENGINE_API UClass* Z_Construct_UClass_UNavArea_NoRegister();
 	ENGINE_API UClass* Z_Construct_UClass_UNavRelevantInterface_NoRegister();
 // End Cross Module References
 	void ANavModifierVolume::StaticRegisterNativesANavModifierVolume()

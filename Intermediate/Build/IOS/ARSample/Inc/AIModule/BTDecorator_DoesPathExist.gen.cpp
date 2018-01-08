@@ -18,8 +18,8 @@ void EmptyLinkFunctionForGeneratedCodeBTDecorator_DoesPathExist() {}
 	AIMODULE_API UClass* Z_Construct_UClass_UBTDecorator_DoesPathExist_NoRegister();
 	AIMODULE_API UClass* Z_Construct_UClass_UBTDecorator_DoesPathExist();
 	AIMODULE_API UClass* Z_Construct_UClass_UBTDecorator();
-	ENGINE_API UClass* Z_Construct_UClass_UNavigationQueryFilter_NoRegister();
 	COREUOBJECT_API UClass* Z_Construct_UClass_UClass();
+	ENGINE_API UClass* Z_Construct_UClass_UNavigationQueryFilter_NoRegister();
 	AIMODULE_API UScriptStruct* Z_Construct_UScriptStruct_FBlackboardKeySelector();
 // End Cross Module References
 	static UEnum* EPathExistanceQueryType_StaticEnum()

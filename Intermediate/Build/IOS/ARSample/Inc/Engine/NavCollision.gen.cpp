@@ -20,8 +20,8 @@ void EmptyLinkFunctionForGeneratedCodeNavCollision() {}
 	ENGINE_API UClass* Z_Construct_UClass_UNavCollision_NoRegister();
 	ENGINE_API UClass* Z_Construct_UClass_UNavCollision();
 	COREUOBJECT_API UClass* Z_Construct_UClass_UObject();
-	ENGINE_API UClass* Z_Construct_UClass_UNavArea_NoRegister();
 	COREUOBJECT_API UClass* Z_Construct_UClass_UClass();
+	ENGINE_API UClass* Z_Construct_UClass_UNavArea_NoRegister();
 // End Cross Module References
 class UScriptStruct* FNavCollisionBox::StaticStruct()
 {

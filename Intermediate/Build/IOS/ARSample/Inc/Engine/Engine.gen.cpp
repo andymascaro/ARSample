@@ -57,8 +57,8 @@ void EmptyLinkFunctionForGeneratedCodeEngine() {}
 	ENGINE_API UClass* Z_Construct_UClass_UMaterialInstanceDynamic_NoRegister();
 	ENGINE_API UClass* Z_Construct_UClass_UAssetManager_NoRegister();
 	COREUOBJECT_API UScriptStruct* Z_Construct_UScriptStruct_FSoftClassPath();
-	ENGINE_API UClass* Z_Construct_UClass_ALevelScriptActor_NoRegister();
 	COREUOBJECT_API UClass* Z_Construct_UClass_UClass();
+	ENGINE_API UClass* Z_Construct_UClass_ALevelScriptActor_NoRegister();
 	ENGINE_API UClass* Z_Construct_UClass_UGameUserSettings_NoRegister();
 	ENGINE_API UClass* Z_Construct_UClass_UPhysicsCollisionHandler_NoRegister();
 	ENGINE_API UClass* Z_Construct_UClass_UAvoidanceManager_NoRegister();

@@ -24,8 +24,8 @@ void EmptyLinkFunctionForGeneratedCodeAIPerceptionComponent() {}
 	ENGINE_API UClass* Z_Construct_UClass_UActorComponent();
 	AIMODULE_API UFunction* Z_Construct_UFunction_UAIPerceptionComponent_GetActorsPerception();
 	AIMODULE_API UFunction* Z_Construct_UFunction_UAIPerceptionComponent_GetCurrentlyPerceivedActors();
-	AIMODULE_API UClass* Z_Construct_UClass_UAISense_NoRegister();
 	COREUOBJECT_API UClass* Z_Construct_UClass_UClass();
+	AIMODULE_API UClass* Z_Construct_UClass_UAISense_NoRegister();
 	AIMODULE_API UFunction* Z_Construct_UFunction_UAIPerceptionComponent_GetKnownPerceivedActors();
 	AIMODULE_API UFunction* Z_Construct_UFunction_UAIPerceptionComponent_GetPerceivedActors();
 	AIMODULE_API UFunction* Z_Construct_UFunction_UAIPerceptionComponent_GetPerceivedHostileActors();

@@ -18,8 +18,8 @@ void EmptyLinkFunctionForGeneratedCodeEnvQueryTest_Pathfinding() {}
 	AIMODULE_API UClass* Z_Construct_UClass_UEnvQueryTest_Pathfinding_NoRegister();
 	AIMODULE_API UClass* Z_Construct_UClass_UEnvQueryTest_Pathfinding();
 	AIMODULE_API UClass* Z_Construct_UClass_UEnvQueryTest();
-	ENGINE_API UClass* Z_Construct_UClass_UNavigationQueryFilter_NoRegister();
 	COREUOBJECT_API UClass* Z_Construct_UClass_UClass();
+	ENGINE_API UClass* Z_Construct_UClass_UNavigationQueryFilter_NoRegister();
 	AIMODULE_API UScriptStruct* Z_Construct_UScriptStruct_FAIDataProviderBoolValue();
 	AIMODULE_API UClass* Z_Construct_UClass_UEnvQueryContext_NoRegister();
 // End Cross Module References

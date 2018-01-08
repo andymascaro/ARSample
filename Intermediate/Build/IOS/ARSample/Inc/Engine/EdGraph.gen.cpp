@@ -21,8 +21,8 @@ void EmptyLinkFunctionForGeneratedCodeEdGraph() {}
 	ENGINE_API UClass* Z_Construct_UClass_UEdGraph();
 	COREUOBJECT_API UClass* Z_Construct_UClass_UObject();
 	ENGINE_API UClass* Z_Construct_UClass_UEdGraphNode_NoRegister();
-	ENGINE_API UClass* Z_Construct_UClass_UEdGraphSchema_NoRegister();
 	COREUOBJECT_API UClass* Z_Construct_UClass_UClass();
+	ENGINE_API UClass* Z_Construct_UClass_UEdGraphSchema_NoRegister();
 // End Cross Module References
 class UScriptStruct* FGraphReference::StaticStruct()
 {

@@ -28,8 +28,8 @@ void EmptyLinkFunctionForGeneratedCodeAISense_Blueprint() {}
 	AIMODULE_API UFunction* Z_Construct_UFunction_UAISense_Blueprint_OnListenerUpdated();
 	AIMODULE_API UFunction* Z_Construct_UFunction_UAISense_Blueprint_OnUpdate();
 	AIMODULE_API UClass* Z_Construct_UClass_UAISenseEvent_NoRegister();
-	ENGINE_API UClass* Z_Construct_UClass_UUserDefinedStruct_NoRegister();
 	COREUOBJECT_API UClass* Z_Construct_UClass_UClass();
+	ENGINE_API UClass* Z_Construct_UClass_UUserDefinedStruct_NoRegister();
 // End Cross Module References
 	static FName NAME_UAISense_Blueprint_K2_OnNewPawn = FName(TEXT("K2_OnNewPawn"));
 	void UAISense_Blueprint::K2_OnNewPawn(APawn* NewPawn)

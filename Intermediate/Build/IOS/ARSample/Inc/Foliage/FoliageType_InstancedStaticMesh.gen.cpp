@@ -17,8 +17,8 @@ void EmptyLinkFunctionForGeneratedCodeFoliageType_InstancedStaticMesh() {}
 	FOLIAGE_API UClass* Z_Construct_UClass_UFoliageType_InstancedStaticMesh();
 	FOLIAGE_API UClass* Z_Construct_UClass_UFoliageType();
 	UPackage* Z_Construct_UPackage__Script_Foliage();
-	FOLIAGE_API UClass* Z_Construct_UClass_UFoliageInstancedStaticMeshComponent_NoRegister();
 	COREUOBJECT_API UClass* Z_Construct_UClass_UClass();
+	FOLIAGE_API UClass* Z_Construct_UClass_UFoliageInstancedStaticMeshComponent_NoRegister();
 	ENGINE_API UClass* Z_Construct_UClass_UMaterialInterface_NoRegister();
 	ENGINE_API UClass* Z_Construct_UClass_UStaticMesh_NoRegister();
 // End Cross Module References

@@ -17,8 +17,8 @@ void EmptyLinkFunctionForGeneratedCodeInterpFilter_Classes() {}
 	ENGINE_API UClass* Z_Construct_UClass_UInterpFilter_Classes();
 	ENGINE_API UClass* Z_Construct_UClass_UInterpFilter();
 	UPackage* Z_Construct_UPackage__Script_Engine();
-	COREUOBJECT_API UClass* Z_Construct_UClass_UObject_NoRegister();
 	COREUOBJECT_API UClass* Z_Construct_UClass_UClass();
+	COREUOBJECT_API UClass* Z_Construct_UClass_UObject_NoRegister();
 // End Cross Module References
 	void UInterpFilter_Classes::StaticRegisterNativesUInterpFilter_Classes()
 	{

@@ -18,8 +18,8 @@ void EmptyLinkFunctionForGeneratedCodeNavigationTestingActor() {}
 	ENGINE_API UClass* Z_Construct_UClass_ANavigationTestingActor_NoRegister();
 	ENGINE_API UClass* Z_Construct_UClass_ANavigationTestingActor();
 	ENGINE_API UClass* Z_Construct_UClass_AActor();
-	ENGINE_API UClass* Z_Construct_UClass_UNavigationQueryFilter_NoRegister();
 	COREUOBJECT_API UClass* Z_Construct_UClass_UClass();
+	ENGINE_API UClass* Z_Construct_UClass_UNavigationQueryFilter_NoRegister();
 	COREUOBJECT_API UScriptStruct* Z_Construct_UScriptStruct_FVector2D();
 	COREUOBJECT_API UScriptStruct* Z_Construct_UScriptStruct_FVector();
 	ENGINE_API UClass* Z_Construct_UClass_ANavigationData_NoRegister();

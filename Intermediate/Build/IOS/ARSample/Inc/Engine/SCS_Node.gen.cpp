@@ -21,8 +21,8 @@ void EmptyLinkFunctionForGeneratedCodeSCS_Node() {}
 	ENGINE_API UScriptStruct* Z_Construct_UScriptStruct_FBPVariableMetaDataEntry();
 	ENGINE_API UScriptStruct* Z_Construct_UScriptStruct_FBlueprintCookedComponentInstancingData();
 	ENGINE_API UClass* Z_Construct_UClass_UActorComponent_NoRegister();
-	COREUOBJECT_API UClass* Z_Construct_UClass_UObject_NoRegister();
 	COREUOBJECT_API UClass* Z_Construct_UClass_UClass();
+	COREUOBJECT_API UClass* Z_Construct_UClass_UObject_NoRegister();
 // End Cross Module References
 	void USCS_Node::StaticRegisterNativesUSCS_Node()
 	{

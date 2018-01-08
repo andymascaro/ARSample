@@ -21,8 +21,8 @@ void EmptyLinkFunctionForGeneratedCodeGameplayStatics() {}
 	ENGINE_API UClass* Z_Construct_UClass_UReverbEffect_NoRegister();
 	COREUOBJECT_API UClass* Z_Construct_UClass_UObject_NoRegister();
 	ENGINE_API UFunction* Z_Construct_UFunction_UGameplayStatics_ApplyDamage();
-	ENGINE_API UClass* Z_Construct_UClass_UDamageType_NoRegister();
 	COREUOBJECT_API UClass* Z_Construct_UClass_UClass();
+	ENGINE_API UClass* Z_Construct_UClass_UDamageType_NoRegister();
 	ENGINE_API UClass* Z_Construct_UClass_AActor_NoRegister();
 	ENGINE_API UClass* Z_Construct_UClass_AController_NoRegister();
 	ENGINE_API UFunction* Z_Construct_UFunction_UGameplayStatics_ApplyPointDamage();

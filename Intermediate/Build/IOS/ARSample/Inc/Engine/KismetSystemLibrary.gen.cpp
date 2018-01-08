@@ -15,8 +15,8 @@ void EmptyLinkFunctionForGeneratedCodeKismetSystemLibrary() {}
 // Cross Module References
 	ENGINE_API UFunction* Z_Construct_UDelegateFunction_UKismetSystemLibrary_OnAssetClassLoaded__DelegateSignature();
 	ENGINE_API UClass* Z_Construct_UClass_UKismetSystemLibrary();
-	COREUOBJECT_API UClass* Z_Construct_UClass_UObject_NoRegister();
 	COREUOBJECT_API UClass* Z_Construct_UClass_UClass();
+	COREUOBJECT_API UClass* Z_Construct_UClass_UObject_NoRegister();
 	ENGINE_API UFunction* Z_Construct_UDelegateFunction_UKismetSystemLibrary_OnAssetLoaded__DelegateSignature();
 	ENGINE_API UEnum* Z_Construct_UEnum_Engine_EQuitPreference();
 	UPackage* Z_Construct_UPackage__Script_Engine();

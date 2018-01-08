@@ -17,8 +17,8 @@ void EmptyLinkFunctionForGeneratedCodeEnvQueryGenerator() {}
 	AIMODULE_API UClass* Z_Construct_UClass_UEnvQueryGenerator();
 	AIMODULE_API UClass* Z_Construct_UClass_UEnvQueryNode();
 	UPackage* Z_Construct_UPackage__Script_AIModule();
-	AIMODULE_API UClass* Z_Construct_UClass_UEnvQueryItemType_NoRegister();
 	COREUOBJECT_API UClass* Z_Construct_UClass_UClass();
+	AIMODULE_API UClass* Z_Construct_UClass_UEnvQueryItemType_NoRegister();
 // End Cross Module References
 	void UEnvQueryGenerator::StaticRegisterNativesUEnvQueryGenerator()
 	{

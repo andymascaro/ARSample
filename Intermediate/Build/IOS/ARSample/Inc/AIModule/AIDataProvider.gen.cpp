@@ -20,8 +20,8 @@ void EmptyLinkFunctionForGeneratedCodeAIDataProvider() {}
 	AIMODULE_API UScriptStruct* Z_Construct_UScriptStruct_FAIDataProviderIntValue();
 	AIMODULE_API UScriptStruct* Z_Construct_UScriptStruct_FAIDataProviderStructValue();
 	AIMODULE_API UScriptStruct* Z_Construct_UScriptStruct_FAIDataProviderValue();
-	COREUOBJECT_API UClass* Z_Construct_UClass_UProperty();
 	COREUOBJECT_API UClass* Z_Construct_UClass_UClass();
+	COREUOBJECT_API UClass* Z_Construct_UClass_UProperty();
 	AIMODULE_API UClass* Z_Construct_UClass_UAIDataProvider_NoRegister();
 	AIMODULE_API UClass* Z_Construct_UClass_UAIDataProvider();
 	COREUOBJECT_API UClass* Z_Construct_UClass_UObject();

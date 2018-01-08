@@ -17,8 +17,8 @@ void EmptyLinkFunctionForGeneratedCodeInterpTrack() {}
 	UPackage* Z_Construct_UPackage__Script_Engine();
 	ENGINE_API UScriptStruct* Z_Construct_UScriptStruct_FSubTrackGroup();
 	ENGINE_API UScriptStruct* Z_Construct_UScriptStruct_FSupportedSubTrackInfo();
-	ENGINE_API UClass* Z_Construct_UClass_UInterpTrack_NoRegister();
 	COREUOBJECT_API UClass* Z_Construct_UClass_UClass();
+	ENGINE_API UClass* Z_Construct_UClass_UInterpTrack_NoRegister();
 	ENGINE_API UClass* Z_Construct_UClass_UInterpTrack();
 	COREUOBJECT_API UClass* Z_Construct_UClass_UObject();
 	ENGINE_API UClass* Z_Construct_UClass_UTexture2D_NoRegister();

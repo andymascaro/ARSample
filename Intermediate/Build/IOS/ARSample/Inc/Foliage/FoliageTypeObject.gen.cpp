@@ -15,8 +15,8 @@ void EmptyLinkFunctionForGeneratedCodeFoliageTypeObject() {}
 // Cross Module References
 	FOLIAGE_API UScriptStruct* Z_Construct_UScriptStruct_FFoliageTypeObject();
 	UPackage* Z_Construct_UPackage__Script_Foliage();
-	FOLIAGE_API UClass* Z_Construct_UClass_UFoliageType_InstancedStaticMesh_NoRegister();
 	COREUOBJECT_API UClass* Z_Construct_UClass_UClass();
+	FOLIAGE_API UClass* Z_Construct_UClass_UFoliageType_InstancedStaticMesh_NoRegister();
 	COREUOBJECT_API UClass* Z_Construct_UClass_UObject_NoRegister();
 // End Cross Module References
 class UScriptStruct* FFoliageTypeObject::StaticStruct()

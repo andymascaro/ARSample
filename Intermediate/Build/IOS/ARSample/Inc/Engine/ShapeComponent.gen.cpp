@@ -17,8 +17,8 @@ void EmptyLinkFunctionForGeneratedCodeShapeComponent() {}
 	ENGINE_API UClass* Z_Construct_UClass_UShapeComponent();
 	ENGINE_API UClass* Z_Construct_UClass_UPrimitiveComponent();
 	UPackage* Z_Construct_UPackage__Script_Engine();
-	ENGINE_API UClass* Z_Construct_UClass_UNavArea_NoRegister();
 	COREUOBJECT_API UClass* Z_Construct_UClass_UClass();
+	ENGINE_API UClass* Z_Construct_UClass_UNavArea_NoRegister();
 	ENGINE_API UClass* Z_Construct_UClass_UBodySetup_NoRegister();
 	COREUOBJECT_API UScriptStruct* Z_Construct_UScriptStruct_FColor();
 // End Cross Module References

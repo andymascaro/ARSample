@@ -18,8 +18,8 @@ void EmptyLinkFunctionForGeneratedCodeLevelSequenceBurnIn() {}
 	UMG_API UClass* Z_Construct_UClass_UUserWidget();
 	UPackage* Z_Construct_UPackage__Script_LevelSequence();
 	LEVELSEQUENCE_API UFunction* Z_Construct_UFunction_ULevelSequenceBurnIn_GetSettingsClass();
-	LEVELSEQUENCE_API UClass* Z_Construct_UClass_ULevelSequenceBurnInInitSettings_NoRegister();
 	COREUOBJECT_API UClass* Z_Construct_UClass_UClass();
+	LEVELSEQUENCE_API UClass* Z_Construct_UClass_ULevelSequenceBurnInInitSettings_NoRegister();
 	LEVELSEQUENCE_API UFunction* Z_Construct_UFunction_ULevelSequenceBurnIn_SetSettings();
 	COREUOBJECT_API UClass* Z_Construct_UClass_UObject_NoRegister();
 	LEVELSEQUENCE_API UClass* Z_Construct_UClass_ALevelSequenceActor_NoRegister();

@@ -17,8 +17,8 @@ void EmptyLinkFunctionForGeneratedCodeBTTask_MoveTo() {}
 	AIMODULE_API UClass* Z_Construct_UClass_UBTTask_MoveTo();
 	AIMODULE_API UClass* Z_Construct_UClass_UBTTask_BlackboardBase();
 	UPackage* Z_Construct_UPackage__Script_AIModule();
-	ENGINE_API UClass* Z_Construct_UClass_UNavigationQueryFilter_NoRegister();
 	COREUOBJECT_API UClass* Z_Construct_UClass_UClass();
+	ENGINE_API UClass* Z_Construct_UClass_UNavigationQueryFilter_NoRegister();
 // End Cross Module References
 	void UBTTask_MoveTo::StaticRegisterNativesUBTTask_MoveTo()
 	{

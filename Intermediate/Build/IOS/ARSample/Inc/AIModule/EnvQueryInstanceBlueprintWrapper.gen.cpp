@@ -25,8 +25,8 @@ void EmptyLinkFunctionForGeneratedCodeEnvQueryInstanceBlueprintWrapper() {}
 	AIMODULE_API UFunction* Z_Construct_UFunction_UEnvQueryInstanceBlueprintWrapper_GetResultsAsLocations();
 	COREUOBJECT_API UScriptStruct* Z_Construct_UScriptStruct_FVector();
 	AIMODULE_API UFunction* Z_Construct_UFunction_UEnvQueryInstanceBlueprintWrapper_SetNamedParam();
-	AIMODULE_API UClass* Z_Construct_UClass_UEnvQueryItemType_NoRegister();
 	COREUOBJECT_API UClass* Z_Construct_UClass_UClass();
+	AIMODULE_API UClass* Z_Construct_UClass_UEnvQueryItemType_NoRegister();
 	AIMODULE_API UClass* Z_Construct_UClass_UEQSQueryResultSourceInterface_NoRegister();
 // End Cross Module References
 	UFunction* Z_Construct_UDelegateFunction_UEnvQueryInstanceBlueprintWrapper_EQSQueryDoneSignature__DelegateSignature()

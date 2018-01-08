@@ -17,8 +17,8 @@ void EmptyLinkFunctionForGeneratedCodeAISenseConfig_Blueprint() {}
 	AIMODULE_API UClass* Z_Construct_UClass_UAISenseConfig_Blueprint();
 	AIMODULE_API UClass* Z_Construct_UClass_UAISenseConfig();
 	UPackage* Z_Construct_UPackage__Script_AIModule();
-	AIMODULE_API UClass* Z_Construct_UClass_UAISense_Blueprint_NoRegister();
 	COREUOBJECT_API UClass* Z_Construct_UClass_UClass();
+	AIMODULE_API UClass* Z_Construct_UClass_UAISense_Blueprint_NoRegister();
 // End Cross Module References
 	void UAISenseConfig_Blueprint::StaticRegisterNativesUAISenseConfig_Blueprint()
 	{

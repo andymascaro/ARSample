@@ -48,8 +48,8 @@ void EmptyLinkFunctionForGeneratedCodePlayerController() {}
 	ENGINE_API UEnum* Z_Construct_UEnum_Engine_ECameraAnimPlaySpace();
 	ENGINE_API UClass* Z_Construct_UClass_UCameraAnim_NoRegister();
 	ENGINE_API UFunction* Z_Construct_UFunction_APlayerController_ClientPlayCameraShake();
-	ENGINE_API UClass* Z_Construct_UClass_UCameraShake_NoRegister();
 	COREUOBJECT_API UClass* Z_Construct_UClass_UClass();
+	ENGINE_API UClass* Z_Construct_UClass_UCameraShake_NoRegister();
 	ENGINE_API UFunction* Z_Construct_UFunction_APlayerController_ClientPlayForceFeedback();
 	ENGINE_API UClass* Z_Construct_UClass_UForceFeedbackEffect_NoRegister();
 	ENGINE_API UFunction* Z_Construct_UFunction_APlayerController_ClientPlaySound();

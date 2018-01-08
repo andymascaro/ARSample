@@ -17,8 +17,8 @@ void EmptyLinkFunctionForGeneratedCodeMovieSceneCameraShakeSection() {}
 	UPackage* Z_Construct_UPackage__Script_MovieSceneTracks();
 	COREUOBJECT_API UScriptStruct* Z_Construct_UScriptStruct_FRotator();
 	ENGINE_API UEnum* Z_Construct_UEnum_Engine_ECameraAnimPlaySpace();
-	ENGINE_API UClass* Z_Construct_UClass_UCameraShake_NoRegister();
 	COREUOBJECT_API UClass* Z_Construct_UClass_UClass();
+	ENGINE_API UClass* Z_Construct_UClass_UCameraShake_NoRegister();
 	MOVIESCENETRACKS_API UClass* Z_Construct_UClass_UMovieSceneCameraShakeSection_NoRegister();
 	MOVIESCENETRACKS_API UClass* Z_Construct_UClass_UMovieSceneCameraShakeSection();
 	MOVIESCENE_API UClass* Z_Construct_UClass_UMovieSceneSection();

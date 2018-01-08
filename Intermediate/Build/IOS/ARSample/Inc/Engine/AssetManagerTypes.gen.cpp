@@ -19,8 +19,8 @@ void EmptyLinkFunctionForGeneratedCodeAssetManagerTypes() {}
 	ENGINE_API UScriptStruct* Z_Construct_UScriptStruct_FPrimaryAssetRules();
 	COREUOBJECT_API UScriptStruct* Z_Construct_UScriptStruct_FSoftObjectPath();
 	ENGINE_API UScriptStruct* Z_Construct_UScriptStruct_FDirectoryPath();
-	COREUOBJECT_API UClass* Z_Construct_UClass_UObject_NoRegister();
 	COREUOBJECT_API UClass* Z_Construct_UClass_UClass();
+	COREUOBJECT_API UClass* Z_Construct_UClass_UObject_NoRegister();
 // End Cross Module References
 	static UEnum* EPrimaryAssetCookRule_StaticEnum()
 	{

@@ -24,8 +24,8 @@ void EmptyLinkFunctionForGeneratedCodeEnvQueryGenerator_BlueprintBase() {}
 	AIMODULE_API UFunction* Z_Construct_UFunction_UEnvQueryGenerator_BlueprintBase_DoItemGeneration();
 	AIMODULE_API UFunction* Z_Construct_UFunction_UEnvQueryGenerator_BlueprintBase_GetQuerier();
 	COREUOBJECT_API UClass* Z_Construct_UClass_UObject_NoRegister();
-	AIMODULE_API UClass* Z_Construct_UClass_UEnvQueryItemType_NoRegister();
 	COREUOBJECT_API UClass* Z_Construct_UClass_UClass();
+	AIMODULE_API UClass* Z_Construct_UClass_UEnvQueryItemType_NoRegister();
 	AIMODULE_API UClass* Z_Construct_UClass_UEnvQueryContext_NoRegister();
 // End Cross Module References
 	static FName NAME_UEnvQueryGenerator_BlueprintBase_DoItemGeneration = FName(TEXT("DoItemGeneration"));

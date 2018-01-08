@@ -1,0 +1,726 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		39A799C779365B4E9F469821 /* ARSample.uproject in Sources */ = {isa = PBXBuildFile; fileRef = 6EF1EB4E659A8BF798C986A9 /* ARSample.uproject */; };
+		91F6DDE87770C5A225363F8F /* ARSample.Target.cs in Sources */ = {isa = PBXBuildFile; fileRef = 9F1A6E3CBDFC1C4D72A426E5 /* ARSample.Target.cs */; };
+		1CA02256E208777020EF3683 /* DefaultEditor.ini in Sources */ = {isa = PBXBuildFile; fileRef = 5873D72E80F5FC38B15BAE4B /* DefaultEditor.ini */; };
+		2C4E399CAD3837ECD0F8CBD6 /* DefaultEngine.ini in Sources */ = {isa = PBXBuildFile; fileRef = 4E6FC01DBECF6EAFE3EBE34A /* DefaultEngine.ini */; };
+		24EDCC7DA8ED33C0F2D72993 /* DefaultGame.ini in Sources */ = {isa = PBXBuildFile; fileRef = CEDBC2E8B849B360A801E011 /* DefaultGame.ini */; };
+		34DF79E2EDFE67416BEF77BF /* DefaultInput.ini in Sources */ = {isa = PBXBuildFile; fileRef = 6BB943E2C40AE476452D4EE3 /* DefaultInput.ini */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		6EF1EB4E659A8BF798C986A9 /* ARSample.uproject */ = {isa = PBXFileReference; explicitFileType = file.text; name = "ARSample.uproject"; path = "../../ARSample.uproject"; sourceTree = SOURCE_ROOT; };
+		9F1A6E3CBDFC1C4D72A426E5 /* ARSample.Target.cs */ = {isa = PBXFileReference; explicitFileType = file.text; name = "ARSample.Target.cs"; path = "../Source/ARSample.Target.cs"; sourceTree = SOURCE_ROOT; };
+		5873D72E80F5FC38B15BAE4B /* DefaultEditor.ini */ = {isa = PBXFileReference; explicitFileType = file.text; name = "DefaultEditor.ini"; path = "../../Config/DefaultEditor.ini"; sourceTree = SOURCE_ROOT; };
+		4E6FC01DBECF6EAFE3EBE34A /* DefaultEngine.ini */ = {isa = PBXFileReference; explicitFileType = file.text; name = "DefaultEngine.ini"; path = "../../Config/DefaultEngine.ini"; sourceTree = SOURCE_ROOT; };
+		CEDBC2E8B849B360A801E011 /* DefaultGame.ini */ = {isa = PBXFileReference; explicitFileType = file.text; name = "DefaultGame.ini"; path = "../../Config/DefaultGame.ini"; sourceTree = SOURCE_ROOT; };
+		6BB943E2C40AE476452D4EE3 /* DefaultInput.ini */ = {isa = PBXFileReference; explicitFileType = file.text; name = "DefaultInput.ini"; path = "../../Config/DefaultInput.ini"; sourceTree = SOURCE_ROOT; };
+		C101425C6EAEA8EA30262BF1 /* ARSample */ = {isa = PBXFileReference; explicitFileType = wrapper.application; path = ARSample; sourceTree = BUILT_PRODUCTS_DIR; };
+/* End PBXFileReference section */
+
+/* Begin PBXSourcesBuildPhase section */
+		E3C9C000C932BB2C7A899FAC = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXContainerItemProxy section */
+		E6E7DE8C59543375913F6655 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 74F028E38F0BA476E9168FFB /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 966712116DDE46B08C91601A;
+			remoteInfo = "ARSample_Build";
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXGroup section */
+		44E32696574D5A59A04C4EEC = {
+			isa = PBXGroup;
+			children = (
+				853F931108A26EEAA2134243 /* Intermediate */,
+				F49FDB8DBD78D75A8DC13733 /* Config */,
+				6EF1EB4E659A8BF798C986A9 /* ARSample.uproject */,
+				633D30B0487F082B920B3A77 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		853F931108A26EEAA2134243 = {
+			isa = PBXGroup;
+			children = (
+				1BE1772141E4A1C08042F851 /* Source */,
+			);
+			name = "Intermediate";
+			path = "Intermediate";
+			sourceTree = "<group>";
+		};
+		1BE1772141E4A1C08042F851 = {
+			isa = PBXGroup;
+			children = (
+				9F1A6E3CBDFC1C4D72A426E5 /* ARSample.Target.cs */,
+			);
+			name = "Source";
+			path = "Intermediate\Source";
+			sourceTree = "<group>";
+		};
+		F49FDB8DBD78D75A8DC13733 = {
+			isa = PBXGroup;
+			children = (
+				5873D72E80F5FC38B15BAE4B /* DefaultEditor.ini */,
+				4E6FC01DBECF6EAFE3EBE34A /* DefaultEngine.ini */,
+				CEDBC2E8B849B360A801E011 /* DefaultGame.ini */,
+				6BB943E2C40AE476452D4EE3 /* DefaultInput.ini */,
+			);
+			name = "Config";
+			path = "Config";
+			sourceTree = "<group>";
+		};
+		633D30B0487F082B920B3A77 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				C101425C6EAEA8EA30262BF1 /* ARSample */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXLegacyTarget section */
+		966712116DDE46B08C91601A /* ARSample_Build */ = {
+			isa = PBXLegacyTarget;
+			buildArgumentsString = "$(ACTION) $(UE_BUILD_TARGET_NAME) $(PLATFORM_NAME) $(UE_BUILD_TARGET_CONFIG) \"D:\ue\ARSample\ARSample.uproject\"";
+			buildConfigurationList = 8B5439B8C14C961F4D207EFB /* Build configuration list for PBXLegacyTarget "ARSample_Build" */;
+			buildPhases = (
+			);
+			buildToolPath = "/Users/egg/UE4/Builds//DESKTOP-OJU3OU9/D/uesrc/UnrealEngine/Engine/Build/BatchFiles/Mac/Build.sh";
+			buildWorkingDirectory = "/Users/egg/UE4/Builds//DESKTOP-OJU3OU9/D/uesrc/UnrealEngine";
+			dependencies = (
+			);
+			name = "ARSample_Build";
+			passBuildSettingsInEnvironment = 1;
+			productName = "ARSample_Build";
+		};
+/* End PBXLegacyTarget section */
+
+/* Begin PBXNativeTarget section */
+		DFF14F8BA50CA70FD53CB3B7 /* ARSample */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 3603E347026AE0930CF5C128 /* Build configuration list for PBXNativeTarget "ARSample" */;
+			buildPhases = (
+			);
+			dependencies = (
+			);
+			name = "ARSample";
+			passBuildSettingsInEnvironment = 1;
+			productName = "ARSample";
+			productReference = "C101425C6EAEA8EA30262BF1";
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXNativeTarget section */
+		817166C3DD8C21C0BCEDF5F1 /* ARSample_Index */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 422207B2F9B6C930A127D11A /* Build configuration list for PBXNativeTarget "ARSample_Index" */;
+			buildPhases = (
+				E3C9C000C932BB2C7A899FAC /* Sources */,
+			);
+			dependencies = (
+			);
+			name = "ARSample_Index";
+			passBuildSettingsInEnvironment = 1;
+			productName = "ARSample_Index";
+			productType = "com.apple.product-type.library.static";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		74F028E38F0BA476E9168FFB /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0900;
+				ORGANIZATIONNAME = "Epic Games, Inc.";
+				TargetAttributes = {
+					DFF14F8BA50CA70FD53CB3B7 = {
+						ProvisioningStyle = Manual;
+					};
+				};
+			};
+			buildConfigurationList = 7882D2FF6FA05E9E5E47759F /* Build configuration list for PBXProject "ARSample" */;
+			compatibilityVersion = "Xcode 8.0";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en
+			);
+			mainGroup = 44E32696574D5A59A04C4EEC;
+			productRefGroup = 633D30B0487F082B920B3A77;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+			DFF14F8BA50CA70FD53CB3B7 /* ARSample */,
+			966712116DDE46B08C91601A /* ARSample_Build */,
+			817166C3DD8C21C0BCEDF5F1 /* ARSample_Index */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin XCBuildConfiguration section */
+		E50D1F9BBC355B2C33E59B32 /* "Debug" */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"MONOLITHIC_BUILD=1",
+				);
+				HEADER_SEARCH_PATHS = (
+				);
+				USER_HEADER_SEARCH_PATHS = (
+				);
+				ONLY_ACTIVE_ARCH = YES;
+				ENABLE_TESTABILITY = YES;
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "c++0x";
+				GCC_ENABLE_CPP_RTTI = NO;
+				GCC_WARN_CHECK_SWITCH_STATEMENTS = NO;
+				USE_HEADERMAP = NO;
+			};
+			name = "Debug";
+		};
+		DCDCED2F7D6602365A910E62 /* "DebugGame" */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"MONOLITHIC_BUILD=1",
+				);
+				HEADER_SEARCH_PATHS = (
+				);
+				USER_HEADER_SEARCH_PATHS = (
+				);
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "c++0x";
+				GCC_ENABLE_CPP_RTTI = NO;
+				GCC_WARN_CHECK_SWITCH_STATEMENTS = NO;
+				USE_HEADERMAP = NO;
+			};
+			name = "DebugGame";
+		};
+		71318A6CFAA438C15D1A53CD /* "Development" */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"MONOLITHIC_BUILD=1",
+				);
+				HEADER_SEARCH_PATHS = (
+				);
+				USER_HEADER_SEARCH_PATHS = (
+				);
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "c++0x";
+				GCC_ENABLE_CPP_RTTI = NO;
+				GCC_WARN_CHECK_SWITCH_STATEMENTS = NO;
+				USE_HEADERMAP = NO;
+			};
+			name = "Development";
+		};
+		CA399C4F7185698A5359089E /* "Shipping" */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"MONOLITHIC_BUILD=1",
+				);
+				HEADER_SEARCH_PATHS = (
+				);
+				USER_HEADER_SEARCH_PATHS = (
+				);
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "c++0x";
+				GCC_ENABLE_CPP_RTTI = NO;
+				GCC_WARN_CHECK_SWITCH_STATEMENTS = NO;
+				USE_HEADERMAP = NO;
+			};
+			name = "Shipping";
+		};
+		4BA9746CBA42DD3BBD5D45FB /* "Test" */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"MONOLITHIC_BUILD=1",
+				);
+				HEADER_SEARCH_PATHS = (
+				);
+				USER_HEADER_SEARCH_PATHS = (
+				);
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "c++0x";
+				GCC_ENABLE_CPP_RTTI = NO;
+				GCC_WARN_CHECK_SWITCH_STATEMENTS = NO;
+				USE_HEADERMAP = NO;
+			};
+			name = "Test";
+		};
+		6FAD56DF3F4A0C39A9AFB28D /* "Debug" */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				VALID_ARCHS = "x86_64 arm64 armv7 armv7s";
+				SUPPORTED_PLATFORMS = "macosx iphoneos appletvos";
+				"PRODUCT_NAME[sdk=macosx*]" = "ARSample-Mac-Debug";
+				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
+				"PRODUCT_NAME[sdk=iphoneos*]" = "ARSample";
+				"TARGETED_DEVICE_FAMILY[sdk=iphoneos*]" = "1,2";
+				"SDKROOT[sdk=iphoneos]" = iphoneos;
+				"DEVELOPMENT_TEAM[sdk=iphoneos*]" = CY9K9H98F8;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer: Ore Nuga (7HWSHU4HAK)";
+				"PROVISIONING_PROFILE_SPECIFIER[sdk=iphoneos*]" = "bb1aaf4d-2e99-4462-9e45-c4dec40ae952";
+				TVOS_DEPLOYMENT_TARGET = 9.0;
+				"PRODUCT_NAME[sdk=appletvos*]" = "ARSample";
+				"TARGETED_DEVICE_FAMILY[sdk=appletvos*]" = "3";
+				"SDKROOT[sdk=appletvos]" = appletvos;
+				"DEVELOPMENT_TEAM[sdk=appletvos*]" = CY9K9H98F8;
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "iPhone Developer: Ore Nuga (7HWSHU4HAK)";
+				"PROVISIONING_PROFILE_SPECIFIER[sdk=appletvos*]" = "bb1aaf4d-2e99-4462-9e45-c4dec40ae952";
+				"CONFIGURATION_BUILD_DIR[sdk=macosx*]" = "/Users/egg/UE4/Builds//DESKTOP-OJU3OU9/D/ue/ARSample/Binaries/Mac";
+				"SDKROOT[sdk=macosx]" = macosx;
+				INFOPLIST_OUTPUT_FORMAT = xml;
+				COMBINE_HIDPI_IMAGES = YES;
+				"CONFIGURATION_BUILD_DIR[sdk=iphoneos*]" = "/Users/egg/UE4/Builds//DESKTOP-OJU3OU9/D/ue/ARSample/Binaries/IOS/Payload";
+				"CONFIGURATION_BUILD_DIR[sdk=appletvos*]" = "/Users/egg/UE4/Builds//DESKTOP-OJU3OU9/D/ue/ARSample/Binaries/TVOS/Payload";
+				INFOPLIST_FILE = "/Users/egg/UE4/Builds//DESKTOP-OJU3OU9/D/ue/ARSample/Intermediate/IOS/ARSample-Info.plist";
+				CODE_SIGN_ENTITLEMENTS = "/Users/egg/UE4/Builds//DESKTOP-OJU3OU9/D/ue/ARSample/Intermediate/IOS/ARSample.entitlements";
+				MACOSX_DEPLOYMENT_TARGET = 10.11;
+				SDKROOT = macosx;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "/Users/egg/UE4/Builds//DESKTOP-OJU3OU9/D/uesrc/UnrealEngine/Engine/Source/Editor/UnrealEd/Public/UnrealEd.h";
+			};
+			name = "Debug";
+		};
+		A5EC9B1173C193EBE21B7ED2 /* "DebugGame" */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				VALID_ARCHS = "x86_64 arm64 armv7 armv7s";
+				SUPPORTED_PLATFORMS = "macosx iphoneos appletvos";
+				"PRODUCT_NAME[sdk=macosx*]" = "ARSample-Mac-DebugGame";
+				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
+				"PRODUCT_NAME[sdk=iphoneos*]" = "ARSample";
+				"TARGETED_DEVICE_FAMILY[sdk=iphoneos*]" = "1,2";
+				"SDKROOT[sdk=iphoneos]" = iphoneos;
+				"DEVELOPMENT_TEAM[sdk=iphoneos*]" = CY9K9H98F8;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer: Ore Nuga (7HWSHU4HAK)";
+				"PROVISIONING_PROFILE_SPECIFIER[sdk=iphoneos*]" = "bb1aaf4d-2e99-4462-9e45-c4dec40ae952";
+				TVOS_DEPLOYMENT_TARGET = 9.0;
+				"PRODUCT_NAME[sdk=appletvos*]" = "ARSample";
+				"TARGETED_DEVICE_FAMILY[sdk=appletvos*]" = "3";
+				"SDKROOT[sdk=appletvos]" = appletvos;
+				"DEVELOPMENT_TEAM[sdk=appletvos*]" = CY9K9H98F8;
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "iPhone Developer: Ore Nuga (7HWSHU4HAK)";
+				"PROVISIONING_PROFILE_SPECIFIER[sdk=appletvos*]" = "bb1aaf4d-2e99-4462-9e45-c4dec40ae952";
+				"CONFIGURATION_BUILD_DIR[sdk=macosx*]" = "/Users/egg/UE4/Builds//DESKTOP-OJU3OU9/D/ue/ARSample/Binaries/Mac";
+				"SDKROOT[sdk=macosx]" = macosx;
+				INFOPLIST_OUTPUT_FORMAT = xml;
+				COMBINE_HIDPI_IMAGES = YES;
+				"CONFIGURATION_BUILD_DIR[sdk=iphoneos*]" = "/Users/egg/UE4/Builds//DESKTOP-OJU3OU9/D/ue/ARSample/Binaries/IOS/Payload";
+				"CONFIGURATION_BUILD_DIR[sdk=appletvos*]" = "/Users/egg/UE4/Builds//DESKTOP-OJU3OU9/D/ue/ARSample/Binaries/TVOS/Payload";
+				INFOPLIST_FILE = "/Users/egg/UE4/Builds//DESKTOP-OJU3OU9/D/ue/ARSample/Intermediate/IOS/ARSample-Info.plist";
+				CODE_SIGN_ENTITLEMENTS = "/Users/egg/UE4/Builds//DESKTOP-OJU3OU9/D/ue/ARSample/Intermediate/IOS/ARSample.entitlements";
+				MACOSX_DEPLOYMENT_TARGET = 10.11;
+				SDKROOT = macosx;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "/Users/egg/UE4/Builds//DESKTOP-OJU3OU9/D/uesrc/UnrealEngine/Engine/Source/Editor/UnrealEd/Public/UnrealEd.h";
+			};
+			name = "DebugGame";
+		};
+		DD67CAA6320E9A315AE7DD30 /* "Development" */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				VALID_ARCHS = "x86_64 arm64 armv7 armv7s";
+				SUPPORTED_PLATFORMS = "macosx iphoneos appletvos";
+				"PRODUCT_NAME[sdk=macosx*]" = "ARSample";
+				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
+				"PRODUCT_NAME[sdk=iphoneos*]" = "ARSample";
+				"TARGETED_DEVICE_FAMILY[sdk=iphoneos*]" = "1,2";
+				"SDKROOT[sdk=iphoneos]" = iphoneos;
+				"DEVELOPMENT_TEAM[sdk=iphoneos*]" = CY9K9H98F8;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer: Ore Nuga (7HWSHU4HAK)";
+				"PROVISIONING_PROFILE_SPECIFIER[sdk=iphoneos*]" = "bb1aaf4d-2e99-4462-9e45-c4dec40ae952";
+				TVOS_DEPLOYMENT_TARGET = 9.0;
+				"PRODUCT_NAME[sdk=appletvos*]" = "ARSample";
+				"TARGETED_DEVICE_FAMILY[sdk=appletvos*]" = "3";
+				"SDKROOT[sdk=appletvos]" = appletvos;
+				"DEVELOPMENT_TEAM[sdk=appletvos*]" = CY9K9H98F8;
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "iPhone Developer: Ore Nuga (7HWSHU4HAK)";
+				"PROVISIONING_PROFILE_SPECIFIER[sdk=appletvos*]" = "bb1aaf4d-2e99-4462-9e45-c4dec40ae952";
+				"CONFIGURATION_BUILD_DIR[sdk=macosx*]" = "/Users/egg/UE4/Builds//DESKTOP-OJU3OU9/D/ue/ARSample/Binaries/Mac";
+				"SDKROOT[sdk=macosx]" = macosx;
+				INFOPLIST_OUTPUT_FORMAT = xml;
+				COMBINE_HIDPI_IMAGES = YES;
+				"CONFIGURATION_BUILD_DIR[sdk=iphoneos*]" = "/Users/egg/UE4/Builds//DESKTOP-OJU3OU9/D/ue/ARSample/Binaries/IOS/Payload";
+				"CONFIGURATION_BUILD_DIR[sdk=appletvos*]" = "/Users/egg/UE4/Builds//DESKTOP-OJU3OU9/D/ue/ARSample/Binaries/TVOS/Payload";
+				INFOPLIST_FILE = "/Users/egg/UE4/Builds//DESKTOP-OJU3OU9/D/ue/ARSample/Intermediate/IOS/ARSample-Info.plist";
+				CODE_SIGN_ENTITLEMENTS = "/Users/egg/UE4/Builds//DESKTOP-OJU3OU9/D/ue/ARSample/Intermediate/IOS/ARSample.entitlements";
+				MACOSX_DEPLOYMENT_TARGET = 10.11;
+				SDKROOT = macosx;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "/Users/egg/UE4/Builds//DESKTOP-OJU3OU9/D/uesrc/UnrealEngine/Engine/Source/Editor/UnrealEd/Public/UnrealEd.h";
+			};
+			name = "Development";
+		};
+		3AEB86ADA583D5183D8F7C3F /* "Shipping" */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				VALID_ARCHS = "x86_64 arm64 armv7 armv7s";
+				SUPPORTED_PLATFORMS = "macosx iphoneos appletvos";
+				"PRODUCT_NAME[sdk=macosx*]" = "ARSample-Mac-Shipping";
+				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
+				"PRODUCT_NAME[sdk=iphoneos*]" = "ARSample";
+				"TARGETED_DEVICE_FAMILY[sdk=iphoneos*]" = "1,2";
+				"SDKROOT[sdk=iphoneos]" = iphoneos;
+				"DEVELOPMENT_TEAM[sdk=iphoneos*]" = CY9K9H98F8;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer: Ore Nuga (7HWSHU4HAK)";
+				"PROVISIONING_PROFILE_SPECIFIER[sdk=iphoneos*]" = "bb1aaf4d-2e99-4462-9e45-c4dec40ae952";
+				TVOS_DEPLOYMENT_TARGET = 9.0;
+				"PRODUCT_NAME[sdk=appletvos*]" = "ARSample";
+				"TARGETED_DEVICE_FAMILY[sdk=appletvos*]" = "3";
+				"SDKROOT[sdk=appletvos]" = appletvos;
+				"DEVELOPMENT_TEAM[sdk=appletvos*]" = CY9K9H98F8;
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "iPhone Developer: Ore Nuga (7HWSHU4HAK)";
+				"PROVISIONING_PROFILE_SPECIFIER[sdk=appletvos*]" = "bb1aaf4d-2e99-4462-9e45-c4dec40ae952";
+				"CONFIGURATION_BUILD_DIR[sdk=macosx*]" = "/Users/egg/UE4/Builds//DESKTOP-OJU3OU9/D/ue/ARSample/Binaries/Mac";
+				"SDKROOT[sdk=macosx]" = macosx;
+				INFOPLIST_OUTPUT_FORMAT = xml;
+				COMBINE_HIDPI_IMAGES = YES;
+				"CONFIGURATION_BUILD_DIR[sdk=iphoneos*]" = "/Users/egg/UE4/Builds//DESKTOP-OJU3OU9/D/ue/ARSample/Binaries/IOS/Payload";
+				"CONFIGURATION_BUILD_DIR[sdk=appletvos*]" = "/Users/egg/UE4/Builds//DESKTOP-OJU3OU9/D/ue/ARSample/Binaries/TVOS/Payload";
+				INFOPLIST_FILE = "/Users/egg/UE4/Builds//DESKTOP-OJU3OU9/D/ue/ARSample/Intermediate/IOS/ARSample-Info.plist";
+				CODE_SIGN_ENTITLEMENTS = "/Users/egg/UE4/Builds//DESKTOP-OJU3OU9/D/ue/ARSample/Intermediate/IOS/ARSample.entitlements";
+				MACOSX_DEPLOYMENT_TARGET = 10.11;
+				SDKROOT = macosx;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "/Users/egg/UE4/Builds//DESKTOP-OJU3OU9/D/uesrc/UnrealEngine/Engine/Source/Editor/UnrealEd/Public/UnrealEd.h";
+			};
+			name = "Shipping";
+		};
+		90E0FA9018349EEA68849A80 /* "Test" */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				VALID_ARCHS = "x86_64 arm64 armv7 armv7s";
+				SUPPORTED_PLATFORMS = "macosx iphoneos appletvos";
+				"PRODUCT_NAME[sdk=macosx*]" = "ARSample-Mac-Test";
+				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
+				"PRODUCT_NAME[sdk=iphoneos*]" = "ARSample";
+				"TARGETED_DEVICE_FAMILY[sdk=iphoneos*]" = "1,2";
+				"SDKROOT[sdk=iphoneos]" = iphoneos;
+				"DEVELOPMENT_TEAM[sdk=iphoneos*]" = CY9K9H98F8;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer: Ore Nuga (7HWSHU4HAK)";
+				"PROVISIONING_PROFILE_SPECIFIER[sdk=iphoneos*]" = "bb1aaf4d-2e99-4462-9e45-c4dec40ae952";
+				TVOS_DEPLOYMENT_TARGET = 9.0;
+				"PRODUCT_NAME[sdk=appletvos*]" = "ARSample";
+				"TARGETED_DEVICE_FAMILY[sdk=appletvos*]" = "3";
+				"SDKROOT[sdk=appletvos]" = appletvos;
+				"DEVELOPMENT_TEAM[sdk=appletvos*]" = CY9K9H98F8;
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "iPhone Developer: Ore Nuga (7HWSHU4HAK)";
+				"PROVISIONING_PROFILE_SPECIFIER[sdk=appletvos*]" = "bb1aaf4d-2e99-4462-9e45-c4dec40ae952";
+				"CONFIGURATION_BUILD_DIR[sdk=macosx*]" = "/Users/egg/UE4/Builds//DESKTOP-OJU3OU9/D/ue/ARSample/Binaries/Mac";
+				"SDKROOT[sdk=macosx]" = macosx;
+				INFOPLIST_OUTPUT_FORMAT = xml;
+				COMBINE_HIDPI_IMAGES = YES;
+				"CONFIGURATION_BUILD_DIR[sdk=iphoneos*]" = "/Users/egg/UE4/Builds//DESKTOP-OJU3OU9/D/ue/ARSample/Binaries/IOS/Payload";
+				"CONFIGURATION_BUILD_DIR[sdk=appletvos*]" = "/Users/egg/UE4/Builds//DESKTOP-OJU3OU9/D/ue/ARSample/Binaries/TVOS/Payload";
+				INFOPLIST_FILE = "/Users/egg/UE4/Builds//DESKTOP-OJU3OU9/D/ue/ARSample/Intermediate/IOS/ARSample-Info.plist";
+				CODE_SIGN_ENTITLEMENTS = "/Users/egg/UE4/Builds//DESKTOP-OJU3OU9/D/ue/ARSample/Intermediate/IOS/ARSample.entitlements";
+				MACOSX_DEPLOYMENT_TARGET = 10.11;
+				SDKROOT = macosx;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "/Users/egg/UE4/Builds//DESKTOP-OJU3OU9/D/uesrc/UnrealEngine/Engine/Source/Editor/UnrealEd/Public/UnrealEd.h";
+			};
+			name = "Test";
+		};
+		8D59906E902172DA9E84CB3B /* "Debug" */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				VALID_ARCHS = "x86_64 arm64 armv7 armv7s";
+				SUPPORTED_PLATFORMS = "macosx iphoneos appletvos";
+				UE_BUILD_TARGET_NAME = "ARSample";
+				UE_BUILD_TARGET_CONFIG = "Debug";
+			};
+			name = "Debug";
+		};
+		DCAF889B6CB45FFFC87492B4 /* "DebugGame" */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				VALID_ARCHS = "x86_64 arm64 armv7 armv7s";
+				SUPPORTED_PLATFORMS = "macosx iphoneos appletvos";
+				UE_BUILD_TARGET_NAME = "ARSample";
+				UE_BUILD_TARGET_CONFIG = "DebugGame";
+			};
+			name = "DebugGame";
+		};
+		645B6A4D3AAF74D0F8C4293A /* "Development" */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				VALID_ARCHS = "x86_64 arm64 armv7 armv7s";
+				SUPPORTED_PLATFORMS = "macosx iphoneos appletvos";
+				UE_BUILD_TARGET_NAME = "ARSample";
+				UE_BUILD_TARGET_CONFIG = "Development";
+			};
+			name = "Development";
+		};
+		0976F58990C341D400508201 /* "Shipping" */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				VALID_ARCHS = "x86_64 arm64 armv7 armv7s";
+				SUPPORTED_PLATFORMS = "macosx iphoneos appletvos";
+				UE_BUILD_TARGET_NAME = "ARSample";
+				UE_BUILD_TARGET_CONFIG = "Shipping";
+			};
+			name = "Shipping";
+		};
+		2462BD9DA8AC55A38DA53EE6 /* "Test" */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				VALID_ARCHS = "x86_64 arm64 armv7 armv7s";
+				SUPPORTED_PLATFORMS = "macosx iphoneos appletvos";
+				UE_BUILD_TARGET_NAME = "ARSample";
+				UE_BUILD_TARGET_CONFIG = "Test";
+			};
+			name = "Test";
+		};
+		606C6E5CB00D43FE2D8E901B /* "Debug" */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				VALID_ARCHS = "x86_64 arm64 armv7 armv7s";
+				SUPPORTED_PLATFORMS = "macosx iphoneos appletvos";
+				"PRODUCT_NAME[sdk=macosx*]" = "ARSample-Mac-Debug";
+				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
+				"PRODUCT_NAME[sdk=iphoneos*]" = "ARSample";
+				"TARGETED_DEVICE_FAMILY[sdk=iphoneos*]" = "1,2";
+				"SDKROOT[sdk=iphoneos]" = iphoneos;
+				"DEVELOPMENT_TEAM[sdk=iphoneos*]" = CY9K9H98F8;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer: Ore Nuga (7HWSHU4HAK)";
+				"PROVISIONING_PROFILE_SPECIFIER[sdk=iphoneos*]" = "bb1aaf4d-2e99-4462-9e45-c4dec40ae952";
+				TVOS_DEPLOYMENT_TARGET = 9.0;
+				"PRODUCT_NAME[sdk=appletvos*]" = "ARSample";
+				"TARGETED_DEVICE_FAMILY[sdk=appletvos*]" = "3";
+				"SDKROOT[sdk=appletvos]" = appletvos;
+				"DEVELOPMENT_TEAM[sdk=appletvos*]" = CY9K9H98F8;
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "iPhone Developer: Ore Nuga (7HWSHU4HAK)";
+				"PROVISIONING_PROFILE_SPECIFIER[sdk=appletvos*]" = "bb1aaf4d-2e99-4462-9e45-c4dec40ae952";
+				"CONFIGURATION_BUILD_DIR[sdk=macosx*]" = "/Users/egg/UE4/Builds//DESKTOP-OJU3OU9/D/ue/ARSample/Binaries/Mac";
+				"SDKROOT[sdk=macosx]" = macosx;
+				INFOPLIST_OUTPUT_FORMAT = xml;
+				COMBINE_HIDPI_IMAGES = YES;
+				"CONFIGURATION_BUILD_DIR[sdk=iphoneos*]" = "/Users/egg/UE4/Builds//DESKTOP-OJU3OU9/D/ue/ARSample/Binaries/IOS/Payload";
+				"CONFIGURATION_BUILD_DIR[sdk=appletvos*]" = "/Users/egg/UE4/Builds//DESKTOP-OJU3OU9/D/ue/ARSample/Binaries/TVOS/Payload";
+				INFOPLIST_FILE = "/Users/egg/UE4/Builds//DESKTOP-OJU3OU9/D/ue/ARSample/Intermediate/IOS/ARSample-Info.plist";
+				CODE_SIGN_ENTITLEMENTS = "/Users/egg/UE4/Builds//DESKTOP-OJU3OU9/D/ue/ARSample/Intermediate/IOS/ARSample.entitlements";
+				MACOSX_DEPLOYMENT_TARGET = 10.11;
+				SDKROOT = macosx;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "/Users/egg/UE4/Builds//DESKTOP-OJU3OU9/D/uesrc/UnrealEngine/Engine/Source/Editor/UnrealEd/Public/UnrealEd.h";
+			};
+			name = "Debug";
+		};
+		34425D388194E0CE5E0BB7C3 /* "DebugGame" */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				VALID_ARCHS = "x86_64 arm64 armv7 armv7s";
+				SUPPORTED_PLATFORMS = "macosx iphoneos appletvos";
+				"PRODUCT_NAME[sdk=macosx*]" = "ARSample-Mac-DebugGame";
+				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
+				"PRODUCT_NAME[sdk=iphoneos*]" = "ARSample";
+				"TARGETED_DEVICE_FAMILY[sdk=iphoneos*]" = "1,2";
+				"SDKROOT[sdk=iphoneos]" = iphoneos;
+				"DEVELOPMENT_TEAM[sdk=iphoneos*]" = CY9K9H98F8;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer: Ore Nuga (7HWSHU4HAK)";
+				"PROVISIONING_PROFILE_SPECIFIER[sdk=iphoneos*]" = "bb1aaf4d-2e99-4462-9e45-c4dec40ae952";
+				TVOS_DEPLOYMENT_TARGET = 9.0;
+				"PRODUCT_NAME[sdk=appletvos*]" = "ARSample";
+				"TARGETED_DEVICE_FAMILY[sdk=appletvos*]" = "3";
+				"SDKROOT[sdk=appletvos]" = appletvos;
+				"DEVELOPMENT_TEAM[sdk=appletvos*]" = CY9K9H98F8;
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "iPhone Developer: Ore Nuga (7HWSHU4HAK)";
+				"PROVISIONING_PROFILE_SPECIFIER[sdk=appletvos*]" = "bb1aaf4d-2e99-4462-9e45-c4dec40ae952";
+				"CONFIGURATION_BUILD_DIR[sdk=macosx*]" = "/Users/egg/UE4/Builds//DESKTOP-OJU3OU9/D/ue/ARSample/Binaries/Mac";
+				"SDKROOT[sdk=macosx]" = macosx;
+				INFOPLIST_OUTPUT_FORMAT = xml;
+				COMBINE_HIDPI_IMAGES = YES;
+				"CONFIGURATION_BUILD_DIR[sdk=iphoneos*]" = "/Users/egg/UE4/Builds//DESKTOP-OJU3OU9/D/ue/ARSample/Binaries/IOS/Payload";
+				"CONFIGURATION_BUILD_DIR[sdk=appletvos*]" = "/Users/egg/UE4/Builds//DESKTOP-OJU3OU9/D/ue/ARSample/Binaries/TVOS/Payload";
+				INFOPLIST_FILE = "/Users/egg/UE4/Builds//DESKTOP-OJU3OU9/D/ue/ARSample/Intermediate/IOS/ARSample-Info.plist";
+				CODE_SIGN_ENTITLEMENTS = "/Users/egg/UE4/Builds//DESKTOP-OJU3OU9/D/ue/ARSample/Intermediate/IOS/ARSample.entitlements";
+				MACOSX_DEPLOYMENT_TARGET = 10.11;
+				SDKROOT = macosx;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "/Users/egg/UE4/Builds//DESKTOP-OJU3OU9/D/uesrc/UnrealEngine/Engine/Source/Editor/UnrealEd/Public/UnrealEd.h";
+			};
+			name = "DebugGame";
+		};
+		2AF205233BD1571AEF8F5B1A /* "Development" */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				VALID_ARCHS = "x86_64 arm64 armv7 armv7s";
+				SUPPORTED_PLATFORMS = "macosx iphoneos appletvos";
+				"PRODUCT_NAME[sdk=macosx*]" = "ARSample";
+				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
+				"PRODUCT_NAME[sdk=iphoneos*]" = "ARSample";
+				"TARGETED_DEVICE_FAMILY[sdk=iphoneos*]" = "1,2";
+				"SDKROOT[sdk=iphoneos]" = iphoneos;
+				"DEVELOPMENT_TEAM[sdk=iphoneos*]" = CY9K9H98F8;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer: Ore Nuga (7HWSHU4HAK)";
+				"PROVISIONING_PROFILE_SPECIFIER[sdk=iphoneos*]" = "bb1aaf4d-2e99-4462-9e45-c4dec40ae952";
+				TVOS_DEPLOYMENT_TARGET = 9.0;
+				"PRODUCT_NAME[sdk=appletvos*]" = "ARSample";
+				"TARGETED_DEVICE_FAMILY[sdk=appletvos*]" = "3";
+				"SDKROOT[sdk=appletvos]" = appletvos;
+				"DEVELOPMENT_TEAM[sdk=appletvos*]" = CY9K9H98F8;
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "iPhone Developer: Ore Nuga (7HWSHU4HAK)";
+				"PROVISIONING_PROFILE_SPECIFIER[sdk=appletvos*]" = "bb1aaf4d-2e99-4462-9e45-c4dec40ae952";
+				"CONFIGURATION_BUILD_DIR[sdk=macosx*]" = "/Users/egg/UE4/Builds//DESKTOP-OJU3OU9/D/ue/ARSample/Binaries/Mac";
+				"SDKROOT[sdk=macosx]" = macosx;
+				INFOPLIST_OUTPUT_FORMAT = xml;
+				COMBINE_HIDPI_IMAGES = YES;
+				"CONFIGURATION_BUILD_DIR[sdk=iphoneos*]" = "/Users/egg/UE4/Builds//DESKTOP-OJU3OU9/D/ue/ARSample/Binaries/IOS/Payload";
+				"CONFIGURATION_BUILD_DIR[sdk=appletvos*]" = "/Users/egg/UE4/Builds//DESKTOP-OJU3OU9/D/ue/ARSample/Binaries/TVOS/Payload";
+				INFOPLIST_FILE = "/Users/egg/UE4/Builds//DESKTOP-OJU3OU9/D/ue/ARSample/Intermediate/IOS/ARSample-Info.plist";
+				CODE_SIGN_ENTITLEMENTS = "/Users/egg/UE4/Builds//DESKTOP-OJU3OU9/D/ue/ARSample/Intermediate/IOS/ARSample.entitlements";
+				MACOSX_DEPLOYMENT_TARGET = 10.11;
+				SDKROOT = macosx;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "/Users/egg/UE4/Builds//DESKTOP-OJU3OU9/D/uesrc/UnrealEngine/Engine/Source/Editor/UnrealEd/Public/UnrealEd.h";
+			};
+			name = "Development";
+		};
+		13255E725B9FE7D0EA66E950 /* "Shipping" */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				VALID_ARCHS = "x86_64 arm64 armv7 armv7s";
+				SUPPORTED_PLATFORMS = "macosx iphoneos appletvos";
+				"PRODUCT_NAME[sdk=macosx*]" = "ARSample-Mac-Shipping";
+				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
+				"PRODUCT_NAME[sdk=iphoneos*]" = "ARSample";
+				"TARGETED_DEVICE_FAMILY[sdk=iphoneos*]" = "1,2";
+				"SDKROOT[sdk=iphoneos]" = iphoneos;
+				"DEVELOPMENT_TEAM[sdk=iphoneos*]" = CY9K9H98F8;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer: Ore Nuga (7HWSHU4HAK)";
+				"PROVISIONING_PROFILE_SPECIFIER[sdk=iphoneos*]" = "bb1aaf4d-2e99-4462-9e45-c4dec40ae952";
+				TVOS_DEPLOYMENT_TARGET = 9.0;
+				"PRODUCT_NAME[sdk=appletvos*]" = "ARSample";
+				"TARGETED_DEVICE_FAMILY[sdk=appletvos*]" = "3";
+				"SDKROOT[sdk=appletvos]" = appletvos;
+				"DEVELOPMENT_TEAM[sdk=appletvos*]" = CY9K9H98F8;
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "iPhone Developer: Ore Nuga (7HWSHU4HAK)";
+				"PROVISIONING_PROFILE_SPECIFIER[sdk=appletvos*]" = "bb1aaf4d-2e99-4462-9e45-c4dec40ae952";
+				"CONFIGURATION_BUILD_DIR[sdk=macosx*]" = "/Users/egg/UE4/Builds//DESKTOP-OJU3OU9/D/ue/ARSample/Binaries/Mac";
+				"SDKROOT[sdk=macosx]" = macosx;
+				INFOPLIST_OUTPUT_FORMAT = xml;
+				COMBINE_HIDPI_IMAGES = YES;
+				"CONFIGURATION_BUILD_DIR[sdk=iphoneos*]" = "/Users/egg/UE4/Builds//DESKTOP-OJU3OU9/D/ue/ARSample/Binaries/IOS/Payload";
+				"CONFIGURATION_BUILD_DIR[sdk=appletvos*]" = "/Users/egg/UE4/Builds//DESKTOP-OJU3OU9/D/ue/ARSample/Binaries/TVOS/Payload";
+				INFOPLIST_FILE = "/Users/egg/UE4/Builds//DESKTOP-OJU3OU9/D/ue/ARSample/Intermediate/IOS/ARSample-Info.plist";
+				CODE_SIGN_ENTITLEMENTS = "/Users/egg/UE4/Builds//DESKTOP-OJU3OU9/D/ue/ARSample/Intermediate/IOS/ARSample.entitlements";
+				MACOSX_DEPLOYMENT_TARGET = 10.11;
+				SDKROOT = macosx;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "/Users/egg/UE4/Builds//DESKTOP-OJU3OU9/D/uesrc/UnrealEngine/Engine/Source/Editor/UnrealEd/Public/UnrealEd.h";
+			};
+			name = "Shipping";
+		};
+		4ED519BD734743B5DF63E27A /* "Test" */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				VALID_ARCHS = "x86_64 arm64 armv7 armv7s";
+				SUPPORTED_PLATFORMS = "macosx iphoneos appletvos";
+				"PRODUCT_NAME[sdk=macosx*]" = "ARSample-Mac-Test";
+				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
+				"PRODUCT_NAME[sdk=iphoneos*]" = "ARSample";
+				"TARGETED_DEVICE_FAMILY[sdk=iphoneos*]" = "1,2";
+				"SDKROOT[sdk=iphoneos]" = iphoneos;
+				"DEVELOPMENT_TEAM[sdk=iphoneos*]" = CY9K9H98F8;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer: Ore Nuga (7HWSHU4HAK)";
+				"PROVISIONING_PROFILE_SPECIFIER[sdk=iphoneos*]" = "bb1aaf4d-2e99-4462-9e45-c4dec40ae952";
+				TVOS_DEPLOYMENT_TARGET = 9.0;
+				"PRODUCT_NAME[sdk=appletvos*]" = "ARSample";
+				"TARGETED_DEVICE_FAMILY[sdk=appletvos*]" = "3";
+				"SDKROOT[sdk=appletvos]" = appletvos;
+				"DEVELOPMENT_TEAM[sdk=appletvos*]" = CY9K9H98F8;
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "iPhone Developer: Ore Nuga (7HWSHU4HAK)";
+				"PROVISIONING_PROFILE_SPECIFIER[sdk=appletvos*]" = "bb1aaf4d-2e99-4462-9e45-c4dec40ae952";
+				"CONFIGURATION_BUILD_DIR[sdk=macosx*]" = "/Users/egg/UE4/Builds//DESKTOP-OJU3OU9/D/ue/ARSample/Binaries/Mac";
+				"SDKROOT[sdk=macosx]" = macosx;
+				INFOPLIST_OUTPUT_FORMAT = xml;
+				COMBINE_HIDPI_IMAGES = YES;
+				"CONFIGURATION_BUILD_DIR[sdk=iphoneos*]" = "/Users/egg/UE4/Builds//DESKTOP-OJU3OU9/D/ue/ARSample/Binaries/IOS/Payload";
+				"CONFIGURATION_BUILD_DIR[sdk=appletvos*]" = "/Users/egg/UE4/Builds//DESKTOP-OJU3OU9/D/ue/ARSample/Binaries/TVOS/Payload";
+				INFOPLIST_FILE = "/Users/egg/UE4/Builds//DESKTOP-OJU3OU9/D/ue/ARSample/Intermediate/IOS/ARSample-Info.plist";
+				CODE_SIGN_ENTITLEMENTS = "/Users/egg/UE4/Builds//DESKTOP-OJU3OU9/D/ue/ARSample/Intermediate/IOS/ARSample.entitlements";
+				MACOSX_DEPLOYMENT_TARGET = 10.11;
+				SDKROOT = macosx;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "/Users/egg/UE4/Builds//DESKTOP-OJU3OU9/D/uesrc/UnrealEngine/Engine/Source/Editor/UnrealEd/Public/UnrealEd.h";
+			};
+			name = "Test";
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		7882D2FF6FA05E9E5E47759F /* Build configuration list for PBXProject "ARSample" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				E50D1F9BBC355B2C33E59B32 /* "Debug" */,
+				DCDCED2F7D6602365A910E62 /* "DebugGame" */,
+				71318A6CFAA438C15D1A53CD /* "Development" */,
+				CA399C4F7185698A5359089E /* "Shipping" */,
+				4BA9746CBA42DD3BBD5D45FB /* "Test" */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Development;
+		};
+		8B5439B8C14C961F4D207EFB /* Build configuration list for PBXLegacyTarget "ARSample_Build" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				8D59906E902172DA9E84CB3B /* "Debug" */,
+				DCAF889B6CB45FFFC87492B4 /* "DebugGame" */,
+				645B6A4D3AAF74D0F8C4293A /* "Development" */,
+				0976F58990C341D400508201 /* "Shipping" */,
+				2462BD9DA8AC55A38DA53EE6 /* "Test" */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Development;
+		};
+		3603E347026AE0930CF5C128 /* Build configuration list for PBXNativeTarget "ARSample" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				6FAD56DF3F4A0C39A9AFB28D /* "Debug" */,
+				A5EC9B1173C193EBE21B7ED2 /* "DebugGame" */,
+				DD67CAA6320E9A315AE7DD30 /* "Development" */,
+				3AEB86ADA583D5183D8F7C3F /* "Shipping" */,
+				90E0FA9018349EEA68849A80 /* "Test" */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Development;
+		};
+		422207B2F9B6C930A127D11A /* Build configuration list for PBXNativeTarget "ARSample_Index" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				606C6E5CB00D43FE2D8E901B /* "Debug" */,
+				34425D388194E0CE5E0BB7C3 /* "DebugGame" */,
+				2AF205233BD1571AEF8F5B1A /* "Development" */,
+				13255E725B9FE7D0EA66E950 /* "Shipping" */,
+				4ED519BD734743B5DF63E27A /* "Test" */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Development;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 74F028E38F0BA476E9168FFB /* Project object */;
+}

@@ -16,8 +16,8 @@ void EmptyLinkFunctionForGeneratedCodeMovieScenePossessable() {}
 	MOVIESCENE_API UScriptStruct* Z_Construct_UScriptStruct_FMovieScenePossessable();
 	UPackage* Z_Construct_UPackage__Script_MovieScene();
 	COREUOBJECT_API UScriptStruct* Z_Construct_UScriptStruct_FGuid();
-	COREUOBJECT_API UClass* Z_Construct_UClass_UObject_NoRegister();
 	COREUOBJECT_API UClass* Z_Construct_UClass_UClass();
+	COREUOBJECT_API UClass* Z_Construct_UClass_UObject_NoRegister();
 // End Cross Module References
 class UScriptStruct* FMovieScenePossessable::StaticStruct()
 {

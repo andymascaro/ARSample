@@ -18,8 +18,8 @@ void EmptyLinkFunctionForGeneratedCodeAIPerceptionStimuliSourceComponent() {}
 	ENGINE_API UClass* Z_Construct_UClass_UActorComponent();
 	UPackage* Z_Construct_UPackage__Script_AIModule();
 	AIMODULE_API UFunction* Z_Construct_UFunction_UAIPerceptionStimuliSourceComponent_RegisterForSense();
-	AIMODULE_API UClass* Z_Construct_UClass_UAISense_NoRegister();
 	COREUOBJECT_API UClass* Z_Construct_UClass_UClass();
+	AIMODULE_API UClass* Z_Construct_UClass_UAISense_NoRegister();
 	AIMODULE_API UFunction* Z_Construct_UFunction_UAIPerceptionStimuliSourceComponent_RegisterWithPerceptionSystem();
 	AIMODULE_API UFunction* Z_Construct_UFunction_UAIPerceptionStimuliSourceComponent_UnregisterFromPerceptionSystem();
 	AIMODULE_API UFunction* Z_Construct_UFunction_UAIPerceptionStimuliSourceComponent_UnregisterFromSense();

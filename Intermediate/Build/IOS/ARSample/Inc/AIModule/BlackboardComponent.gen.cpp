@@ -24,8 +24,8 @@ void EmptyLinkFunctionForGeneratedCodeBlackboardComponent() {}
 	COREUOBJECT_API UScriptStruct* Z_Construct_UScriptStruct_FRotator();
 	AIMODULE_API UFunction* Z_Construct_UFunction_UBlackboardComponent_GetValueAsBool();
 	AIMODULE_API UFunction* Z_Construct_UFunction_UBlackboardComponent_GetValueAsClass();
-	COREUOBJECT_API UClass* Z_Construct_UClass_UObject_NoRegister();
 	COREUOBJECT_API UClass* Z_Construct_UClass_UClass();
+	COREUOBJECT_API UClass* Z_Construct_UClass_UObject_NoRegister();
 	AIMODULE_API UFunction* Z_Construct_UFunction_UBlackboardComponent_GetValueAsEnum();
 	AIMODULE_API UFunction* Z_Construct_UFunction_UBlackboardComponent_GetValueAsFloat();
 	AIMODULE_API UFunction* Z_Construct_UFunction_UBlackboardComponent_GetValueAsInt();

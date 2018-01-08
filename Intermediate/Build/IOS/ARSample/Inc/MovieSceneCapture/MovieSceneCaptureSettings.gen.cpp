@@ -16,8 +16,8 @@ void EmptyLinkFunctionForGeneratedCodeMovieSceneCaptureSettings() {}
 	MOVIESCENECAPTURE_API UScriptStruct* Z_Construct_UScriptStruct_FMovieSceneCaptureSettings();
 	UPackage* Z_Construct_UPackage__Script_MovieSceneCapture();
 	MOVIESCENECAPTURE_API UScriptStruct* Z_Construct_UScriptStruct_FCaptureResolution();
-	ENGINE_API UClass* Z_Construct_UClass_AGameModeBase_NoRegister();
 	COREUOBJECT_API UClass* Z_Construct_UClass_UClass();
+	ENGINE_API UClass* Z_Construct_UClass_AGameModeBase_NoRegister();
 	ENGINE_API UScriptStruct* Z_Construct_UScriptStruct_FDirectoryPath();
 // End Cross Module References
 class UScriptStruct* FMovieSceneCaptureSettings::StaticStruct()

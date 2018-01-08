@@ -17,8 +17,8 @@ void EmptyLinkFunctionForGeneratedCodeEnvQueryTest_Trace() {}
 	AIMODULE_API UClass* Z_Construct_UClass_UEnvQueryTest_Trace();
 	AIMODULE_API UClass* Z_Construct_UClass_UEnvQueryTest();
 	UPackage* Z_Construct_UPackage__Script_AIModule();
-	AIMODULE_API UClass* Z_Construct_UClass_UEnvQueryContext_NoRegister();
 	COREUOBJECT_API UClass* Z_Construct_UClass_UClass();
+	AIMODULE_API UClass* Z_Construct_UClass_UEnvQueryContext_NoRegister();
 	AIMODULE_API UScriptStruct* Z_Construct_UScriptStruct_FAIDataProviderFloatValue();
 	AIMODULE_API UScriptStruct* Z_Construct_UScriptStruct_FAIDataProviderBoolValue();
 	AIMODULE_API UScriptStruct* Z_Construct_UScriptStruct_FEnvTraceData();

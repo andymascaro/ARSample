@@ -21,8 +21,8 @@ void EmptyLinkFunctionForGeneratedCodeAIController() {}
 	AIMODULE_API UClass* Z_Construct_UClass_AAIController();
 	ENGINE_API UClass* Z_Construct_UClass_AController();
 	AIMODULE_API UFunction* Z_Construct_UFunction_AAIController_ClaimTaskResource();
-	GAMEPLAYTASKS_API UClass* Z_Construct_UClass_UGameplayTaskResource_NoRegister();
 	COREUOBJECT_API UClass* Z_Construct_UClass_UClass();
+	GAMEPLAYTASKS_API UClass* Z_Construct_UClass_UGameplayTaskResource_NoRegister();
 	AIMODULE_API UFunction* Z_Construct_UFunction_AAIController_GetAIPerceptionComponent();
 	AIMODULE_API UClass* Z_Construct_UClass_UAIPerceptionComponent_NoRegister();
 	AIMODULE_API UFunction* Z_Construct_UFunction_AAIController_GetFocalPoint();

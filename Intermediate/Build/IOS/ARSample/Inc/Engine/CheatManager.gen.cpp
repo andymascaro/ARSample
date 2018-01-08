@@ -35,8 +35,8 @@ void EmptyLinkFunctionForGeneratedCodeCheatManager() {}
 	ENGINE_API UFunction* Z_Construct_UFunction_UCheatManager_DebugCapsuleSweepPawn();
 	ENGINE_API UFunction* Z_Construct_UFunction_UCheatManager_DebugCapsuleSweepSize();
 	ENGINE_API UFunction* Z_Construct_UFunction_UCheatManager_DestroyAll();
-	ENGINE_API UClass* Z_Construct_UClass_AActor_NoRegister();
 	COREUOBJECT_API UClass* Z_Construct_UClass_UClass();
+	ENGINE_API UClass* Z_Construct_UClass_AActor_NoRegister();
 	ENGINE_API UFunction* Z_Construct_UFunction_UCheatManager_DestroyAllPawnsExceptTarget();
 	ENGINE_API UFunction* Z_Construct_UFunction_UCheatManager_DestroyPawns();
 	ENGINE_API UClass* Z_Construct_UClass_APawn_NoRegister();

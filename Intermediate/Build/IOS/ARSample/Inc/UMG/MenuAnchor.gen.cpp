@@ -28,8 +28,8 @@ void EmptyLinkFunctionForGeneratedCodeMenuAnchor() {}
 	UMG_API UFunction* Z_Construct_UFunction_UMenuAnchor_ToggleOpen();
 	SLATECORE_API UEnum* Z_Construct_UEnum_SlateCore_EMenuPlacement();
 	UMG_API UFunction* Z_Construct_UDelegateFunction_UWidget_GetWidget__DelegateSignature();
-	UMG_API UClass* Z_Construct_UClass_UUserWidget_NoRegister();
 	COREUOBJECT_API UClass* Z_Construct_UClass_UClass();
+	UMG_API UClass* Z_Construct_UClass_UUserWidget_NoRegister();
 // End Cross Module References
 	UFunction* Z_Construct_UDelegateFunction_UMG_OnMenuOpenChangedEvent__DelegateSignature()
 	{

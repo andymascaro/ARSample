@@ -18,8 +18,8 @@ void EmptyLinkFunctionForGeneratedCodeAIPerceptionSystem() {}
 	COREUOBJECT_API UClass* Z_Construct_UClass_UObject();
 	UPackage* Z_Construct_UPackage__Script_AIModule();
 	AIMODULE_API UFunction* Z_Construct_UFunction_UAIPerceptionSystem_GetSenseClassForStimulus();
-	AIMODULE_API UClass* Z_Construct_UClass_UAISense_NoRegister();
 	COREUOBJECT_API UClass* Z_Construct_UClass_UClass();
+	AIMODULE_API UClass* Z_Construct_UClass_UAISense_NoRegister();
 	AIMODULE_API UScriptStruct* Z_Construct_UScriptStruct_FAIStimulus();
 	COREUOBJECT_API UClass* Z_Construct_UClass_UObject_NoRegister();
 	AIMODULE_API UFunction* Z_Construct_UFunction_UAIPerceptionSystem_OnPerceptionStimuliSourceEndPlay();

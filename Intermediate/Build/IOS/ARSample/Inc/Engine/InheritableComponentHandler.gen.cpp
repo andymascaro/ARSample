@@ -18,8 +18,8 @@ void EmptyLinkFunctionForGeneratedCodeInheritableComponentHandler() {}
 	ENGINE_API UScriptStruct* Z_Construct_UScriptStruct_FBlueprintCookedComponentInstancingData();
 	ENGINE_API UScriptStruct* Z_Construct_UScriptStruct_FComponentKey();
 	ENGINE_API UClass* Z_Construct_UClass_UActorComponent_NoRegister();
-	COREUOBJECT_API UClass* Z_Construct_UClass_UObject_NoRegister();
 	COREUOBJECT_API UClass* Z_Construct_UClass_UClass();
+	COREUOBJECT_API UClass* Z_Construct_UClass_UObject_NoRegister();
 	COREUOBJECT_API UScriptStruct* Z_Construct_UScriptStruct_FGuid();
 	ENGINE_API UClass* Z_Construct_UClass_UInheritableComponentHandler_NoRegister();
 	ENGINE_API UClass* Z_Construct_UClass_UInheritableComponentHandler();

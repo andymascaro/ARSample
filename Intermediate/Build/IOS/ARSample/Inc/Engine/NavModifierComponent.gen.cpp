@@ -18,8 +18,8 @@ void EmptyLinkFunctionForGeneratedCodeNavModifierComponent() {}
 	ENGINE_API UClass* Z_Construct_UClass_UNavRelevantComponent();
 	UPackage* Z_Construct_UPackage__Script_Engine();
 	ENGINE_API UFunction* Z_Construct_UFunction_UNavModifierComponent_SetAreaClass();
-	ENGINE_API UClass* Z_Construct_UClass_UNavArea_NoRegister();
 	COREUOBJECT_API UClass* Z_Construct_UClass_UClass();
+	ENGINE_API UClass* Z_Construct_UClass_UNavArea_NoRegister();
 	COREUOBJECT_API UScriptStruct* Z_Construct_UScriptStruct_FVector();
 // End Cross Module References
 	void UNavModifierComponent::StaticRegisterNativesUNavModifierComponent()

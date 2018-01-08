@@ -17,8 +17,8 @@ void EmptyLinkFunctionForGeneratedCodeBlackboardKeyType_Class() {}
 	AIMODULE_API UClass* Z_Construct_UClass_UBlackboardKeyType_Class();
 	AIMODULE_API UClass* Z_Construct_UClass_UBlackboardKeyType();
 	UPackage* Z_Construct_UPackage__Script_AIModule();
-	COREUOBJECT_API UClass* Z_Construct_UClass_UObject_NoRegister();
 	COREUOBJECT_API UClass* Z_Construct_UClass_UClass();
+	COREUOBJECT_API UClass* Z_Construct_UClass_UObject_NoRegister();
 // End Cross Module References
 	void UBlackboardKeyType_Class::StaticRegisterNativesUBlackboardKeyType_Class()
 	{

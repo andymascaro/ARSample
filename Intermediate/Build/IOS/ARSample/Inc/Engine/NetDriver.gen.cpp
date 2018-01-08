@@ -19,8 +19,8 @@ void EmptyLinkFunctionForGeneratedCodeNetDriver() {}
 	ENGINE_API UClass* Z_Construct_UClass_UNetDriver();
 	COREUOBJECT_API UClass* Z_Construct_UClass_UObject();
 	COREUOBJECT_API UClass* Z_Construct_UClass_UProperty();
-	COREUOBJECT_API UClass* Z_Construct_UClass_UObject_NoRegister();
 	COREUOBJECT_API UClass* Z_Construct_UClass_UClass();
+	COREUOBJECT_API UClass* Z_Construct_UClass_UObject_NoRegister();
 	ENGINE_API UClass* Z_Construct_UClass_UWorld_NoRegister();
 	ENGINE_API UClass* Z_Construct_UClass_UNetConnection_NoRegister();
 // End Cross Module References

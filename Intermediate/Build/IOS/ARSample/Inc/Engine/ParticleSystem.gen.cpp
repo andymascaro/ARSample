@@ -25,8 +25,8 @@ void EmptyLinkFunctionForGeneratedCodeParticleSystem() {}
 	ENGINE_API UClass* Z_Construct_UClass_UParticleSystem();
 	COREUOBJECT_API UClass* Z_Construct_UClass_UObject();
 	ENGINE_API UFunction* Z_Construct_UFunction_UParticleSystem_ContainsEmitterType();
-	COREUOBJECT_API UClass* Z_Construct_UClass_UObject_NoRegister();
 	COREUOBJECT_API UClass* Z_Construct_UClass_UClass();
+	COREUOBJECT_API UClass* Z_Construct_UClass_UObject_NoRegister();
 	COREUOBJECT_API UScriptStruct* Z_Construct_UScriptStruct_FBox();
 	COREUOBJECT_API UScriptStruct* Z_Construct_UScriptStruct_FVector();
 	ENGINE_API UEnum* Z_Construct_UEnum_Engine_EParticleSignificanceLevel();

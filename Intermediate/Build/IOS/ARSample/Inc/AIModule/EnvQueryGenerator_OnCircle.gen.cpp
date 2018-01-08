@@ -20,8 +20,8 @@ void EmptyLinkFunctionForGeneratedCodeEnvQueryGenerator_OnCircle() {}
 	AIMODULE_API UClass* Z_Construct_UClass_UEnvQueryGenerator_ProjectedPoints();
 	AIMODULE_API UScriptStruct* Z_Construct_UScriptStruct_FEnvTraceData();
 	AIMODULE_API UScriptStruct* Z_Construct_UScriptStruct_FAIDataProviderFloatValue();
-	AIMODULE_API UClass* Z_Construct_UClass_UEnvQueryContext_NoRegister();
 	COREUOBJECT_API UClass* Z_Construct_UClass_UClass();
+	AIMODULE_API UClass* Z_Construct_UClass_UEnvQueryContext_NoRegister();
 	AIMODULE_API UScriptStruct* Z_Construct_UScriptStruct_FEnvDirection();
 	AIMODULE_API UScriptStruct* Z_Construct_UScriptStruct_FAIDataProviderIntValue();
 // End Cross Module References

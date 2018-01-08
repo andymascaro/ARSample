@@ -35,8 +35,8 @@ void EmptyLinkFunctionForGeneratedCodeEnvQueryTypes() {}
 	AIMODULE_API UScriptStruct* Z_Construct_UScriptStruct_FAIDynamicParam();
 	AIMODULE_API UClass* Z_Construct_UClass_UEnvQuery_NoRegister();
 	AIMODULE_API UScriptStruct* Z_Construct_UScriptStruct_FEnvQueryResult();
-	AIMODULE_API UClass* Z_Construct_UClass_UEnvQueryItemType_NoRegister();
 	COREUOBJECT_API UClass* Z_Construct_UClass_UClass();
+	AIMODULE_API UClass* Z_Construct_UClass_UEnvQueryItemType_NoRegister();
 	AIMODULE_API UScriptStruct* Z_Construct_UScriptStruct_FEnvOverlapData();
 	ENGINE_API UEnum* Z_Construct_UEnum_Engine_ECollisionChannel();
 	COREUOBJECT_API UScriptStruct* Z_Construct_UScriptStruct_FVector();

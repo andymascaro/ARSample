@@ -75,8 +75,8 @@ void EmptyLinkFunctionForGeneratedCodeSkeletalMeshComponent() {}
 	ENGINE_API UFunction* Z_Construct_UFunction_USkeletalMeshComponent_SetAnimation();
 	ENGINE_API UFunction* Z_Construct_UFunction_USkeletalMeshComponent_SetAnimationMode();
 	ENGINE_API UFunction* Z_Construct_UFunction_USkeletalMeshComponent_SetAnimInstanceClass();
-	COREUOBJECT_API UClass* Z_Construct_UClass_UObject_NoRegister();
 	COREUOBJECT_API UClass* Z_Construct_UClass_UClass();
+	COREUOBJECT_API UClass* Z_Construct_UClass_UObject_NoRegister();
 	ENGINE_API UFunction* Z_Construct_UFunction_USkeletalMeshComponent_SetBodyNotifyRigidBodyCollision();
 	ENGINE_API UFunction* Z_Construct_UFunction_USkeletalMeshComponent_SetClothMaxDistanceScale();
 	ENGINE_API UFunction* Z_Construct_UFunction_USkeletalMeshComponent_SetConstraintProfile();

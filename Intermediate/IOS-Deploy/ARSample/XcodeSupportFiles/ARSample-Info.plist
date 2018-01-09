@@ -30,7 +30,7 @@
 		<key>CFBundleSignature</key>
 		<string>????</string>
 		<key>CFBundleVersion</key>
-		<string>0.201</string>
+		<string>0.351</string>
 		<key>CFBundleShortVersionString</key>
 		<string>1.0</string>
 		<key>LSRequiresIPhoneOS</key>
@@ -293,7 +293,7 @@
 		<key>NSCameraUsageDescription</key>
 		<string>The camera is used for augmenting reality.</string>
 		<key>EpicAppVersion</key>
-		<string>0.200 01-07 21:23</string>
+		<string>0.350 01-08 23:37</string>
 		<key>EpicPackagingMode</key>
 		<string>Development</string>
 	</dict>

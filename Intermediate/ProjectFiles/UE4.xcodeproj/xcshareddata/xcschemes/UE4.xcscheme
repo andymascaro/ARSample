@@ -14,7 +14,7 @@
             buildForAnalyzing = "YES">
             <BuildableReference
                BuildableIdentifier = "primary"
-               BlueprintIdentifier = "DAA01384B3FF9986886227B4"
+               BlueprintIdentifier = "4ADE14A891D6CA0749100260"
                BuildableName = "UE4.app"
                BlueprintName = "UE4"
                ReferencedContainer = "container:UE4.xcodeproj">
@@ -32,7 +32,7 @@
       <MacroExpansion>
             <BuildableReference
                BuildableIdentifier = "primary"
-               BlueprintIdentifier = "DAA01384B3FF9986886227B4"
+               BlueprintIdentifier = "4ADE14A891D6CA0749100260"
                BuildableName = "UE4.app"
                BlueprintName = "UE4"
                ReferencedContainer = "container:UE4.xcodeproj">
@@ -55,7 +55,7 @@
          runnableDebuggingMode = "0">
             <BuildableReference
                BuildableIdentifier = "primary"
-               BlueprintIdentifier = "DAA01384B3FF9986886227B4"
+               BlueprintIdentifier = "4ADE14A891D6CA0749100260"
                BuildableName = "UE4.app"
                BlueprintName = "UE4"
                ReferencedContainer = "container:UE4.xcodeproj">
@@ -74,7 +74,7 @@
          runnableDebuggingMode = "0">
             <BuildableReference
                BuildableIdentifier = "primary"
-               BlueprintIdentifier = "DAA01384B3FF9986886227B4"
+               BlueprintIdentifier = "4ADE14A891D6CA0749100260"
                BuildableName = "UE4.app"
                BlueprintName = "UE4"
                ReferencedContainer = "container:UE4.xcodeproj">

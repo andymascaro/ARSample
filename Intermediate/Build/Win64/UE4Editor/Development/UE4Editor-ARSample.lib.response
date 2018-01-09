@@ -1,0 +1,13 @@
+/NOLOGO
+/errorReport:prompt
+/MACHINE:x64
+/SUBSYSTEM:WINDOWS
+/DEF
+/NAME:"UE4Editor-ARSample.dll"
+/IGNORE:4221
+/NODEFAULTLIB
+"D:\uesrc\UnrealEngine\Engine\Intermediate\Build\Win64\UE4Editor\Development\Engine\SharedPCH.Engine.h.obj"
+"D:\ue\ARSample\Intermediate\Build\Win64\UE4Editor\Development\ARSample\ARSample.cpp.obj"
+"D:\uesrc\UnrealEngine\Engine\Intermediate\Build\Win64\UE4Editor\Development\PCLaunch.rc.res"
+"D:\uesrc\UnrealEngine\Engine\Intermediate\Build\Win64\UE4Editor\Development\ModuleVersionResource.rc.inl.res"
+/OUT:"D:\ue\ARSample\Intermediate\Build\Win64\UE4Editor\Development\UE4Editor-ARSample.lib"

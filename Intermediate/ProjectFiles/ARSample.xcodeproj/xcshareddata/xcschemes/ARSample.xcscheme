@@ -14,7 +14,7 @@
             buildForAnalyzing = "YES">
             <BuildableReference
                BuildableIdentifier = "primary"
-               BlueprintIdentifier = "DFF14F8BA50CA70FD53CB3B7"
+               BlueprintIdentifier = "422207B2F9B6C930A127D11A"
                BuildableName = "ARSample.app"
                BlueprintName = "ARSample"
                ReferencedContainer = "container:ARSample.xcodeproj">
@@ -32,7 +32,7 @@
       <MacroExpansion>
             <BuildableReference
                BuildableIdentifier = "primary"
-               BlueprintIdentifier = "DFF14F8BA50CA70FD53CB3B7"
+               BlueprintIdentifier = "422207B2F9B6C930A127D11A"
                BuildableName = "ARSample.app"
                BlueprintName = "ARSample"
                ReferencedContainer = "container:ARSample.xcodeproj">
@@ -55,12 +55,22 @@
          runnableDebuggingMode = "0">
             <BuildableReference
                BuildableIdentifier = "primary"
-               BlueprintIdentifier = "DFF14F8BA50CA70FD53CB3B7"
+               BlueprintIdentifier = "422207B2F9B6C930A127D11A"
                BuildableName = "ARSample.app"
                BlueprintName = "ARSample"
                ReferencedContainer = "container:ARSample.xcodeproj">
             </BuildableReference>
       </BuildableProductRunnable>
+      <CommandLineArguments>
+         <CommandLineArgument
+            argument = "&quot;D:\ue\ARSample\ARSample.uproject&quot;"
+            isEnabled = "YES">
+         </CommandLineArgument>
+         <CommandLineArgument
+            argument = "-RunConfig=$(Configuration)"
+            isEnabled = "YES">
+         </CommandLineArgument>
+      </CommandLineArguments>
       <AdditionalOptions>
       </AdditionalOptions>
    </LaunchAction>
@@ -74,7 +84,7 @@
          runnableDebuggingMode = "0">
             <BuildableReference
                BuildableIdentifier = "primary"
-               BlueprintIdentifier = "DFF14F8BA50CA70FD53CB3B7"
+               BlueprintIdentifier = "422207B2F9B6C930A127D11A"
                BuildableName = "ARSample.app"
                BlueprintName = "ARSample"
                ReferencedContainer = "container:ARSample.xcodeproj">

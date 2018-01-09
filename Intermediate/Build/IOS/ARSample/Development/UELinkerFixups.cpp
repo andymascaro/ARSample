@@ -452,8 +452,8 @@
 #ifndef RUNTIMEPHYSXCOOKING_API
 	#define RUNTIMEPHYSXCOOKING_API 
 #endif
-#ifndef UE4GAME_API
-	#define UE4GAME_API 
+#ifndef ARSAMPLE_API
+	#define ARSAMPLE_API 
 #endif
 #ifndef METALRHI_API
 	#define METALRHI_API 
@@ -730,9 +730,6 @@
 #endif
 #ifndef PHYSXCOOKING_API
 	#define PHYSXCOOKING_API 
-#endif
-#ifndef IOSADVERTISING_API
-	#define IOSADVERTISING_API 
 #endif
 void UELinkerFixups()
 {
@@ -4392,8 +4389,8 @@ void UELinkerFixups()
     EmptyLinkFunctionForStaticInitializationProceduralMeshComponent();
     extern void EmptyLinkFunctionForStaticInitializationRuntimePhysXCooking();
     EmptyLinkFunctionForStaticInitializationRuntimePhysXCooking();
-    extern void EmptyLinkFunctionForStaticInitializationUE4Game();
-    EmptyLinkFunctionForStaticInitializationUE4Game();
+    extern void EmptyLinkFunctionForStaticInitializationARSample();
+    EmptyLinkFunctionForStaticInitializationARSample();
     extern void EmptyLinkFunctionForStaticInitializationMetalRHI();
     EmptyLinkFunctionForStaticInitializationMetalRHI();
     extern void EmptyLinkFunctionForStaticInitializationCore();
@@ -4598,6 +4595,4 @@ void UELinkerFixups()
     EmptyLinkFunctionForStaticInitializationBuildPatchServices();
     extern void EmptyLinkFunctionForStaticInitializationPhysXCooking();
     EmptyLinkFunctionForStaticInitializationPhysXCooking();
-    extern void EmptyLinkFunctionForStaticInitializationIOSAdvertising();
-    EmptyLinkFunctionForStaticInitializationIOSAdvertising();
 }

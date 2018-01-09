@@ -3,6 +3,16 @@
 	"EngineAssociation": "{A542576D-46D3-13E5-82DB-C4B1B15CB39C}",
 	"Category": "",
 	"Description": "",
+	"Modules": [
+		{
+			"Name": "ARSample",
+			"Type": "Runtime",
+			"LoadingPhase": "Default",
+			"AdditionalDependencies": [
+				"Engine"
+			]
+		}
+	],
 	"Plugins": [
 		{
 			"Name": "OculusVR",

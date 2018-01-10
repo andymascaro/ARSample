@@ -1,1 +1,1 @@
-../../../ARSample/ARSample.uproject  /Game/Maps/ARSample -Messaging -SessionId=19D71DCB4F2446EAC55035B802D6AC4A -SessionOwner="Andy" -SessionName="Launch On Device" -iterative
+../../../ARSample/ARSample.uproject  /Game/Maps/ARSample -Messaging -SessionId=6A8C78C44B95A937CBD46686A7F80AD9 -SessionOwner="Andy" -SessionName="Launch On Device" -iterative

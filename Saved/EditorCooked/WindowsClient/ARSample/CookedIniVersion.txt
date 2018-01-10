@@ -782,6 +782,11 @@ Windows.Engine:RemoteConfiguration:IniToLoad:1=EditorKeyBindings
 Windows.Engine:Engine.ErrorHandling:bPromptForRemoteDebugging:0=false
 Windows.Engine:Engine.ErrorHandling:bPromptForRemoteDebugOnEnsure:0=false
 Windows.Engine:Niagara:EnableNiagara:0=false
+Windows.Engine:/Script/Engine.CollisionProfile:OldProfiles:0=(Name="BlockingVolume",CollisionEnabled=QueryAndPhysics,ObjectTypeName=WorldStatic,CustomResponses=((Channel=Visibility, Response=ECR_Ignore)))
+Windows.Engine:/Script/Engine.CollisionProfile:OldProfiles:1=(Name="InterpActor",CollisionEnabled=QueryOnly,ObjectTypeName=WorldStatic,CustomResponses=((Channel=Pawn, Response=ECR_Ignore)))
+Windows.Engine:/Script/Engine.CollisionProfile:OldProfiles:2=(Name="StaticMeshComponent",CollisionEnabled=QueryAndPhysics,ObjectTypeName=WorldStatic)
+Windows.Engine:/Script/Engine.CollisionProfile:OldProfiles:3=(Name="SkeletalMeshActor",CollisionEnabled=QueryAndPhysics,ObjectTypeName=PhysicsBody,CustomResponses=((Channel=Visibility, Response=ECR_Block)))
+Windows.Engine:/Script/Engine.CollisionProfile:OldProfiles:4=(Name="InvisibleActor", CollisionEnabled=QueryAndPhysics, ObjectTypeName=WorldDynamic, CustomResponses=((Channel=Visibility, Response=ECR_Ignore)))
 Windows.Engine:/Script/Engine.CollisionProfile:Profiles:0=(Name="NoCollision",CollisionEnabled=NoCollision,ObjectTypeName="WorldStatic",CustomResponses=((Channel="Visibility",Response=ECR_Ignore),(Channel="Camera",Response=ECR_Ignore)),HelpMessage="No collision",bCanModify=False)
 Windows.Engine:/Script/Engine.CollisionProfile:Profiles:1=(Name="BlockAll",CollisionEnabled=QueryAndPhysics,ObjectTypeName="WorldStatic",CustomResponses=,HelpMessage="WorldStatic object that blocks all actors by default. All new custom channels will use its own default response. ",bCanModify=False)
 Windows.Engine:/Script/Engine.CollisionProfile:Profiles:2=(Name="OverlapAll",CollisionEnabled=QueryOnly,ObjectTypeName="WorldStatic",CustomResponses=((Channel="WorldStatic",Response=ECR_Overlap),(Channel="Pawn",Response=ECR_Overlap),(Channel="Visibility",Response=ECR_Overlap),(Channel="WorldDynamic",Response=ECR_Overlap),(Channel="Camera",Response=ECR_Overlap),(Channel="PhysicsBody",Response=ECR_Overlap),(Channel="Vehicle",Response=ECR_Overlap),(Channel="Destructible",Response=ECR_Overlap)),HelpMessage="WorldStatic object that overlaps all actors by default. All new custom channels will use its own default response. ",bCanModify=False)
@@ -790,7 +795,7 @@ Windows.Engine:/Script/Engine.CollisionProfile:Profiles:4=(Name="OverlapAllDynam
 Windows.Engine:/Script/Engine.CollisionProfile:Profiles:5=(Name="IgnoreOnlyPawn",CollisionEnabled=QueryOnly,ObjectTypeName="WorldDynamic",CustomResponses=((Channel="Pawn",Response=ECR_Ignore),(Channel="Vehicle",Response=ECR_Ignore)),HelpMessage="WorldDynamic object that ignores Pawn and Vehicle. All other channels will be set to default.",bCanModify=False)
 Windows.Engine:/Script/Engine.CollisionProfile:Profiles:6=(Name="OverlapOnlyPawn",CollisionEnabled=QueryOnly,ObjectTypeName="WorldDynamic",CustomResponses=((Channel="Pawn",Response=ECR_Overlap),(Channel="Vehicle",Response=ECR_Overlap),(Channel="Camera",Response=ECR_Ignore)),HelpMessage="WorldDynamic object that overlaps Pawn, Camera, and Vehicle. All other channels will be set to default. ",bCanModify=False)
 Windows.Engine:/Script/Engine.CollisionProfile:Profiles:7=(Name="Pawn",CollisionEnabled=QueryAndPhysics,ObjectTypeName="Pawn",CustomResponses=((Channel="Visibility",Response=ECR_Ignore)),HelpMessage="Pawn object. Can be used for capsule of any playerable character or AI. ",bCanModify=False)
-Windows.Engine:/Script/Engine.CollisionProfile:Profiles:8=(Name="Spectator",CollisionEnabled=QueryOnly,ObjectTypeName="Pawn",CustomResponses=((Channel="WorldStatic",Response=ECR_Block),(Channel="Pawn",Response=ECR_Ignore),(Channel="Visibility",Response=ECR_Ignore),(Channel="WorldDynamic",Response=ECR_Ignore),(Channel="Camera",Response=ECR_Ignore),(Channel="PhysicsBody",Response=ECR_Ignore),(Channel="Vehicle",Response=ECR_Ignore),(Channel="Destructible",Response=ECR_Ignore)),HelpMessage="Pawn object that ignores all other actors except WorldStatic.",bCanModify=False)
+Windows.Engine:/Script/Engine.CollisionProfile:Profiles:8=(Name="Spectator",CollisionEnabled=QueryOnly,ObjectTypeName="Pawn",CustomResponses=((Channel="WorldStatic"),(Channel="Pawn",Response=ECR_Ignore),(Channel="Visibility",Response=ECR_Ignore),(Channel="WorldDynamic",Response=ECR_Ignore),(Channel="Camera",Response=ECR_Ignore),(Channel="PhysicsBody",Response=ECR_Ignore),(Channel="Vehicle",Response=ECR_Ignore),(Channel="Destructible",Response=ECR_Ignore)),HelpMessage="Pawn object that ignores all other actors except WorldStatic.",bCanModify=False)
 Windows.Engine:/Script/Engine.CollisionProfile:Profiles:9=(Name="CharacterMesh",CollisionEnabled=QueryOnly,ObjectTypeName="Pawn",CustomResponses=((Channel="Pawn",Response=ECR_Ignore),(Channel="Vehicle",Response=ECR_Ignore),(Channel="Visibility",Response=ECR_Ignore)),HelpMessage="Pawn object that is used for Character Mesh. All other channels will be set to default.",bCanModify=False)
 Windows.Engine:/Script/Engine.CollisionProfile:Profiles:10=(Name="PhysicsActor",CollisionEnabled=QueryAndPhysics,ObjectTypeName="PhysicsBody",CustomResponses=,HelpMessage="Simulating actors",bCanModify=False)
 Windows.Engine:/Script/Engine.CollisionProfile:Profiles:11=(Name="Destructible",CollisionEnabled=QueryAndPhysics,ObjectTypeName="Destructible",CustomResponses=,HelpMessage="Destructible actors",bCanModify=False)
@@ -799,12 +804,8 @@ Windows.Engine:/Script/Engine.CollisionProfile:Profiles:13=(Name="InvisibleWallD
 Windows.Engine:/Script/Engine.CollisionProfile:Profiles:14=(Name="Trigger",CollisionEnabled=QueryOnly,ObjectTypeName="WorldDynamic",CustomResponses=((Channel="WorldStatic",Response=ECR_Overlap),(Channel="Pawn",Response=ECR_Overlap),(Channel="Visibility",Response=ECR_Ignore),(Channel="WorldDynamic",Response=ECR_Overlap),(Channel="Camera",Response=ECR_Overlap),(Channel="PhysicsBody",Response=ECR_Overlap),(Channel="Vehicle",Response=ECR_Overlap),(Channel="Destructible",Response=ECR_Overlap)),HelpMessage="WorldDynamic object that is used for trigger. All other channels will be set to default.",bCanModify=False)
 Windows.Engine:/Script/Engine.CollisionProfile:Profiles:15=(Name="Ragdoll",CollisionEnabled=QueryAndPhysics,ObjectTypeName="PhysicsBody",CustomResponses=((Channel="Pawn",Response=ECR_Ignore),(Channel="Visibility",Response=ECR_Ignore)),HelpMessage="Simulating Skeletal Mesh Component. All other channels will be set to default.",bCanModify=False)
 Windows.Engine:/Script/Engine.CollisionProfile:Profiles:16=(Name="Vehicle",CollisionEnabled=QueryAndPhysics,ObjectTypeName="Vehicle",CustomResponses=,HelpMessage="Vehicle object that blocks Vehicle, WorldStatic, and WorldDynamic. All other channels will be set to default.",bCanModify=False)
-Windows.Engine:/Script/Engine.CollisionProfile:Profiles:17=(Name="UI",CollisionEnabled=QueryOnly,ObjectTypeName="WorldDynamic",CustomResponses=((Channel="WorldStatic",Response=ECR_Overlap),(Channel="Pawn",Response=ECR_Overlap),(Channel="Visibility",Response=ECR_Block),(Channel="WorldDynamic",Response=ECR_Overlap),(Channel="Camera",Response=ECR_Overlap),(Channel="PhysicsBody",Response=ECR_Overlap),(Channel="Vehicle",Response=ECR_Overlap),(Channel="Destructible",Response=ECR_Overlap)),HelpMessage="WorldStatic object that overlaps all actors by default. All new custom channels will use its own default response. ",bCanModify=False)
-Windows.Engine:/Script/Engine.CollisionProfile:OldProfiles:0=(Name="BlockingVolume",CollisionEnabled=QueryAndPhysics,ObjectTypeName=WorldStatic,CustomResponses=((Channel=Visibility, Response=ECR_Ignore)))
-Windows.Engine:/Script/Engine.CollisionProfile:OldProfiles:1=(Name="InterpActor",CollisionEnabled=QueryOnly,ObjectTypeName=WorldStatic,CustomResponses=((Channel=Pawn, Response=ECR_Ignore)))
-Windows.Engine:/Script/Engine.CollisionProfile:OldProfiles:2=(Name="StaticMeshComponent",CollisionEnabled=QueryAndPhysics,ObjectTypeName=WorldStatic)
-Windows.Engine:/Script/Engine.CollisionProfile:OldProfiles:3=(Name="SkeletalMeshActor",CollisionEnabled=QueryAndPhysics,ObjectTypeName=PhysicsBody,CustomResponses=((Channel=Visibility, Response=ECR_Block)))
-Windows.Engine:/Script/Engine.CollisionProfile:OldProfiles:4=(Name="InvisibleActor", CollisionEnabled=QueryAndPhysics, ObjectTypeName=WorldDynamic, CustomResponses=((Channel=Visibility, Response=ECR_Ignore)))
+Windows.Engine:/Script/Engine.CollisionProfile:Profiles:17=(Name="UI",CollisionEnabled=QueryOnly,ObjectTypeName="WorldDynamic",CustomResponses=((Channel="WorldStatic",Response=ECR_Overlap),(Channel="Pawn",Response=ECR_Overlap),(Channel="Visibility"),(Channel="WorldDynamic",Response=ECR_Overlap),(Channel="Camera",Response=ECR_Overlap),(Channel="PhysicsBody",Response=ECR_Overlap),(Channel="Vehicle",Response=ECR_Overlap),(Channel="Destructible",Response=ECR_Overlap)),HelpMessage="WorldStatic object that overlaps all actors by default. All new custom channels will use its own default response. ",bCanModify=False)
+Windows.Engine:/Script/Engine.CollisionProfile:DefaultChannelResponses:0=(Channel=ECC_GameTraceChannel1,Name="UnstoppableRound",DefaultResponse=ECR_Block,bTraceType=False,bStaticObject=False)
 Windows.Engine:/Script/Engine.CollisionProfile:ProfileRedirects:0=(OldName="BlockingVolume",NewName="InvisibleWall")
 Windows.Engine:/Script/Engine.CollisionProfile:ProfileRedirects:1=(OldName="InterpActor",NewName="IgnoreOnlyPawn")
 Windows.Engine:/Script/Engine.CollisionProfile:ProfileRedirects:2=(OldName="StaticMeshComponent",NewName="BlockAllDynamic")
@@ -1231,6 +1232,379 @@ Windows.Engine:/Script/HardwareTargeting.HardwareTargetingSettings:AppliedDefaul
 Windows.Engine:ForwardShadingQuality_SF_METAL ShaderPlatformQualitySettings:QualityOverrides[0]:0=(bEnableOverride=False,bForceFullyRough=False,bForceNonMetal=False,bForceDisableLMDirectionality=False,bForceLQReflections=False,MobileCSMQuality=PCF_2x2)
 Windows.Engine:ForwardShadingQuality_SF_METAL ShaderPlatformQualitySettings:QualityOverrides[1]:0=(bEnableOverride=True,bForceFullyRough=False,bForceNonMetal=False,bForceDisableLMDirectionality=False,bForceLQReflections=False,MobileCSMQuality=PCF_2x2)
 Windows.Engine:ForwardShadingQuality_SF_METAL ShaderPlatformQualitySettings:QualityOverrides[2]:0=(bEnableOverride=False,bForceFullyRough=False,bForceNonMetal=False,bForceDisableLMDirectionality=False,bForceLQReflections=False,MobileCSMQuality=PCF_2x2)
+Windows.Input:/Script/Engine.Console:HistoryBuffer:0=r.ShadowQuality 2
+Windows.Input:/Script/Engine.Console:HistoryBuffer:1=r.Shadow.CSM.TransitionScale 50
+Windows.Input:/Script/Engine.Console:HistoryBuffer:2=r.Shadow.CSMSplitPenumbraScale 1
+Windows.Input:/Script/Engine.Console:HistoryBuffer:3=r.Shadow.CSMSplitPenumbraScale 100
+Windows.Input:/Script/Engine.Console:HistoryBuffer:4=r.Shadow.CSM.TransitionScale 500
+Windows.Input:/Script/Engine.Console:HistoryBuffer:5=r.Shadow.CSM.TransitionScale .1
+Windows.Input:/Script/Engine.Console:HistoryBuffer:6=r.Shadow.CSM.TransitionScale .0001
+Windows.Input:/Script/Engine.Console:HistoryBuffer:7=r.Shadow.CSM.TransitionScale 100000
+Windows.Input:/Script/Engine.Console:HistoryBuffer:8=r.Shadow.CSM.TransitionScale 1
+Windows.Input:/Script/Engine.Console:HistoryBuffer:9=r.Shadow.CSM.TransitionScale 5
+Windows.Input:/Script/Engine.Console:HistoryBuffer:10=r.ShadowQuality 3
+Windows.Input:/Script/Engine.Console:HistoryBuffer:11=r.ShadowQuality 5
+Windows.Input:/Script/Engine.Console:HistoryBuffer:12=r.Shadow.CSM.MaxCascades 4
+Windows.Input:/Script/Engine.Console:HistoryBuffer:13=r.Shadow.CSMDepthBias
+Windows.Input:/Script/Engine.Console:HistoryBuffer:14=r.Shadow.CSM.MaxCascades
+Windows.Input:/Script/Engine.Console:HistoryBuffer:15=r.Shadow.CSM.MaxMobileCascades
+Windows.Input:/Script/Engine.Console:HistoryBuffer:16=r.Shadow.CSM.MaxMobileCascades 4
+Windows.Input:/Script/Engine.Console:HistoryBuffer:17=r.Shadow.CSM.MaxCascades 5
+Windows.Input:/Script/Engine.Console:HistoryBuffer:18=r.Shadow.CSM.MaxCascades 50
+Windows.Input:/Script/Engine.Console:HistoryBuffer:19=r.Shadow.CSM.MaxCascades 2
+Windows.Input:/Script/Engine.Console:HistoryBuffer:20=r.Shadow.CSM.MaxCascades 1
+Windows.Input:/Script/Engine.Console:HistoryBuffer:21=r.Shadow.CSM.MaxMobileCascades 1
+Windows.Input:/Script/Engine.Console:HistoryBuffer:22=r.Shadow.CSM.MaxMobileCascades 2
+Windows.Input:/Script/Engine.Console:HistoryBuffer:23=r.Shadow.CSM.MaxMobileCascades 50
+Windows.Input:/Script/Engine.Console:HistoryBuffer:24=r.ShadowQuality 4
+Windows.Input:/Script/Engine.Console:HistoryBuffer:25=r.ShadowQuality 0
+Windows.Input:/Script/Engine.Console:HistoryBuffer:26=r.ShadowQuality 1
+Windows.Input:/Script/Engine.Console:HistoryBuffer:27=showflag.rendering
+Windows.Input:/Script/Engine.Console:HistoryBuffer:28=showflag.game
+Windows.Input:/Script/Engine.Console:HistoryBuffer:29=show Game
+Windows.Input:/Script/Engine.Console:HistoryBuffer:30=show debug
+Windows.Input:/Script/Engine.Console:HistoryBuffer:31=stat game
+Windows.Input:/Script/Engine.Console:HistoryBuffer:32=stat fps
+Windows.Input:/Script/Engine.Console:HistoryBuffer:33=ce dummy 1
+Windows.Input:/Script/Engine.Console:HistoryBuffer:34=show collision
+Windows.Input:/Script/Engine.Console:HistoryBuffer:35=ce dummy 2
+Windows.Input:/Script/Engine.Console:HistoryBot:0=-1
+Windows.Input:/Script/Engine.InputSettings:bEnableMouseSmoothing:0=True
+Windows.Input:/Script/Engine.InputSettings:bEnableFOVScaling:0=True
+Windows.Input:/Script/Engine.InputSettings:FOVScale:0=0.011110
+Windows.Input:/Script/Engine.InputSettings:DoubleClickTime:0=0.200000
+Windows.Input:/Script/Engine.InputSettings:DefaultTouchInterface:0=/Engine/MobileResources/HUD/LeftVirtualJoystickOnly.LeftVirtualJoystickOnly
+Windows.Input:/Script/Engine.InputSettings:bAlwaysShowTouchInterface:0=True
+Windows.Input:/Script/Engine.InputSettings:bShowConsoleOnFourFingerTap:0=True
+Windows.Input:/Script/Engine.InputSettings:bAltEnterTogglesFullscreen:0=True
+Windows.Input:/Script/Engine.InputSettings:bF11TogglesFullscreen:0=True
+Windows.Input:/Script/Engine.InputSettings:bRequireCtrlToNavigateAutoComplete:0=False
+Windows.Input:/Script/Engine.InputSettings:AxisConfig:0=(AxisKeyName="Gamepad_LeftX",AxisProperties=(DeadZone=0.250000,Sensitivity=1.000000,Exponent=1.000000,bInvert=False))
+Windows.Input:/Script/Engine.InputSettings:AxisConfig:1=(AxisKeyName="Gamepad_LeftY",AxisProperties=(DeadZone=0.250000,Sensitivity=1.000000,Exponent=1.000000,bInvert=False))
+Windows.Input:/Script/Engine.InputSettings:AxisConfig:2=(AxisKeyName="Gamepad_RightX",AxisProperties=(DeadZone=0.250000,Sensitivity=1.000000,Exponent=1.000000,bInvert=False))
+Windows.Input:/Script/Engine.InputSettings:AxisConfig:3=(AxisKeyName="Gamepad_RightY",AxisProperties=(DeadZone=0.250000,Sensitivity=1.000000,Exponent=1.000000,bInvert=False))
+Windows.Input:/Script/Engine.InputSettings:AxisConfig:4=(AxisKeyName="MouseX",AxisProperties=(DeadZone=0.000000,Sensitivity=0.070000,Exponent=1.000000,bInvert=False))
+Windows.Input:/Script/Engine.InputSettings:AxisConfig:5=(AxisKeyName="MouseY",AxisProperties=(DeadZone=0.000000,Sensitivity=0.070000,Exponent=1.000000,bInvert=False))
+Windows.Input:/Script/Engine.InputSettings:AxisConfig:6=(AxisKeyName="MouseWheelAxis",AxisProperties=(DeadZone=0.000000,Sensitivity=1.000000,Exponent=1.000000,bInvert=False))
+Windows.Input:/Script/Engine.InputSettings:AxisConfig:7=(AxisKeyName="Gamepad_LeftTriggerAxis",AxisProperties=(DeadZone=0.000000,Sensitivity=1.000000,Exponent=1.000000,bInvert=False))
+Windows.Input:/Script/Engine.InputSettings:AxisConfig:8=(AxisKeyName="Gamepad_RightTriggerAxis",AxisProperties=(DeadZone=0.000000,Sensitivity=1.000000,Exponent=1.000000,bInvert=False))
+Windows.Input:/Script/Engine.InputSettings:AxisConfig:9=(AxisKeyName="MotionController_Left_Thumbstick_X",AxisProperties=(DeadZone=0.000000,Sensitivity=1.000000,Exponent=1.000000,bInvert=False))
+Windows.Input:/Script/Engine.InputSettings:AxisConfig:10=(AxisKeyName="MotionController_Left_Thumbstick_Y",AxisProperties=(DeadZone=0.000000,Sensitivity=1.000000,Exponent=1.000000,bInvert=False))
+Windows.Input:/Script/Engine.InputSettings:AxisConfig:11=(AxisKeyName="MotionController_Left_TriggerAxis",AxisProperties=(DeadZone=0.000000,Sensitivity=1.000000,Exponent=1.000000,bInvert=False))
+Windows.Input:/Script/Engine.InputSettings:AxisConfig:12=(AxisKeyName="MotionController_Left_Grip1Axis",AxisProperties=(DeadZone=0.000000,Sensitivity=1.000000,Exponent=1.000000,bInvert=False))
+Windows.Input:/Script/Engine.InputSettings:AxisConfig:13=(AxisKeyName="MotionController_Left_Grip2Axis",AxisProperties=(DeadZone=0.000000,Sensitivity=1.000000,Exponent=1.000000,bInvert=False))
+Windows.Input:/Script/Engine.InputSettings:AxisConfig:14=(AxisKeyName="MotionController_Right_Thumbstick_X",AxisProperties=(DeadZone=0.000000,Sensitivity=1.000000,Exponent=1.000000,bInvert=False))
+Windows.Input:/Script/Engine.InputSettings:AxisConfig:15=(AxisKeyName="MotionController_Right_Thumbstick_Y",AxisProperties=(DeadZone=0.000000,Sensitivity=1.000000,Exponent=1.000000,bInvert=False))
+Windows.Input:/Script/Engine.InputSettings:AxisConfig:16=(AxisKeyName="MotionController_Right_TriggerAxis",AxisProperties=(DeadZone=0.000000,Sensitivity=1.000000,Exponent=1.000000,bInvert=False))
+Windows.Input:/Script/Engine.InputSettings:AxisConfig:17=(AxisKeyName="MotionController_Right_Grip1Axis",AxisProperties=(DeadZone=0.000000,Sensitivity=1.000000,Exponent=1.000000,bInvert=False))
+Windows.Input:/Script/Engine.InputSettings:AxisConfig:18=(AxisKeyName="MotionController_Right_Grip2Axis",AxisProperties=(DeadZone=0.000000,Sensitivity=1.000000,Exponent=1.000000,bInvert=False))
+Windows.Input:/Script/Engine.InputSettings:AxisConfig:19=(AxisKeyName="Gamepad_Special_Left_X",AxisProperties=(DeadZone=0.000000,Sensitivity=1.000000,Exponent=1.000000,bInvert=False))
+Windows.Input:/Script/Engine.InputSettings:AxisConfig:20=(AxisKeyName="Gamepad_Special_Left_Y",AxisProperties=(DeadZone=0.000000,Sensitivity=1.000000,Exponent=1.000000,bInvert=False))
+Windows.Input:/Script/Engine.InputSettings:bUseMouseForTouch:0=False
+Windows.Input:/Script/Engine.InputSettings:bCaptureMouseOnLaunch:0=True
+Windows.Input:/Script/Engine.InputSettings:DefaultViewportMouseCaptureMode:0=CapturePermanently
+Windows.Input:/Script/Engine.InputSettings:bDefaultViewportMouseLock:0=False
+Windows.Input:/Script/Engine.InputSettings:DefaultViewportMouseLockMode:0=LockOnCapture
+Windows.Input:/Script/Engine.InputSettings:AxisMappings:0=(AxisName="LookRight",Key=MouseX,Scale=1.000000)
+Windows.Input:/Script/Engine.InputSettings:AxisMappings:1=(AxisName="LookUp",Key=MouseY,Scale=1.000000)
+Windows.Input:/Script/Engine.InputSettings:AxisMappings:2=(AxisName="MoveForward",Key=W,Scale=1.000000)
+Windows.Input:/Script/Engine.InputSettings:AxisMappings:3=(AxisName="MoveRight",Key=A,Scale=-1.000000)
+Windows.Input:/Script/Engine.InputSettings:AxisMappings:4=(AxisName="MoveForward",Key=S,Scale=-1.000000)
+Windows.Input:/Script/Engine.InputSettings:AxisMappings:5=(AxisName="MoveRight",Key=D,Scale=1.000000)
+Windows.Input:/Script/Engine.InputSettings:ConsoleKey:0=None
+Windows.Input:/Script/Engine.InputSettings:ConsoleKeys:0=Tilde
+Windows.Input:/Script/Engine.PlayerInput:DebugExecBindings:0=(Key=F11,Command="LevelEditor.ToggleImmersive")
+Windows.Input:/Script/Engine.PlayerInput:DebugExecBindings:1=(Key=F11,Command="MainFrame.ToggleFullscreen",Shift=True)
+Windows.Input:/Script/Engine.PlayerInput:DebugExecBindings:2=(Key=F1,Command="viewmode wireframe", bIgnoreShift=True)
+Windows.Input:/Script/Engine.PlayerInput:DebugExecBindings:3=(Key=F2,Command="viewmode unlit")
+Windows.Input:/Script/Engine.PlayerInput:DebugExecBindings:4=(Key=F3,Command="viewmode lit")
+Windows.Input:/Script/Engine.PlayerInput:DebugExecBindings:5=(Key=F4,Command="viewmode lit_detaillighting")
+Windows.Input:/Script/Engine.PlayerInput:DebugExecBindings:6=(Key=F5,Command="viewmode shadercomplexity")
+Windows.Input:/Script/Engine.PlayerInput:DebugExecBindings:7=(Key=F9,Command="shot showui")
+Windows.Input:/Script/Engine.PlayerInput:DebugExecBindings:8=(Key=Period,Command="RECOMPILESHADERS CHANGED",Control=True,Shift=True)
+Windows.Input:/Script/Engine.PlayerInput:DebugExecBindings:9=(Key=Comma,Command="PROFILEGPU",Control=True,Shift=True)
+Windows.Input:/Script/Engine.PlayerInput:DebugExecBindings:10=(Key=Tab,Command="FocusNextPIEWindow",Control=True)
+Windows.Input:/Script/Engine.PlayerInput:DebugExecBindings:11=(Key=Tab,Command="FocusLastPIEWindow",Control=True,Shift=True)
+Windows.Input:/Script/Engine.PlayerInput:DebugExecBindings:12=(Key=Apostrophe,Command="EnableGDT")
+Windows.Input:/Script/Engine.PlayerInput:DebugExecBindings:13=(Key=Quote,Command="EnableGDT")
+Windows.Input:/Script/EngineSettings.ConsoleSettings:MaxScrollbackSize:0=1024
+Windows.Input:/Script/EngineSettings.ConsoleSettings:AutoCompleteMapPaths:0=Content/Maps
+Windows.Input:/Script/EngineSettings.ConsoleSettings:ManualAutoCompleteList:0=(Command="Exit",Desc="Exits the game")
+Windows.Input:/Script/EngineSettings.ConsoleSettings:ManualAutoCompleteList:1=(Command="DebugCreatePlayer 1",Desc=)
+Windows.Input:/Script/EngineSettings.ConsoleSettings:ManualAutoCompleteList:2=(Command="ToggleDrawEvents",Desc="Toggles annotations for shader debugging with Pix, Razor or similar GPU capture tools")
+Windows.Input:/Script/EngineSettings.ConsoleSettings:ManualAutoCompleteList:3=(Command="Shot",Desc="Make a screenshot")
+Windows.Input:/Script/EngineSettings.ConsoleSettings:ManualAutoCompleteList:4=(Command="RecompileShaders changed",Desc="Recompile shaders that have any changes on their source files")
+Windows.Input:/Script/EngineSettings.ConsoleSettings:ManualAutoCompleteList:5=(Command="RecompileShaders global",Desc="Recompile global shaders that have any changes on their source files")
+Windows.Input:/Script/EngineSettings.ConsoleSettings:ManualAutoCompleteList:6=(Command="RecompileShaders material ",Desc="Recompile shaders for a specific material if it's source files have changed")
+Windows.Input:/Script/EngineSettings.ConsoleSettings:ManualAutoCompleteList:7=(Command="RecompileShaders all",Desc="Recompile all shaders that have any changes on their source files")
+Windows.Input:/Script/EngineSettings.ConsoleSettings:ManualAutoCompleteList:8=(Command="DumpMaterialStats",Desc="Dump material information")
+Windows.Input:/Script/EngineSettings.ConsoleSettings:ManualAutoCompleteList:9=(Command="DumpShaderStats",Desc="Dump shader information")
+Windows.Input:/Script/EngineSettings.ConsoleSettings:ManualAutoCompleteList:10=(Command="DumpShaderPipelineStats",Desc="Dump shader pipeline information")
+Windows.Input:/Script/EngineSettings.ConsoleSettings:ManualAutoCompleteList:11=(Command="StartFPSChart",Desc="after that use StopFPSChart")
+Windows.Input:/Script/EngineSettings.ConsoleSettings:ManualAutoCompleteList:12=(Command="StopFPSChart",Desc="after that look for the output in Saved/Profiling/FPSChartStats")
+Windows.Input:/Script/EngineSettings.ConsoleSettings:ManualAutoCompleteList:13=(Command="FreezeAt",Desc="Locks the player view and rendering time.")
+Windows.Input:/Script/EngineSettings.ConsoleSettings:ManualAutoCompleteList:14=(Command="Open",Desc="<MapName> Opens the specified map, doesn't pass previously set options")
+Windows.Input:/Script/EngineSettings.ConsoleSettings:ManualAutoCompleteList:15=(Command="Travel",Desc="<MapName> Travels to the specified map, passes along previously set options")
+Windows.Input:/Script/EngineSettings.ConsoleSettings:ManualAutoCompleteList:16=(Command="ServerTravel",Desc="<MapName> Travels to the specified map and brings clients along, passes along previously set options")
+Windows.Input:/Script/EngineSettings.ConsoleSettings:ManualAutoCompleteList:17=(Command="DisplayAll",Desc="<ClassName> <PropertyName> Display property values for instances of classname")
+Windows.Input:/Script/EngineSettings.ConsoleSettings:ManualAutoCompleteList:18=(Command="DisplayAllLocation",Desc="<ClassName> Display location for all instances of classname")
+Windows.Input:/Script/EngineSettings.ConsoleSettings:ManualAutoCompleteList:19=(Command="DisplayAllRotation",Desc="<ClassName> Display rotation for all instances of classname")
+Windows.Input:/Script/EngineSettings.ConsoleSettings:ManualAutoCompleteList:20=(Command="DisplayClear",Desc="Clears previous DisplayAll entries")
+Windows.Input:/Script/EngineSettings.ConsoleSettings:ManualAutoCompleteList:21=(Command="FlushPersistentDebugLines",Desc="Clears persistent debug line cache")
+Windows.Input:/Script/EngineSettings.ConsoleSettings:ManualAutoCompleteList:22=(Command="GetAll ",Desc="<ClassName> <PropertyName> <Name=ObjectInstanceName> <OUTER=ObjectInstanceName> <SHOWDEFAULTS> <SHOWPENDINGKILLS> <DETAILED> Log property values of all instances of classname")
+Windows.Input:/Script/EngineSettings.ConsoleSettings:ManualAutoCompleteList:23=(Command="GetAllState",Desc="<ClassName> Log state names for all instances of classname")
+Windows.Input:/Script/EngineSettings.ConsoleSettings:ManualAutoCompleteList:24=(Command="Obj List ",Desc="<Class=ClassName> <Type=MetaClass> <Outer=OuterObject> <Package=InsidePackage> <Inside=InsideObject>")
+Windows.Input:/Script/EngineSettings.ConsoleSettings:ManualAutoCompleteList:25=(Command="Obj ListContentRefs",Desc="<Class=ClassName> <ListClass=ClassName>")
+Windows.Input:/Script/EngineSettings.ConsoleSettings:ManualAutoCompleteList:26=(Command="Obj Classes",Desc="Shows all classes")
+Windows.Input:/Script/EngineSettings.ConsoleSettings:ManualAutoCompleteList:27=(Command="Obj Refs",Desc="Name=<ObjectName> Class=<OptionalObjectClass> Lists referencers of the specified object")
+Windows.Input:/Script/EngineSettings.ConsoleSettings:ManualAutoCompleteList:28=(Command="EditActor",Desc="<Class=ClassName> or <Name=ObjectName> or TRACE")
+Windows.Input:/Script/EngineSettings.ConsoleSettings:ManualAutoCompleteList:29=(Command="EditDefault",Desc="<Class=ClassName>")
+Windows.Input:/Script/EngineSettings.ConsoleSettings:ManualAutoCompleteList:30=(Command="EditObject",Desc="<Class=ClassName> or <Name=ObjectName> or <ObjectName>")
+Windows.Input:/Script/EngineSettings.ConsoleSettings:ManualAutoCompleteList:31=(Command="ReloadCfg ",Desc="<Class/ObjectName> Reloads config variables for the specified object/class")
+Windows.Input:/Script/EngineSettings.ConsoleSettings:ManualAutoCompleteList:32=(Command="ReloadLoc ",Desc="<Class/ObjectName> Reloads localized variables for the specified object/class")
+Windows.Input:/Script/EngineSettings.ConsoleSettings:ManualAutoCompleteList:33=(Command="Set ",Desc="<ClassName> <PropertyName> <Value> Sets property to value on objectname")
+Windows.Input:/Script/EngineSettings.ConsoleSettings:ManualAutoCompleteList:34=(Command="SetNoPEC",Desc="<ClassName> <PropertyName> <Value> Sets property to value on objectname without Pre/Post Edit Change notifications")
+Windows.Input:/Script/EngineSettings.ConsoleSettings:ManualAutoCompleteList:35=(Command="Stat FPS",Desc="Shows FPS counter")
+Windows.Input:/Script/EngineSettings.ConsoleSettings:ManualAutoCompleteList:36=(Command="Stat UNIT",Desc="Shows hardware unit framerate")
+Windows.Input:/Script/EngineSettings.ConsoleSettings:ManualAutoCompleteList:37=(Command="Stat UnitGraph",Desc="Draws simple unit time graph")
+Windows.Input:/Script/EngineSettings.ConsoleSettings:ManualAutoCompleteList:38=(Command="Stat NamedEvents",Desc="Stat NamedEvents (Enables named events for external profilers)")
+Windows.Input:/Script/EngineSettings.ConsoleSettings:ManualAutoCompleteList:39=(Command="Stat StartFile",Desc="Stat StartFile (starts a stats capture, creating a new file in the Profiling directory; stop with stat StopFile to close the file)")
+Windows.Input:/Script/EngineSettings.ConsoleSettings:ManualAutoCompleteList:40=(Command="Stat StopFile",Desc="Stat StopFile (finishes a stats capture started by stat StartFile)")
+Windows.Input:/Script/EngineSettings.ConsoleSettings:ManualAutoCompleteList:41=(Command="Stat Hitches",Desc="Stat Hitches (shows an onscreen history of hitches)")
+Windows.Input:/Script/EngineSettings.ConsoleSettings:ManualAutoCompleteList:42=(Command="Stat CPULoad",Desc="Stat CPULoad (Shows CPU Utilization)")
+Windows.Input:/Script/EngineSettings.ConsoleSettings:ManualAutoCompleteList:43=(Command="Stat DUMPHITCHES",Desc="executes dumpstats on hitches - see log")
+Windows.Input:/Script/EngineSettings.ConsoleSettings:ManualAutoCompleteList:44=(Command="Stat D3D11RHI",Desc="Shows Direct3D 11 stats")
+Windows.Input:/Script/EngineSettings.ConsoleSettings:ManualAutoCompleteList:45=(Command="Stat LEVELS",Desc="Displays level streaming info")
+Windows.Input:/Script/EngineSettings.ConsoleSettings:ManualAutoCompleteList:46=(Command="Stat GAME",Desc="Displays game performance stats")
+Windows.Input:/Script/EngineSettings.ConsoleSettings:ManualAutoCompleteList:47=(Command="Stat MEMORY",Desc="Displays memory stats")
+Windows.Input:/Script/EngineSettings.ConsoleSettings:ManualAutoCompleteList:48=(Command="Stat PHYSICS",Desc="Displays physics performance stats")
+Windows.Input:/Script/EngineSettings.ConsoleSettings:ManualAutoCompleteList:49=(Command="Stat STREAMING",Desc="Displays basic texture streaming stats")
+Windows.Input:/Script/EngineSettings.ConsoleSettings:ManualAutoCompleteList:50=(Command="Stat STREAMINGDETAILS",Desc="Displays detailed texture streaming stats")
+Windows.Input:/Script/EngineSettings.ConsoleSettings:ManualAutoCompleteList:51=(Command="Stat GPU",Desc="Displays GPU stats for the frame")
+Windows.Input:/Script/EngineSettings.ConsoleSettings:ManualAutoCompleteList:52=(Command="Stat COLLISION",Desc=)
+Windows.Input:/Script/EngineSettings.ConsoleSettings:ManualAutoCompleteList:53=(Command="Stat PARTICLES",Desc=)
+Windows.Input:/Script/EngineSettings.ConsoleSettings:ManualAutoCompleteList:54=(Command="Stat SCRIPT",Desc=)
+Windows.Input:/Script/EngineSettings.ConsoleSettings:ManualAutoCompleteList:55=(Command="Stat AUDIO",Desc=)
+Windows.Input:/Script/EngineSettings.ConsoleSettings:ManualAutoCompleteList:56=(Command="Stat ANIM",Desc=)
+Windows.Input:/Script/EngineSettings.ConsoleSettings:ManualAutoCompleteList:57=(Command="Stat NET",Desc=)
+Windows.Input:/Script/EngineSettings.ConsoleSettings:ManualAutoCompleteList:58=(Command="Stat LIST",Desc="<Groups/Sets/Group> List groups of stats, saved sets, or specific stats within a specified group")
+Windows.Input:/Script/EngineSettings.ConsoleSettings:ManualAutoCompleteList:59=(Command="Stat splitscreen",Desc=)
+Windows.Input:/Script/EngineSettings.ConsoleSettings:ManualAutoCompleteList:60=(Command="MemReport",Desc="Outputs memory stats to a profile file. -Full gives more data, -Log outputs to the log")
+Windows.Input:/Script/EngineSettings.ConsoleSettings:ManualAutoCompleteList:61=(Command="ListTextures",Desc="Lists all loaded textures and their current memory footprint")
+Windows.Input:/Script/EngineSettings.ConsoleSettings:ManualAutoCompleteList:62=(Command="ListStreamingTextures",Desc="Lists info all streaming textures")
+Windows.Input:/Script/EngineSettings.ConsoleSettings:ManualAutoCompleteList:63=(Command="InvestigateTexture",Desc="Shows streaming info about the specified texture")
+Windows.Input:/Script/EngineSettings.ConsoleSettings:ManualAutoCompleteList:64=(Command="RestartLevel",Desc="Restarts the level")
+Windows.Input:/Script/EngineSettings.ConsoleSettings:ManualAutoCompleteList:65=(Command="Module List",Desc="Lists all known modules")
+Windows.Input:/Script/EngineSettings.ConsoleSettings:ManualAutoCompleteList:66=(Command="Module Load",Desc="Attempts to load the specified module name")
+Windows.Input:/Script/EngineSettings.ConsoleSettings:ManualAutoCompleteList:67=(Command="Module Unload",Desc="Unloads the specified module name")
+Windows.Input:/Script/EngineSettings.ConsoleSettings:ManualAutoCompleteList:68=(Command="Module Reload",Desc="Reloads the specified module name, unloading it first if needed")
+Windows.Input:/Script/EngineSettings.ConsoleSettings:ManualAutoCompleteList:69=(Command="Module Recompile",Desc="Attempts to recompile a module, first unloading it if needed")
+Windows.Input:/Script/EngineSettings.ConsoleSettings:ManualAutoCompleteList:70=(Command="HotReload",Desc="<UObject DLL Hot Reload> Attempts to recompile a UObject DLL and reload it on the fly")
+Windows.Input:/Script/EngineSettings.ConsoleSettings:ManualAutoCompleteList:71=(Command="ListSounds",Desc="Lists all the loaded sounds and their memory footprint")
+Windows.Input:/Script/EngineSettings.ConsoleSettings:ManualAutoCompleteList:72=(Command="ListWaves",Desc="List the WaveInstances and whether they have a source")
+Windows.Input:/Script/EngineSettings.ConsoleSettings:ManualAutoCompleteList:73=(Command="ListSoundClasses",Desc="Lists a summary of loaded sound collated by class")
+Windows.Input:/Script/EngineSettings.ConsoleSettings:ManualAutoCompleteList:74=(Command="ListAudioComponents",Desc="Dumps a detailed list of all AudioComponent objects")
+Windows.Input:/Script/EngineSettings.ConsoleSettings:ManualAutoCompleteList:75=(Command="ListSoundDurations",Desc=)
+Windows.Input:/Script/EngineSettings.ConsoleSettings:ManualAutoCompleteList:76=(Command="PlaySoundCue",Desc="Lists a summary of loaded sound collated by class")
+Windows.Input:/Script/EngineSettings.ConsoleSettings:ManualAutoCompleteList:77=(Command="PlaySoundWave",Desc=)
+Windows.Input:/Script/EngineSettings.ConsoleSettings:ManualAutoCompleteList:78=(Command="SetBaseSoundMix",Desc="<MixName>")
+Windows.Input:/Script/EngineSettings.ConsoleSettings:ManualAutoCompleteList:79=(Command="DisableLowPassFilter",Desc=)
+Windows.Input:/Script/EngineSettings.ConsoleSettings:ManualAutoCompleteList:80=(Command="DisableEQFilter",Desc=)
+Windows.Input:/Script/EngineSettings.ConsoleSettings:ManualAutoCompleteList:81=(Command="IsolateDryAudio",Desc=)
+Windows.Input:/Script/EngineSettings.ConsoleSettings:ManualAutoCompleteList:82=(Command="IsolateReverb",Desc=)
+Windows.Input:/Script/EngineSettings.ConsoleSettings:ManualAutoCompleteList:83=(Command="ResetSoundState",Desc="Resets volumes to default and removes test filters")
+Windows.Input:/Script/EngineSettings.ConsoleSettings:ManualAutoCompleteList:84=(Command="DisableAllScreenMessages",Desc="Disables all on-screen warnings/messages")
+Windows.Input:/Script/EngineSettings.ConsoleSettings:ManualAutoCompleteList:85=(Command="EnableAllScreenMessages",Desc="Enables all on-screen warnings/messages")
+Windows.Input:/Script/EngineSettings.ConsoleSettings:ManualAutoCompleteList:86=(Command="ToggleAllScreenMessages",Desc="Toggles display state of all on-screen warnings/messages")
+Windows.Input:/Script/EngineSettings.ConsoleSettings:ManualAutoCompleteList:87=(Command="ToggleAsyncCompute",Desc="Toggles AsyncCompute for platforms that have it")
+Windows.Input:/Script/EngineSettings.ConsoleSettings:ManualAutoCompleteList:88=(Command="ToggleRenderingThread",Desc="Toggles the rendering thread for platforms that have it")
+Windows.Input:/Script/EngineSettings.ConsoleSettings:ManualAutoCompleteList:89=(Command="CaptureMode",Desc="Toggles display state of all on-screen warnings/messages")
+Windows.Input:/Script/EngineSettings.ConsoleSettings:ManualAutoCompleteList:90=(Command="ShowDebug None",Desc="Toggles ShowDebug w/ current debug type selection")
+Windows.Input:/Script/EngineSettings.ConsoleSettings:ManualAutoCompleteList:91=(Command="ShowDebug Reset",Desc="Turns off ShowDebug, and clears debug type selection")
+Windows.Input:/Script/EngineSettings.ConsoleSettings:ManualAutoCompleteList:92=(Command="ShowDebug NET",Desc=)
+Windows.Input:/Script/EngineSettings.ConsoleSettings:ManualAutoCompleteList:93=(Command="ShowDebug PHYSICS",Desc=)
+Windows.Input:/Script/EngineSettings.ConsoleSettings:ManualAutoCompleteList:94=(Command="ShowDebug COLLISION",Desc=)
+Windows.Input:/Script/EngineSettings.ConsoleSettings:ManualAutoCompleteList:95=(Command="ShowDebug AI",Desc=)
+Windows.Input:/Script/EngineSettings.ConsoleSettings:ManualAutoCompleteList:96=(Command="ShowDebug CAMERA",Desc=)
+Windows.Input:/Script/EngineSettings.ConsoleSettings:ManualAutoCompleteList:97=(Command="ShowDebug WEAPON",Desc=)
+Windows.Input:/Script/EngineSettings.ConsoleSettings:ManualAutoCompleteList:98=(Command="ShowDebug ANIMATION",Desc="Toggles display state of animation debug data")
+Windows.Input:/Script/EngineSettings.ConsoleSettings:ManualAutoCompleteList:99=(Command="ShowDebug BONES",Desc="Toggles display of skeletalmesh bones")
+Windows.Input:/Script/EngineSettings.ConsoleSettings:ManualAutoCompleteList:100=(Command="ShowDebug INPUT",Desc=)
+Windows.Input:/Script/EngineSettings.ConsoleSettings:ManualAutoCompleteList:101=(Command="ShowDebug FORCEFEEDBACK",Desc="Toggles display of current force feedback values and what is contributing to that calculation")
+Windows.Input:/Script/EngineSettings.ConsoleSettings:ManualAutoCompleteList:102=(Command="ShowDebugToggleSubCategory 3DBONES",Desc="With ShowDebug Bones Toggles bone rendering between single lines and a more complex 3D model per bone")
+Windows.Input:/Script/EngineSettings.ConsoleSettings:ManualAutoCompleteList:103=(Command="ShowDebugToggleSubCategory SYNCGROUPS",Desc="With ShowDebug Animation Toggles display of sync group data")
+Windows.Input:/Script/EngineSettings.ConsoleSettings:ManualAutoCompleteList:104=(Command="ShowDebugToggleSubCategory MONTAGES",Desc="With ShowDebug Animation Toggles display of montage data")
+Windows.Input:/Script/EngineSettings.ConsoleSettings:ManualAutoCompleteList:105=(Command="ShowDebugToggleSubCategory GRAPH",Desc="With ShowDebug Animation Toggles display of animation blueprint graph")
+Windows.Input:/Script/EngineSettings.ConsoleSettings:ManualAutoCompleteList:106=(Command="ShowDebugToggleSubCategory CURVES",Desc="With ShowDebug Animation Toggles display of curve data")
+Windows.Input:/Script/EngineSettings.ConsoleSettings:ManualAutoCompleteList:107=(Command="ShowDebugToggleSubCategory NOTIFIES",Desc="With ShowDebug Animation Toggles display of notify data")
+Windows.Input:/Script/EngineSettings.ConsoleSettings:ManualAutoCompleteList:108=(Command="ShowDebugToggleSubCategory FULLGRAPH",Desc="With ShowDebug Animation Toggles graph display between active nodes only and all nodes")
+Windows.Input:/Script/EngineSettings.ConsoleSettings:ManualAutoCompleteList:109=(Command="ShowDebugToggleSubCategory FULLBLENDSPACEDISPLAY",Desc="With ShowDebug Animation Toggles display of sample blend weights on blendspaces")
+Windows.Input:/Script/EngineSettings.ConsoleSettings:ManualAutoCompleteList:110=(Command="ShowDebugForReticleTargetToggle ",Desc="<DesiredClass> Toggles 'ShowDebug' from showing debug info between reticle target actor (of subclass <DesiredClass>) and camera view target")
+Windows.Input:/Script/EngineSettings.ConsoleSettings:ManualAutoCompleteList:111=(Command="Stat SOUNDMIXES",Desc="Shows active SoundMixes")
+Windows.Input:/Script/EngineSettings.ConsoleSettings:ManualAutoCompleteList:112=(Command="Stat SOUNDWAVES",Desc="Shows active SoundWaves")
+Windows.Input:/Script/EngineSettings.ConsoleSettings:ManualAutoCompleteList:113=(Command="Stat SOUNDCUES",Desc="Shows active SoundCues")
+Windows.Input:/Script/EngineSettings.ConsoleSettings:ManualAutoCompleteList:114=(Command="Stat SOUNDS",Desc="<?> <sort=distance|class|name|waves|default> <-debug> <off> Shows active SoundCues and SoundWaves")
+Windows.Input:/Script/EngineSettings.ConsoleSettings:ManualAutoCompleteList:115=(Command="StartMovieCapture",Desc=)
+Windows.Input:/Script/EngineSettings.ConsoleSettings:ManualAutoCompleteList:116=(Command="StopMovieCapture",Desc=)
+Windows.Input:/Script/EngineSettings.ConsoleSettings:ManualAutoCompleteList:117=(Command="TraceTag",Desc="Draw traces that use the specified tag")
+Windows.Input:/Script/EngineSettings.ConsoleSettings:ManualAutoCompleteList:118=(Command="TraceTagAll",Desc="Draw all scene queries regardless of the trace tag")
+Windows.Input:/Script/EngineSettings.ConsoleSettings:ManualAutoCompleteList:119=(Command="VisLog",Desc="Launches Log Visualizer tool")
+Windows.Input:/Script/EngineSettings.ConsoleSettings:ManualAutoCompleteList:120=(Command="CycleNavDrawn",Desc="Cycles through navigation data (navmeshes for example) to draw one at a time")
+Windows.Input:/Script/EngineSettings.ConsoleSettings:ManualAutoCompleteList:121=(Command="Log ",Desc="<category> <level> Change verbosity level for a log category")
+Windows.Input:/Script/EngineSettings.ConsoleSettings:ManualAutoCompleteList:122=(Command="Log list",Desc="<search string> Search for log categories")
+Windows.Input:/Script/EngineSettings.ConsoleSettings:ManualAutoCompleteList:123=(Command="Log reset",Desc="Undo any changes to log verbosity")
+Windows.Input:/Script/EngineSettings.ConsoleSettings:ManualAutoCompleteList:124=(Command="RecordAnimation ActorName AnimName",Desc="Record animation for a specified actor to the specified file")
+Windows.Input:/Script/EngineSettings.ConsoleSettings:ManualAutoCompleteList:125=(Command="StopRecordingAnimation All",Desc="Stop all recording animations")
+Windows.Input:/Script/EngineSettings.ConsoleSettings:ManualAutoCompleteList:126=(Command="RecordSequence Filter ActorOrClassName",Desc="Record a level sequence from gameplay. Filter=<All|Actor|Class>")
+Windows.Input:/Script/EngineSettings.ConsoleSettings:ManualAutoCompleteList:127=(Command="StopRecordingSequence",Desc="Stop recording the current sequence. Only one sequence recording can be active at one time.")
+Windows.Input:/Script/EngineSettings.ConsoleSettings:ManualAutoCompleteList:128=(Command="FreezeRendering",Desc="Toggle freezing of most aspects of rendering (such as visibility calculations), useful in conjunction with ToggleDebugCamera to fly around and see how frustum and occlusion culling is working")
+Windows.Input:/Script/EngineSettings.ConsoleSettings:ManualAutoCompleteList:129=(Command="ProfileGPU",Desc="Profile one frame of rendering commands sent to the GPU")
+Windows.Input:/Script/EngineSettings.ConsoleSettings:ManualAutoCompleteList:130=(Command="Automation",Desc="Run an automation command (e.g., Automation RunTests TestName)")
+Windows.Input:/Script/EngineSettings.ConsoleSettings:BackgroundOpacityPercentage:0=85.000000
+Windows.Input:/Script/EngineSettings.ConsoleSettings:InputColor:0=(R=230,G=230,B=230,A=255)
+Windows.Input:/Script/EngineSettings.ConsoleSettings:HistoryColor:0=(R=180,G=180,B=180,A=255)
+Windows.Input:/Script/EngineSettings.ConsoleSettings:AutoCompleteCommandColor:0=(B=185,G=109,R=144,A=255)
+Windows.Input:/Script/EngineSettings.ConsoleSettings:AutoCompleteCVarColor:0=(B=86,G=158,R=86,A=255)
+Windows.Input:/Script/EngineSettings.ConsoleSettings:AutoCompleteFadedColor:0=(R=100,G=100,B=100,A=255)
+IOS.Engine:/Script/Engine.RendererSettings:r.MobileHDR:0=True
+IOS.Engine:AssetRegistry:bUseAssetRegistryTagsWhitelistInsteadOfBlacklist:0=false
+IOS.Engine:AssetRegistry:bSerializeAssetRegistry:0=true
+IOS.Engine:AssetRegistry:bSerializeDependencies:0=false
+IOS.Engine:AssetRegistry:bSerializeManageDependencies:0=false
+IOS.Engine:AssetRegistry:bSerializePackageData:0=false
+IOS.Engine:/Script/EngineSettings.GameMapsSettings:GameInstanceClass:0=/Script/Engine.GameInstance
+IOS.Engine:/Script/EngineSettings.GameMapsSettings:GameDefaultMap:0=/Game/Maps/ARSample.ARSample
+IOS.Engine:/Script/EngineSettings.GameMapsSettings:GlobalDefaultGameMode:0=/Game/Blueprints/ARGameMode.ARGameMode_C
+IOS.Engine:/Script/EngineSettings.GameMapsSettings:GlobalDefaultServerGameMode:0=None
+Mac.Engine:AssetRegistry:bUseAssetRegistryTagsWhitelistInsteadOfBlacklist:0=false
+Mac.Engine:AssetRegistry:bSerializeAssetRegistry:0=true
+Mac.Engine:AssetRegistry:bSerializeDependencies:0=false
+Mac.Engine:AssetRegistry:bSerializeManageDependencies:0=false
+Mac.Engine:AssetRegistry:bSerializePackageData:0=false
+Mac.Engine:/Script/EngineSettings.GameMapsSettings:GameInstanceClass:0=/Script/Engine.GameInstance
+Mac.Engine:/Script/EngineSettings.GameMapsSettings:GameDefaultMap:0=/Game/Maps/ARSample.ARSample
+Mac.Engine:/Script/EngineSettings.GameMapsSettings:GlobalDefaultGameMode:0=/Game/Blueprints/ARGameMode.ARGameMode_C
+Mac.Engine:/Script/EngineSettings.GameMapsSettings:GlobalDefaultServerGameMode:0=None
+Android.Engine:AssetRegistry:bUseAssetRegistryTagsWhitelistInsteadOfBlacklist:0=false
+Android.Engine:AssetRegistry:bSerializeAssetRegistry:0=true
+Android.Engine:AssetRegistry:bSerializeDependencies:0=false
+Android.Engine:AssetRegistry:bSerializeManageDependencies:0=false
+Android.Engine:AssetRegistry:bSerializePackageData:0=false
+Android.Engine:/Script/EngineSettings.GameMapsSettings:GameInstanceClass:0=/Script/Engine.GameInstance
+Android.Engine:/Script/EngineSettings.GameMapsSettings:GameDefaultMap:0=/Game/Maps/ARSample.ARSample
+Android.Engine:/Script/EngineSettings.GameMapsSettings:GlobalDefaultGameMode:0=/Game/Blueprints/ARGameMode.ARGameMode_C
+Android.Engine:/Script/EngineSettings.GameMapsSettings:GlobalDefaultServerGameMode:0=None
+HTML5.Engine:AssetRegistry:bUseAssetRegistryTagsWhitelistInsteadOfBlacklist:0=false
+HTML5.Engine:AssetRegistry:bSerializeAssetRegistry:0=true
+HTML5.Engine:AssetRegistry:bSerializeDependencies:0=false
+HTML5.Engine:AssetRegistry:bSerializeManageDependencies:0=false
+HTML5.Engine:AssetRegistry:bSerializePackageData:0=false
+HTML5.Engine:/Script/EngineSettings.GameMapsSettings:GameInstanceClass:0=/Script/Engine.GameInstance
+HTML5.Engine:/Script/EngineSettings.GameMapsSettings:GameDefaultMap:0=/Game/Maps/ARSample.ARSample
+HTML5.Engine:/Script/EngineSettings.GameMapsSettings:GlobalDefaultGameMode:0=/Game/Blueprints/ARGameMode.ARGameMode_C
+HTML5.Engine:/Script/EngineSettings.GameMapsSettings:GlobalDefaultServerGameMode:0=None
+Engine:/Script/EngineSettings.GameMapsSettings:GameInstanceClass:0=/Script/Engine.GameInstance
+Engine:/Script/EngineSettings.GameMapsSettings:GameDefaultMap:0=/Game/Maps/ARSample.ARSample
+Engine:/Script/EngineSettings.GameMapsSettings:GlobalDefaultGameMode:0=/Game/Blueprints/ARGameMode.ARGameMode_C
+Engine:/Script/EngineSettings.GameMapsSettings:GlobalDefaultServerGameMode:0=None
+Game:/Script/UnrealEd.ProjectPackagingSettings:bGenerateChunks:0=False
+Mac.Game:/Script/UnrealEd.ProjectPackagingSettings:bGenerateChunks:0=False
+Windows.Game:/Script/UnrealEd.ProjectPackagingSettings:bGenerateChunks:0=False
+Windows.Game:/Script/UnrealEd.ProjectPackagingSettings:BuildConfiguration:0=PPBC_Development
+Windows.Game:/Script/UnrealEd.ProjectPackagingSettings:FullRebuild:0=False
+Windows.Game:/Script/UnrealEd.ProjectPackagingSettings:UsePakFile:0=True
+Windows.Game:/Script/UnrealEd.ProjectPackagingSettings:bChunkHardReferencesOnly:0=False
+Windows.Game:/Script/UnrealEd.ProjectPackagingSettings:IncludePrerequisites:0=True
+Windows.Game:/Script/UnrealEd.ProjectPackagingSettings:IncludeCrashReporter:0=False
+Windows.Game:/Script/UnrealEd.ProjectPackagingSettings:InternationalizationPreset:0=English
+Windows.Game:/Script/UnrealEd.ProjectPackagingSettings:CulturesToStage:0=en
+Windows.Game:/Script/UnrealEd.ProjectPackagingSettings:DefaultCulture:0=en
+Windows.Game:/Script/UnrealEd.ProjectPackagingSettings:bSkipEditorContent:0=false
+Windows.Game:/Script/UnrealEd.ProjectPackagingSettings:bSharedMaterialNativeLibraries:0=False
+Windows.Game:/Script/UnrealEd.ProjectPackagingSettings:bShareMaterialShaderCode:0=False
+Windows.Game:Internationalization:LocalizationPaths:0=%GAMEDIR%Content/Localization/Game
+Windows.Game:DefaultPlayer:Name:0=Player
+Windows.Game:/Script/Engine.GameNetworkManager:TotalNetBandwidth:0=32000
+Windows.Game:/Script/Engine.GameNetworkManager:MaxDynamicBandwidth:0=7000
+Windows.Game:/Script/Engine.GameNetworkManager:MinDynamicBandwidth:0=4000
+Windows.Game:/Script/Engine.GameNetworkManager:MoveRepSize:0=42.0f
+Windows.Game:/Script/Engine.GameNetworkManager:MAXPOSITIONERRORSQUARED:0=3.0f
+Windows.Game:/Script/Engine.GameNetworkManager:MAXNEARZEROVELOCITYSQUARED:0=9.0f
+Windows.Game:/Script/Engine.GameNetworkManager:CLIENTADJUSTUPDATECOST:0=180.0f
+Windows.Game:/Script/Engine.GameNetworkManager:MAXCLIENTUPDATEINTERVAL:0=0.25f
+Windows.Game:/Script/Engine.GameNetworkManager:MaxMoveDeltaTime:0=0.125f
+Windows.Game:/Script/Engine.GameNetworkManager:ClientNetSendMoveDeltaTime:0=0.0166
+Windows.Game:/Script/Engine.GameNetworkManager:ClientNetSendMoveDeltaTimeThrottled:0=0.0222
+Windows.Game:/Script/Engine.GameNetworkManager:ClientNetSendMoveThrottleAtNetSpeed:0=10000
+Windows.Game:/Script/Engine.GameNetworkManager:ClientNetSendMoveThrottleOverPlayerCount:0=10
+Windows.Game:/Script/Engine.GameNetworkManager:ClientAuthorativePosition:0=false
+Windows.Game:/Script/Engine.GameNetworkManager:ClientErrorUpdateRateLimit:0=0.0f
+Windows.Game:/Script/Engine.GameNetworkManager:bMovementTimeDiscrepancyDetection:0=false
+Windows.Game:/Script/Engine.GameNetworkManager:bMovementTimeDiscrepancyResolution:0=false
+Windows.Game:/Script/Engine.GameNetworkManager:MovementTimeDiscrepancyMaxTimeMargin:0=0.25f
+Windows.Game:/Script/Engine.GameNetworkManager:MovementTimeDiscrepancyMinTimeMargin:0=-0.25f
+Windows.Game:/Script/Engine.GameNetworkManager:MovementTimeDiscrepancyResolutionRate:0=1.0f
+Windows.Game:/Script/Engine.GameNetworkManager:MovementTimeDiscrepancyDriftAllowance:0=0.0f
+Windows.Game:/Script/Engine.GameNetworkManager:bMovementTimeDiscrepancyForceCorrectionsDuringResolution:0=false
+Windows.Game:/Script/Engine.GameNetworkManager:bUseDistanceBasedRelevancy:0=true
+Windows.Game:/Script/Party.Party:DefaultMaxPartySize:0=5
+Windows.Game:/Script/Lobby.LobbyBeaconState:WaitForPlayersTimeRemaining:0=20.0
+Windows.Game:/Script/Engine.GameSession:MaxPlayers:0=16
+Windows.Game:/Script/Engine.GameSession:MaxSpectators:0=2
+Windows.Game:/Script/Engine.GameSession:MaxSplitscreensPerConnection:0=4
+Windows.Game:/Script/Engine.GameSession:bRequiresPushToTalk:0=true
+Windows.Game:/Script/EngineSettings.GeneralProjectSettings:CompanyName:0=
+Windows.Game:/Script/EngineSettings.GeneralProjectSettings:CompanyDistinguishedName:0=
+Windows.Game:/Script/EngineSettings.GeneralProjectSettings:CopyrightNotice:0=Fill out your copyright notice in the Description page of Project Settings.
+Windows.Game:/Script/EngineSettings.GeneralProjectSettings:Description:0=
+Windows.Game:/Script/EngineSettings.GeneralProjectSettings:LicensingTerms:0=
+Windows.Game:/Script/EngineSettings.GeneralProjectSettings:PrivacyPolicy:0=
+Windows.Game:/Script/EngineSettings.GeneralProjectSettings:ProjectName:0=ARSample
+Windows.Game:/Script/EngineSettings.GeneralProjectSettings:ProjectVersion:0=1.0.0.0
+Windows.Game:/Script/EngineSettings.GeneralProjectSettings:Homepage:0=
+Windows.Game:/Script/EngineSettings.GeneralProjectSettings:SupportContact:0=
+Windows.Game:/Script/EngineSettings.GeneralProjectSettings:ProjectID:0=41277677413D5229CF6FA995A4447B87
+Windows.Game:/Script/EngineSettings.GeneralProjectSettings:bStartInAR:0=True
+Windows.Game:/Script/Engine.HUD:DebugDisplay:0=AI
+Windows.Game:/Script/Engine.PlayerController:InputYawScale:0=2.5
+Windows.Game:/Script/Engine.PlayerController:InputPitchScale:0=-1.75
+Windows.Game:/Script/Engine.PlayerController:InputRollScale:0=1.0
+Windows.Game:/Script/Engine.PlayerController:ForceFeedbackScale:0=1.0
+Windows.Game:/Script/Engine.DebugCameraController:bShowSelectedInfo:0=true
+Windows.Game:/Script/Engine.WorldSettings:ChanceOfPhysicsChunkOverride:0=1.0
+Windows.Game:/Script/Engine.WorldSettings:bEnableChanceOfPhysicsChunkOverride:0=false
+Windows.Game:/Script/Engine.WorldSettings:DefaultAmbientZoneSettings:0=(bIsWorldSettings=true)
+Windows.Game:/Script/Engine.WorldSettings:EnabledPlugins:0=ExampleDeviceProfileSelector
+Windows.Game:/Script/Engine.WorldSettings:MinUndilatedFrameTime:0=0.0005		; 2000 fps
+Windows.Game:/Script/Engine.WorldSettings:MaxUndilatedFrameTime:0=0.4			; 2.5 fps
+Windows.Game:/Script/Engine.WorldSettings:MinGlobalTimeDilation:0=0.0001
+Windows.Game:/Script/Engine.WorldSettings:MaxGlobalTimeDilation:0=20.0
+Windows.Game:/Script/AIModule.AIPerceptionComponent:HearingRange:0=768
+Windows.Game:/Script/AIModule.AIPerceptionComponent:SightRadius:0=3000
+Windows.Game:/Script/AIModule.AIPerceptionComponent:LoseSightRadius:0=3500
+Windows.Game:/Script/AIModule.AIPerceptionComponent:LoSHearingRange:0=1500
+Windows.Game:/Script/AIModule.AIPerceptionComponent:PeripheralVisionAngle:0=90
+Windows.Game:/Script/AIModule.AISense_Hearing:SpeedOfSoundSq:0=0
+Windows.Game:/Script/AIModule.AISenseConfig_Hearing:Implementation:0=Class'/Script/AIModule.AISense_Hearing'
+Windows.Game:/Script/AIModule.AISenseConfig_Hearing:HearingRange:0=768
+Windows.Game:/Script/AIModule.AISenseConfig_Hearing:LoSHearingRange:0=1500
+Windows.Game:/Script/AIModule.AISenseConfig_Hearing:DetectionByAffiliation:0=(bDetectEnemies=true)
+Windows.Game:/Script/AIModule.AISenseConfig_Sight:Implementation:0=Class'/Script/AIModule.AISense_Sight'
+Windows.Game:/Script/AIModule.AISenseConfig_Sight:SightRadius:0=3000
+Windows.Game:/Script/AIModule.AISenseConfig_Sight:LoseSightRadius:0=3500
+Windows.Game:/Script/AIModule.AISenseConfig_Sight:PeripheralVisionAngleDegrees:0=90
+Windows.Game:/Script/AIModule.AISenseConfig_Sight:DetectionByAffiliation:0=(bDetectEnemies=true)
+Windows.Game:/Script/AIModule.AISenseConfig_Sight:AutoSuccessRangeFromLastSeenLocation:0=-1.f
+Windows.Game:/Script/AIModule.AISenseConfig_Damage:Implementation:0=Class'/Script/AIModule.AISense_Damage'
+Windows.Game:/Script/AIModule.EnvQueryManager:MaxAllowedTestingTime:0=0.01
+Windows.Game:/Script/AIModule.EnvQueryManager:bTestQueriesUsingBreadth:0=true
+Windows.Game:/Script/AIModule.EnvQueryManager:QueryCountWarningThreshold:0=0
+Windows.Game:/Script/AIModule.EnvQueryManager:QueryCountWarningInterval:0=30.0
+Windows.Game:/Script/Engine.AssetManagerSettings:PrimaryAssetTypesToScan:0=(PrimaryAssetType="Map",AssetBaseClass=/Script/Engine.World,bHasBlueprintClasses=False,bIsEditorOnly=True,Directories=((Path="/Game/Maps")))
+Windows.Game:/Script/Engine.AssetManagerSettings:PrimaryAssetTypesToScan:1=(PrimaryAssetType="PrimaryAssetLabel",AssetBaseClass=/Script/Engine.PrimaryAssetLabel,bHasBlueprintClasses=False,bIsEditorOnly=True,Directories=((Path="/Game")))
+Android.Game:/Script/UnrealEd.ProjectPackagingSettings:bGenerateChunks:0=False
+HTML5.Game:/Script/UnrealEd.ProjectPackagingSettings:bGenerateChunks:0=False
+IOS.Game:/Script/UnrealEd.ProjectPackagingSettings:bGenerateChunks:0=False
 Windows.Editor:EditorLayouts:NullLayout:0=(\
 	"Type" "Layout",\
 	"Name" "NullLayout",\
@@ -1242,6 +1616,242 @@ Windows.Editor:EditorLayouts:NullLayout:0=(\
 			"Orientation" "Orient_Horizontal",\
 			"WindowPlacement" "Placement_NoWindow",\
 			"Nodes" []\
+		)\
+	]\
+)
+Windows.Editor:EditorLayouts:WidgetBlueprintEditor_Designer_Layout_v4_1:0=(\
+	"Type" "Layout",\
+	"Name" "WidgetBlueprintEditor_Designer_Layout_v4_1",\
+	"PrimaryAreaIndex" 0,\
+	"Areas" [\
+		(\
+			"SizeCoefficient" 1,\
+			"Type" "Area",\
+			"Orientation" "Orient_Vertical",\
+			"WindowPlacement" "Placement_NoWindow",\
+			"Nodes" [\
+				(\
+					"SizeCoefficient" 0.20000000298023224,\
+					"Type" "Stack",\
+					"HideTabWell" true,\
+					"ForegroundTab" "AssetEditorToolkit_Toolbar",\
+					"Tabs" [\
+						(\
+							"TabId" "AssetEditorToolkit_Toolbar",\
+							"TabState" "OpenedTab"\
+						)\
+					]\
+				),\
+				(\
+					"SizeCoefficient" 0.69999998807907104,\
+					"Type" "Splitter",\
+					"Orientation" "Orient_Horizontal",\
+					"Nodes" [\
+						(\
+							"SizeCoefficient" 0.15000000596046448,\
+							"Type" "Splitter",\
+							"Orientation" "Orient_Vertical",\
+							"Nodes" [\
+								(\
+									"SizeCoefficient" 0.5,\
+									"Type" "Stack",\
+									"HideTabWell" false,\
+									"ForegroundTab" "WidgetTemplates",\
+									"Tabs" [\
+										(\
+											"TabId" "WidgetTemplates",\
+											"TabState" "OpenedTab"\
+										)\
+									]\
+								),\
+								(\
+									"SizeCoefficient" 0.5,\
+									"Type" "Stack",\
+									"HideTabWell" false,\
+									"ForegroundTab" "SlateHierarchy",\
+									"Tabs" [\
+										(\
+											"TabId" "SlateHierarchy",\
+											"TabState" "OpenedTab"\
+										)\
+									]\
+								)\
+							]\
+						),\
+						(\
+							"SizeCoefficient" 0.54949378967285156,\
+							"Type" "Stack",\
+							"HideTabWell" true,\
+							"ForegroundTab" "SlatePreview",\
+							"Tabs" [\
+								(\
+									"TabId" "SlatePreview",\
+									"TabState" "OpenedTab"\
+								)\
+							]\
+						),\
+						(\
+							"SizeCoefficient" 0.30050551891326904,\
+							"Type" "Stack",\
+							"HideTabWell" false,\
+							"ForegroundTab" "WidgetDetails",\
+							"Tabs" [\
+								(\
+									"TabId" "WidgetDetails",\
+									"TabState" "OpenedTab"\
+								)\
+							]\
+						)\
+					]\
+				),\
+				(\
+					"SizeCoefficient" 0.30000001192092896,\
+					"Type" "Splitter",\
+					"Orientation" "Orient_Horizontal",\
+					"Nodes" [\
+						(\
+							"SizeCoefficient" 0.15000000596046448,\
+							"Type" "Stack",\
+							"HideTabWell" false,\
+							"ForegroundTab" "Animations",\
+							"Tabs" [\
+								(\
+									"TabId" "Animations",\
+									"TabState" "OpenedTab"\
+								)\
+							]\
+						),\
+						(\
+							"SizeCoefficient" 0.85000002384185791,\
+							"Type" "Stack",\
+							"HideTabWell" false,\
+							"ForegroundTab" "CompilerResults",\
+							"Tabs" [\
+								(\
+									"TabId" "Sequencer",\
+									"TabState" "OpenedTab"\
+								),\
+								(\
+									"TabId" "CompilerResults",\
+									"TabState" "OpenedTab"\
+								)\
+							]\
+						)\
+					]\
+				)\
+			]\
+		)\
+	]\
+)
+Windows.Editor:EditorLayouts:WidgetBlueprintEditor_Graph_Layout_v1:0=(\
+	"Type" "Layout",\
+	"Name" "WidgetBlueprintEditor_Graph_Layout_v1",\
+	"PrimaryAreaIndex" 0,\
+	"Areas" [\
+		(\
+			"SizeCoefficient" 1,\
+			"Type" "Area",\
+			"Orientation" "Orient_Vertical",\
+			"WindowPlacement" "Placement_NoWindow",\
+			"Nodes" [\
+				(\
+					"SizeCoefficient" 0.18672099709510803,\
+					"Type" "Stack",\
+					"HideTabWell" true,\
+					"ForegroundTab" "AssetEditorToolkit_Toolbar",\
+					"Tabs" [\
+						(\
+							"TabId" "AssetEditorToolkit_Toolbar",\
+							"TabState" "OpenedTab"\
+						)\
+					]\
+				),\
+				(\
+					"SizeCoefficient" 1,\
+					"Type" "Splitter",\
+					"Orientation" "Orient_Horizontal",\
+					"Nodes" [\
+						(\
+							"SizeCoefficient" 0.15000000596046448,\
+							"Type" "Splitter",\
+							"Orientation" "Orient_Vertical",\
+							"Nodes" [\
+								(\
+									"SizeCoefficient" 0.63083261251449585,\
+									"Type" "Stack",\
+									"HideTabWell" false,\
+									"ForegroundTab" "MyBlueprint",\
+									"Tabs" [\
+										(\
+											"TabId" "MyBlueprint",\
+											"TabState" "OpenedTab"\
+										)\
+									]\
+								),\
+								(\
+									"SizeCoefficient" 0.36916586756706238,\
+									"Type" "Stack",\
+									"HideTabWell" false,\
+									"ForegroundTab" "Inspector",\
+									"Tabs" [\
+										(\
+											"TabId" "Inspector",\
+											"TabState" "OpenedTab"\
+										)\
+									]\
+								)\
+							]\
+						),\
+						(\
+							"SizeCoefficient" 0.69999998807907104,\
+							"Type" "Splitter",\
+							"Orientation" "Orient_Vertical",\
+							"Nodes" [\
+								(\
+									"SizeCoefficient" 0.80000001192092896,\
+									"Type" "Stack",\
+									"HideTabWell" false,\
+									"ForegroundTab" "Document  4",\
+									"Tabs" [\
+										(\
+											"TabId" "Document",\
+											"TabState" "ClosedTab"\
+										)\
+									]\
+								),\
+								(\
+									"SizeCoefficient" 0.20000000298023224,\
+									"Type" "Stack",\
+									"HideTabWell" false,\
+									"ForegroundTab" "FindResults",\
+									"Tabs" [\
+										(\
+											"TabId" "CompilerResults",\
+											"TabState" "ClosedTab"\
+										),\
+										(\
+											"TabId" "FindResults",\
+											"TabState" "OpenedTab"\
+										)\
+									]\
+								)\
+							]\
+						),\
+						(\
+							"SizeCoefficient" 0.15000000596046448,\
+							"Type" "Stack",\
+							"HideTabWell" false,\
+							"ForegroundTab" "None",\
+							"Tabs" [\
+								(\
+									"TabId" "PaletteList",\
+									"TabState" "ClosedTab"\
+								)\
+							]\
+						)\
+					]\
+				)\
+			]\
 		)\
 	]\
 )
@@ -1586,353 +2196,6 @@ Windows.Editor:/Script/UMGEditor.UMGEditorProjectSettings:DebugResolutions:9=(Wi
 Windows.Editor:/Script/UMGEditor.UMGEditorProjectSettings:DebugResolutions:10=(Width=720,Height=1280,Description="",Color=(R=0.000000,G=0.318547,B=0.806952,A=1.000000))
 Windows.Editor:/Script/UMGEditor.UMGEditorProjectSettings:DebugResolutions:11=(Width=1136,Height=640,Description="",Color=(R=0.000000,G=0.238398,B=0.658375,A=1.000000))
 Windows.Editor:/Script/UMGEditor.UMGEditorProjectSettings:DebugResolutions:12=(Width=640,Height=1136,Description="",Color=(R=0.000000,G=0.238398,B=0.658375,A=1.000000))
-IOS.Engine:/Script/Engine.RendererSettings:r.MobileHDR:0=True
-IOS.Engine:AssetRegistry:bUseAssetRegistryTagsWhitelistInsteadOfBlacklist:0=false
-IOS.Engine:AssetRegistry:bSerializeAssetRegistry:0=true
-IOS.Engine:AssetRegistry:bSerializeDependencies:0=false
-IOS.Engine:AssetRegistry:bSerializeManageDependencies:0=false
-IOS.Engine:AssetRegistry:bSerializePackageData:0=false
-Mac.Engine:AssetRegistry:bUseAssetRegistryTagsWhitelistInsteadOfBlacklist:0=false
-Mac.Engine:AssetRegistry:bSerializeAssetRegistry:0=true
-Mac.Engine:AssetRegistry:bSerializeDependencies:0=false
-Mac.Engine:AssetRegistry:bSerializeManageDependencies:0=false
-Mac.Engine:AssetRegistry:bSerializePackageData:0=false
-Android.Engine:AssetRegistry:bUseAssetRegistryTagsWhitelistInsteadOfBlacklist:0=false
-Android.Engine:AssetRegistry:bSerializeAssetRegistry:0=true
-Android.Engine:AssetRegistry:bSerializeDependencies:0=false
-Android.Engine:AssetRegistry:bSerializeManageDependencies:0=false
-Android.Engine:AssetRegistry:bSerializePackageData:0=false
-HTML5.Engine:AssetRegistry:bUseAssetRegistryTagsWhitelistInsteadOfBlacklist:0=false
-HTML5.Engine:AssetRegistry:bSerializeAssetRegistry:0=true
-HTML5.Engine:AssetRegistry:bSerializeDependencies:0=false
-HTML5.Engine:AssetRegistry:bSerializeManageDependencies:0=false
-HTML5.Engine:AssetRegistry:bSerializePackageData:0=false
-Windows.Game:Internationalization:LocalizationPaths:0=%GAMEDIR%Content/Localization/Game
-Windows.Game:DefaultPlayer:Name:0=Player
-Windows.Game:/Script/Engine.GameNetworkManager:TotalNetBandwidth:0=32000
-Windows.Game:/Script/Engine.GameNetworkManager:MaxDynamicBandwidth:0=7000
-Windows.Game:/Script/Engine.GameNetworkManager:MinDynamicBandwidth:0=4000
-Windows.Game:/Script/Engine.GameNetworkManager:MoveRepSize:0=42.0f
-Windows.Game:/Script/Engine.GameNetworkManager:MAXPOSITIONERRORSQUARED:0=3.0f
-Windows.Game:/Script/Engine.GameNetworkManager:MAXNEARZEROVELOCITYSQUARED:0=9.0f
-Windows.Game:/Script/Engine.GameNetworkManager:CLIENTADJUSTUPDATECOST:0=180.0f
-Windows.Game:/Script/Engine.GameNetworkManager:MAXCLIENTUPDATEINTERVAL:0=0.25f
-Windows.Game:/Script/Engine.GameNetworkManager:MaxMoveDeltaTime:0=0.125f
-Windows.Game:/Script/Engine.GameNetworkManager:ClientNetSendMoveDeltaTime:0=0.0166
-Windows.Game:/Script/Engine.GameNetworkManager:ClientNetSendMoveDeltaTimeThrottled:0=0.0222
-Windows.Game:/Script/Engine.GameNetworkManager:ClientNetSendMoveThrottleAtNetSpeed:0=10000
-Windows.Game:/Script/Engine.GameNetworkManager:ClientNetSendMoveThrottleOverPlayerCount:0=10
-Windows.Game:/Script/Engine.GameNetworkManager:ClientAuthorativePosition:0=false
-Windows.Game:/Script/Engine.GameNetworkManager:ClientErrorUpdateRateLimit:0=0.0f
-Windows.Game:/Script/Engine.GameNetworkManager:bMovementTimeDiscrepancyDetection:0=false
-Windows.Game:/Script/Engine.GameNetworkManager:bMovementTimeDiscrepancyResolution:0=false
-Windows.Game:/Script/Engine.GameNetworkManager:MovementTimeDiscrepancyMaxTimeMargin:0=0.25f
-Windows.Game:/Script/Engine.GameNetworkManager:MovementTimeDiscrepancyMinTimeMargin:0=-0.25f
-Windows.Game:/Script/Engine.GameNetworkManager:MovementTimeDiscrepancyResolutionRate:0=1.0f
-Windows.Game:/Script/Engine.GameNetworkManager:MovementTimeDiscrepancyDriftAllowance:0=0.0f
-Windows.Game:/Script/Engine.GameNetworkManager:bMovementTimeDiscrepancyForceCorrectionsDuringResolution:0=false
-Windows.Game:/Script/Engine.GameNetworkManager:bUseDistanceBasedRelevancy:0=true
-Windows.Game:/Script/Party.Party:DefaultMaxPartySize:0=5
-Windows.Game:/Script/Lobby.LobbyBeaconState:WaitForPlayersTimeRemaining:0=20.0
-Windows.Game:/Script/Engine.GameSession:MaxPlayers:0=16
-Windows.Game:/Script/Engine.GameSession:MaxSpectators:0=2
-Windows.Game:/Script/Engine.GameSession:MaxSplitscreensPerConnection:0=4
-Windows.Game:/Script/Engine.GameSession:bRequiresPushToTalk:0=true
-Windows.Game:/Script/EngineSettings.GeneralProjectSettings:CompanyName:0=
-Windows.Game:/Script/EngineSettings.GeneralProjectSettings:CompanyDistinguishedName:0=
-Windows.Game:/Script/EngineSettings.GeneralProjectSettings:CopyrightNotice:0=Fill out your copyright notice in the Description page of Project Settings.
-Windows.Game:/Script/EngineSettings.GeneralProjectSettings:Description:0=
-Windows.Game:/Script/EngineSettings.GeneralProjectSettings:LicensingTerms:0=
-Windows.Game:/Script/EngineSettings.GeneralProjectSettings:PrivacyPolicy:0=
-Windows.Game:/Script/EngineSettings.GeneralProjectSettings:ProjectName:0=ARSample
-Windows.Game:/Script/EngineSettings.GeneralProjectSettings:ProjectVersion:0=1.0.0.0
-Windows.Game:/Script/EngineSettings.GeneralProjectSettings:Homepage:0=
-Windows.Game:/Script/EngineSettings.GeneralProjectSettings:SupportContact:0=
-Windows.Game:/Script/EngineSettings.GeneralProjectSettings:ProjectID:0=41277677413D5229CF6FA995A4447B87
-Windows.Game:/Script/EngineSettings.GeneralProjectSettings:bStartInAR:0=True
-Windows.Game:/Script/UnrealEd.ProjectPackagingSettings:BuildConfiguration:0=PPBC_Development
-Windows.Game:/Script/UnrealEd.ProjectPackagingSettings:FullRebuild:0=False
-Windows.Game:/Script/UnrealEd.ProjectPackagingSettings:UsePakFile:0=True
-Windows.Game:/Script/UnrealEd.ProjectPackagingSettings:bGenerateChunks:0=False
-Windows.Game:/Script/UnrealEd.ProjectPackagingSettings:bChunkHardReferencesOnly:0=False
-Windows.Game:/Script/UnrealEd.ProjectPackagingSettings:IncludePrerequisites:0=True
-Windows.Game:/Script/UnrealEd.ProjectPackagingSettings:IncludeCrashReporter:0=False
-Windows.Game:/Script/UnrealEd.ProjectPackagingSettings:InternationalizationPreset:0=English
-Windows.Game:/Script/UnrealEd.ProjectPackagingSettings:CulturesToStage:0=en
-Windows.Game:/Script/UnrealEd.ProjectPackagingSettings:DefaultCulture:0=en
-Windows.Game:/Script/UnrealEd.ProjectPackagingSettings:bSkipEditorContent:0=false
-Windows.Game:/Script/UnrealEd.ProjectPackagingSettings:bSharedMaterialNativeLibraries:0=False
-Windows.Game:/Script/UnrealEd.ProjectPackagingSettings:bShareMaterialShaderCode:0=False
-Windows.Game:/Script/Engine.HUD:DebugDisplay:0=AI
-Windows.Game:/Script/Engine.PlayerController:InputYawScale:0=2.5
-Windows.Game:/Script/Engine.PlayerController:InputPitchScale:0=-1.75
-Windows.Game:/Script/Engine.PlayerController:InputRollScale:0=1.0
-Windows.Game:/Script/Engine.PlayerController:ForceFeedbackScale:0=1.0
-Windows.Game:/Script/Engine.DebugCameraController:bShowSelectedInfo:0=true
-Windows.Game:/Script/Engine.WorldSettings:ChanceOfPhysicsChunkOverride:0=1.0
-Windows.Game:/Script/Engine.WorldSettings:bEnableChanceOfPhysicsChunkOverride:0=false
-Windows.Game:/Script/Engine.WorldSettings:DefaultAmbientZoneSettings:0=(bIsWorldSettings=true)
-Windows.Game:/Script/Engine.WorldSettings:EnabledPlugins:0=ExampleDeviceProfileSelector
-Windows.Game:/Script/Engine.WorldSettings:MinUndilatedFrameTime:0=0.0005		; 2000 fps
-Windows.Game:/Script/Engine.WorldSettings:MaxUndilatedFrameTime:0=0.4			; 2.5 fps
-Windows.Game:/Script/Engine.WorldSettings:MinGlobalTimeDilation:0=0.0001
-Windows.Game:/Script/Engine.WorldSettings:MaxGlobalTimeDilation:0=20.0
-Windows.Game:/Script/AIModule.AIPerceptionComponent:HearingRange:0=768
-Windows.Game:/Script/AIModule.AIPerceptionComponent:SightRadius:0=3000
-Windows.Game:/Script/AIModule.AIPerceptionComponent:LoseSightRadius:0=3500
-Windows.Game:/Script/AIModule.AIPerceptionComponent:LoSHearingRange:0=1500
-Windows.Game:/Script/AIModule.AIPerceptionComponent:PeripheralVisionAngle:0=90
-Windows.Game:/Script/AIModule.AISense_Hearing:SpeedOfSoundSq:0=0
-Windows.Game:/Script/AIModule.AISenseConfig_Hearing:Implementation:0=Class'/Script/AIModule.AISense_Hearing'
-Windows.Game:/Script/AIModule.AISenseConfig_Hearing:HearingRange:0=768
-Windows.Game:/Script/AIModule.AISenseConfig_Hearing:LoSHearingRange:0=1500
-Windows.Game:/Script/AIModule.AISenseConfig_Hearing:DetectionByAffiliation:0=(bDetectEnemies=true)
-Windows.Game:/Script/AIModule.AISenseConfig_Sight:Implementation:0=Class'/Script/AIModule.AISense_Sight'
-Windows.Game:/Script/AIModule.AISenseConfig_Sight:SightRadius:0=3000
-Windows.Game:/Script/AIModule.AISenseConfig_Sight:LoseSightRadius:0=3500
-Windows.Game:/Script/AIModule.AISenseConfig_Sight:PeripheralVisionAngleDegrees:0=90
-Windows.Game:/Script/AIModule.AISenseConfig_Sight:DetectionByAffiliation:0=(bDetectEnemies=true)
-Windows.Game:/Script/AIModule.AISenseConfig_Sight:AutoSuccessRangeFromLastSeenLocation:0=-1.f
-Windows.Game:/Script/AIModule.AISenseConfig_Damage:Implementation:0=Class'/Script/AIModule.AISense_Damage'
-Windows.Game:/Script/AIModule.EnvQueryManager:MaxAllowedTestingTime:0=0.01
-Windows.Game:/Script/AIModule.EnvQueryManager:bTestQueriesUsingBreadth:0=true
-Windows.Game:/Script/AIModule.EnvQueryManager:QueryCountWarningThreshold:0=0
-Windows.Game:/Script/AIModule.EnvQueryManager:QueryCountWarningInterval:0=30.0
-Windows.Game:/Script/Engine.AssetManagerSettings:PrimaryAssetTypesToScan:0=(PrimaryAssetType="Map",AssetBaseClass=/Script/Engine.World,bHasBlueprintClasses=False,bIsEditorOnly=True,Directories=((Path="/Game/Maps")))
-Windows.Game:/Script/Engine.AssetManagerSettings:PrimaryAssetTypesToScan:1=(PrimaryAssetType="PrimaryAssetLabel",AssetBaseClass=/Script/Engine.PrimaryAssetLabel,bHasBlueprintClasses=False,bIsEditorOnly=True,Directories=((Path="/Game")))
-Windows.Input:/Script/Engine.Console:HistoryBuffer:0=r.ShadowQuality 2
-Windows.Input:/Script/Engine.Console:HistoryBuffer:1=r.Shadow.CSM.TransitionScale 50
-Windows.Input:/Script/Engine.Console:HistoryBuffer:2=r.Shadow.CSMSplitPenumbraScale 1
-Windows.Input:/Script/Engine.Console:HistoryBuffer:3=r.Shadow.CSMSplitPenumbraScale 100
-Windows.Input:/Script/Engine.Console:HistoryBuffer:4=r.Shadow.CSM.TransitionScale 500
-Windows.Input:/Script/Engine.Console:HistoryBuffer:5=r.Shadow.CSM.TransitionScale .1
-Windows.Input:/Script/Engine.Console:HistoryBuffer:6=r.Shadow.CSM.TransitionScale .0001
-Windows.Input:/Script/Engine.Console:HistoryBuffer:7=r.Shadow.CSM.TransitionScale 100000
-Windows.Input:/Script/Engine.Console:HistoryBuffer:8=r.Shadow.CSM.TransitionScale 1
-Windows.Input:/Script/Engine.Console:HistoryBuffer:9=r.Shadow.CSM.TransitionScale 5
-Windows.Input:/Script/Engine.Console:HistoryBuffer:10=r.ShadowQuality 3
-Windows.Input:/Script/Engine.Console:HistoryBuffer:11=r.ShadowQuality 5
-Windows.Input:/Script/Engine.Console:HistoryBuffer:12=r.Shadow.CSM.MaxCascades 4
-Windows.Input:/Script/Engine.Console:HistoryBuffer:13=r.Shadow.CSMDepthBias
-Windows.Input:/Script/Engine.Console:HistoryBuffer:14=r.Shadow.CSM.MaxCascades
-Windows.Input:/Script/Engine.Console:HistoryBuffer:15=r.Shadow.CSM.MaxMobileCascades
-Windows.Input:/Script/Engine.Console:HistoryBuffer:16=r.Shadow.CSM.MaxMobileCascades 4
-Windows.Input:/Script/Engine.Console:HistoryBuffer:17=r.Shadow.CSM.MaxCascades 5
-Windows.Input:/Script/Engine.Console:HistoryBuffer:18=r.Shadow.CSM.MaxCascades 50
-Windows.Input:/Script/Engine.Console:HistoryBuffer:19=r.Shadow.CSM.MaxCascades 2
-Windows.Input:/Script/Engine.Console:HistoryBuffer:20=r.Shadow.CSM.MaxCascades 1
-Windows.Input:/Script/Engine.Console:HistoryBuffer:21=r.Shadow.CSM.MaxMobileCascades 1
-Windows.Input:/Script/Engine.Console:HistoryBuffer:22=r.Shadow.CSM.MaxMobileCascades 2
-Windows.Input:/Script/Engine.Console:HistoryBuffer:23=r.Shadow.CSM.MaxMobileCascades 50
-Windows.Input:/Script/Engine.Console:HistoryBuffer:24=r.ShadowQuality 4
-Windows.Input:/Script/Engine.Console:HistoryBuffer:25=r.ShadowQuality 0
-Windows.Input:/Script/Engine.Console:HistoryBuffer:26=r.ShadowQuality 1
-Windows.Input:/Script/Engine.Console:HistoryBuffer:27=showflag.rendering
-Windows.Input:/Script/Engine.Console:HistoryBuffer:28=showflag.game
-Windows.Input:/Script/Engine.Console:HistoryBuffer:29=show Game
-Windows.Input:/Script/Engine.Console:HistoryBuffer:30=show debug
-Windows.Input:/Script/Engine.Console:HistoryBuffer:31=stat game
-Windows.Input:/Script/Engine.Console:HistoryBuffer:32=stat fps
-Windows.Input:/Script/Engine.Console:HistoryBuffer:33=ce dummy 1
-Windows.Input:/Script/Engine.Console:HistoryBuffer:34=ce dummy 2
-Windows.Input:/Script/Engine.Console:HistoryBot:0=-1
-Windows.Input:/Script/Engine.InputSettings:bEnableMouseSmoothing:0=True
-Windows.Input:/Script/Engine.InputSettings:bEnableFOVScaling:0=True
-Windows.Input:/Script/Engine.InputSettings:FOVScale:0=0.011110
-Windows.Input:/Script/Engine.InputSettings:DoubleClickTime:0=0.200000
-Windows.Input:/Script/Engine.InputSettings:DefaultTouchInterface:0=/Engine/MobileResources/HUD/LeftVirtualJoystickOnly.LeftVirtualJoystickOnly
-Windows.Input:/Script/Engine.InputSettings:bAlwaysShowTouchInterface:0=True
-Windows.Input:/Script/Engine.InputSettings:bShowConsoleOnFourFingerTap:0=True
-Windows.Input:/Script/Engine.InputSettings:bAltEnterTogglesFullscreen:0=True
-Windows.Input:/Script/Engine.InputSettings:bF11TogglesFullscreen:0=True
-Windows.Input:/Script/Engine.InputSettings:bRequireCtrlToNavigateAutoComplete:0=False
-Windows.Input:/Script/Engine.InputSettings:AxisConfig:0=(AxisKeyName="Gamepad_LeftX",AxisProperties=(DeadZone=0.250000,Sensitivity=1.000000,Exponent=1.000000,bInvert=False))
-Windows.Input:/Script/Engine.InputSettings:AxisConfig:1=(AxisKeyName="Gamepad_LeftY",AxisProperties=(DeadZone=0.250000,Sensitivity=1.000000,Exponent=1.000000,bInvert=False))
-Windows.Input:/Script/Engine.InputSettings:AxisConfig:2=(AxisKeyName="Gamepad_RightX",AxisProperties=(DeadZone=0.250000,Sensitivity=1.000000,Exponent=1.000000,bInvert=False))
-Windows.Input:/Script/Engine.InputSettings:AxisConfig:3=(AxisKeyName="Gamepad_RightY",AxisProperties=(DeadZone=0.250000,Sensitivity=1.000000,Exponent=1.000000,bInvert=False))
-Windows.Input:/Script/Engine.InputSettings:AxisConfig:4=(AxisKeyName="MouseX",AxisProperties=(DeadZone=0.000000,Sensitivity=0.070000,Exponent=1.000000,bInvert=False))
-Windows.Input:/Script/Engine.InputSettings:AxisConfig:5=(AxisKeyName="MouseY",AxisProperties=(DeadZone=0.000000,Sensitivity=0.070000,Exponent=1.000000,bInvert=False))
-Windows.Input:/Script/Engine.InputSettings:AxisConfig:6=(AxisKeyName="MouseWheelAxis",AxisProperties=(DeadZone=0.000000,Sensitivity=1.000000,Exponent=1.000000,bInvert=False))
-Windows.Input:/Script/Engine.InputSettings:AxisConfig:7=(AxisKeyName="Gamepad_LeftTriggerAxis",AxisProperties=(DeadZone=0.000000,Sensitivity=1.000000,Exponent=1.000000,bInvert=False))
-Windows.Input:/Script/Engine.InputSettings:AxisConfig:8=(AxisKeyName="Gamepad_RightTriggerAxis",AxisProperties=(DeadZone=0.000000,Sensitivity=1.000000,Exponent=1.000000,bInvert=False))
-Windows.Input:/Script/Engine.InputSettings:AxisConfig:9=(AxisKeyName="MotionController_Left_Thumbstick_X",AxisProperties=(DeadZone=0.000000,Sensitivity=1.000000,Exponent=1.000000,bInvert=False))
-Windows.Input:/Script/Engine.InputSettings:AxisConfig:10=(AxisKeyName="MotionController_Left_Thumbstick_Y",AxisProperties=(DeadZone=0.000000,Sensitivity=1.000000,Exponent=1.000000,bInvert=False))
-Windows.Input:/Script/Engine.InputSettings:AxisConfig:11=(AxisKeyName="MotionController_Left_TriggerAxis",AxisProperties=(DeadZone=0.000000,Sensitivity=1.000000,Exponent=1.000000,bInvert=False))
-Windows.Input:/Script/Engine.InputSettings:AxisConfig:12=(AxisKeyName="MotionController_Left_Grip1Axis",AxisProperties=(DeadZone=0.000000,Sensitivity=1.000000,Exponent=1.000000,bInvert=False))
-Windows.Input:/Script/Engine.InputSettings:AxisConfig:13=(AxisKeyName="MotionController_Left_Grip2Axis",AxisProperties=(DeadZone=0.000000,Sensitivity=1.000000,Exponent=1.000000,bInvert=False))
-Windows.Input:/Script/Engine.InputSettings:AxisConfig:14=(AxisKeyName="MotionController_Right_Thumbstick_X",AxisProperties=(DeadZone=0.000000,Sensitivity=1.000000,Exponent=1.000000,bInvert=False))
-Windows.Input:/Script/Engine.InputSettings:AxisConfig:15=(AxisKeyName="MotionController_Right_Thumbstick_Y",AxisProperties=(DeadZone=0.000000,Sensitivity=1.000000,Exponent=1.000000,bInvert=False))
-Windows.Input:/Script/Engine.InputSettings:AxisConfig:16=(AxisKeyName="MotionController_Right_TriggerAxis",AxisProperties=(DeadZone=0.000000,Sensitivity=1.000000,Exponent=1.000000,bInvert=False))
-Windows.Input:/Script/Engine.InputSettings:AxisConfig:17=(AxisKeyName="MotionController_Right_Grip1Axis",AxisProperties=(DeadZone=0.000000,Sensitivity=1.000000,Exponent=1.000000,bInvert=False))
-Windows.Input:/Script/Engine.InputSettings:AxisConfig:18=(AxisKeyName="MotionController_Right_Grip2Axis",AxisProperties=(DeadZone=0.000000,Sensitivity=1.000000,Exponent=1.000000,bInvert=False))
-Windows.Input:/Script/Engine.InputSettings:AxisConfig:19=(AxisKeyName="Gamepad_Special_Left_X",AxisProperties=(DeadZone=0.000000,Sensitivity=1.000000,Exponent=1.000000,bInvert=False))
-Windows.Input:/Script/Engine.InputSettings:AxisConfig:20=(AxisKeyName="Gamepad_Special_Left_Y",AxisProperties=(DeadZone=0.000000,Sensitivity=1.000000,Exponent=1.000000,bInvert=False))
-Windows.Input:/Script/Engine.InputSettings:bUseMouseForTouch:0=False
-Windows.Input:/Script/Engine.InputSettings:bCaptureMouseOnLaunch:0=True
-Windows.Input:/Script/Engine.InputSettings:DefaultViewportMouseCaptureMode:0=CapturePermanently
-Windows.Input:/Script/Engine.InputSettings:bDefaultViewportMouseLock:0=False
-Windows.Input:/Script/Engine.InputSettings:DefaultViewportMouseLockMode:0=LockOnCapture
-Windows.Input:/Script/Engine.InputSettings:AxisMappings:0=(AxisName="LookRight",Key=MouseX,Scale=1.000000)
-Windows.Input:/Script/Engine.InputSettings:AxisMappings:1=(AxisName="LookUp",Key=MouseY,Scale=1.000000)
-Windows.Input:/Script/Engine.InputSettings:AxisMappings:2=(AxisName="MoveForward",Key=W,Scale=1.000000)
-Windows.Input:/Script/Engine.InputSettings:AxisMappings:3=(AxisName="MoveRight",Key=A,Scale=-1.000000)
-Windows.Input:/Script/Engine.InputSettings:AxisMappings:4=(AxisName="MoveForward",Key=S,Scale=-1.000000)
-Windows.Input:/Script/Engine.InputSettings:AxisMappings:5=(AxisName="MoveRight",Key=D,Scale=1.000000)
-Windows.Input:/Script/Engine.InputSettings:ConsoleKey:0=None
-Windows.Input:/Script/Engine.InputSettings:ConsoleKeys:0=Tilde
-Windows.Input:/Script/Engine.PlayerInput:DebugExecBindings:0=(Key=F11,Command="LevelEditor.ToggleImmersive")
-Windows.Input:/Script/Engine.PlayerInput:DebugExecBindings:1=(Key=F11,Command="MainFrame.ToggleFullscreen",Shift=True)
-Windows.Input:/Script/Engine.PlayerInput:DebugExecBindings:2=(Key=F1,Command="viewmode wireframe", bIgnoreShift=True)
-Windows.Input:/Script/Engine.PlayerInput:DebugExecBindings:3=(Key=F2,Command="viewmode unlit")
-Windows.Input:/Script/Engine.PlayerInput:DebugExecBindings:4=(Key=F3,Command="viewmode lit")
-Windows.Input:/Script/Engine.PlayerInput:DebugExecBindings:5=(Key=F4,Command="viewmode lit_detaillighting")
-Windows.Input:/Script/Engine.PlayerInput:DebugExecBindings:6=(Key=F5,Command="viewmode shadercomplexity")
-Windows.Input:/Script/Engine.PlayerInput:DebugExecBindings:7=(Key=F9,Command="shot showui")
-Windows.Input:/Script/Engine.PlayerInput:DebugExecBindings:8=(Key=Period,Command="RECOMPILESHADERS CHANGED",Control=True,Shift=True)
-Windows.Input:/Script/Engine.PlayerInput:DebugExecBindings:9=(Key=Comma,Command="PROFILEGPU",Control=True,Shift=True)
-Windows.Input:/Script/Engine.PlayerInput:DebugExecBindings:10=(Key=Tab,Command="FocusNextPIEWindow",Control=True)
-Windows.Input:/Script/Engine.PlayerInput:DebugExecBindings:11=(Key=Tab,Command="FocusLastPIEWindow",Control=True,Shift=True)
-Windows.Input:/Script/Engine.PlayerInput:DebugExecBindings:12=(Key=Apostrophe,Command="EnableGDT")
-Windows.Input:/Script/Engine.PlayerInput:DebugExecBindings:13=(Key=Quote,Command="EnableGDT")
-Windows.Input:/Script/EngineSettings.ConsoleSettings:MaxScrollbackSize:0=1024
-Windows.Input:/Script/EngineSettings.ConsoleSettings:AutoCompleteMapPaths:0=Content/Maps
-Windows.Input:/Script/EngineSettings.ConsoleSettings:ManualAutoCompleteList:0=(Command="Exit",Desc="Exits the game")
-Windows.Input:/Script/EngineSettings.ConsoleSettings:ManualAutoCompleteList:1=(Command="DebugCreatePlayer 1",Desc=)
-Windows.Input:/Script/EngineSettings.ConsoleSettings:ManualAutoCompleteList:2=(Command="ToggleDrawEvents",Desc="Toggles annotations for shader debugging with Pix, Razor or similar GPU capture tools")
-Windows.Input:/Script/EngineSettings.ConsoleSettings:ManualAutoCompleteList:3=(Command="Shot",Desc="Make a screenshot")
-Windows.Input:/Script/EngineSettings.ConsoleSettings:ManualAutoCompleteList:4=(Command="RecompileShaders changed",Desc="Recompile shaders that have any changes on their source files")
-Windows.Input:/Script/EngineSettings.ConsoleSettings:ManualAutoCompleteList:5=(Command="RecompileShaders global",Desc="Recompile global shaders that have any changes on their source files")
-Windows.Input:/Script/EngineSettings.ConsoleSettings:ManualAutoCompleteList:6=(Command="RecompileShaders material ",Desc="Recompile shaders for a specific material if it's source files have changed")
-Windows.Input:/Script/EngineSettings.ConsoleSettings:ManualAutoCompleteList:7=(Command="RecompileShaders all",Desc="Recompile all shaders that have any changes on their source files")
-Windows.Input:/Script/EngineSettings.ConsoleSettings:ManualAutoCompleteList:8=(Command="DumpMaterialStats",Desc="Dump material information")
-Windows.Input:/Script/EngineSettings.ConsoleSettings:ManualAutoCompleteList:9=(Command="DumpShaderStats",Desc="Dump shader information")
-Windows.Input:/Script/EngineSettings.ConsoleSettings:ManualAutoCompleteList:10=(Command="DumpShaderPipelineStats",Desc="Dump shader pipeline information")
-Windows.Input:/Script/EngineSettings.ConsoleSettings:ManualAutoCompleteList:11=(Command="StartFPSChart",Desc="after that use StopFPSChart")
-Windows.Input:/Script/EngineSettings.ConsoleSettings:ManualAutoCompleteList:12=(Command="StopFPSChart",Desc="after that look for the output in Saved/Profiling/FPSChartStats")
-Windows.Input:/Script/EngineSettings.ConsoleSettings:ManualAutoCompleteList:13=(Command="FreezeAt",Desc="Locks the player view and rendering time.")
-Windows.Input:/Script/EngineSettings.ConsoleSettings:ManualAutoCompleteList:14=(Command="Open",Desc="<MapName> Opens the specified map, doesn't pass previously set options")
-Windows.Input:/Script/EngineSettings.ConsoleSettings:ManualAutoCompleteList:15=(Command="Travel",Desc="<MapName> Travels to the specified map, passes along previously set options")
-Windows.Input:/Script/EngineSettings.ConsoleSettings:ManualAutoCompleteList:16=(Command="ServerTravel",Desc="<MapName> Travels to the specified map and brings clients along, passes along previously set options")
-Windows.Input:/Script/EngineSettings.ConsoleSettings:ManualAutoCompleteList:17=(Command="DisplayAll",Desc="<ClassName> <PropertyName> Display property values for instances of classname")
-Windows.Input:/Script/EngineSettings.ConsoleSettings:ManualAutoCompleteList:18=(Command="DisplayAllLocation",Desc="<ClassName> Display location for all instances of classname")
-Windows.Input:/Script/EngineSettings.ConsoleSettings:ManualAutoCompleteList:19=(Command="DisplayAllRotation",Desc="<ClassName> Display rotation for all instances of classname")
-Windows.Input:/Script/EngineSettings.ConsoleSettings:ManualAutoCompleteList:20=(Command="DisplayClear",Desc="Clears previous DisplayAll entries")
-Windows.Input:/Script/EngineSettings.ConsoleSettings:ManualAutoCompleteList:21=(Command="FlushPersistentDebugLines",Desc="Clears persistent debug line cache")
-Windows.Input:/Script/EngineSettings.ConsoleSettings:ManualAutoCompleteList:22=(Command="GetAll ",Desc="<ClassName> <PropertyName> <Name=ObjectInstanceName> <OUTER=ObjectInstanceName> <SHOWDEFAULTS> <SHOWPENDINGKILLS> <DETAILED> Log property values of all instances of classname")
-Windows.Input:/Script/EngineSettings.ConsoleSettings:ManualAutoCompleteList:23=(Command="GetAllState",Desc="<ClassName> Log state names for all instances of classname")
-Windows.Input:/Script/EngineSettings.ConsoleSettings:ManualAutoCompleteList:24=(Command="Obj List ",Desc="<Class=ClassName> <Type=MetaClass> <Outer=OuterObject> <Package=InsidePackage> <Inside=InsideObject>")
-Windows.Input:/Script/EngineSettings.ConsoleSettings:ManualAutoCompleteList:25=(Command="Obj ListContentRefs",Desc="<Class=ClassName> <ListClass=ClassName>")
-Windows.Input:/Script/EngineSettings.ConsoleSettings:ManualAutoCompleteList:26=(Command="Obj Classes",Desc="Shows all classes")
-Windows.Input:/Script/EngineSettings.ConsoleSettings:ManualAutoCompleteList:27=(Command="Obj Refs",Desc="Name=<ObjectName> Class=<OptionalObjectClass> Lists referencers of the specified object")
-Windows.Input:/Script/EngineSettings.ConsoleSettings:ManualAutoCompleteList:28=(Command="EditActor",Desc="<Class=ClassName> or <Name=ObjectName> or TRACE")
-Windows.Input:/Script/EngineSettings.ConsoleSettings:ManualAutoCompleteList:29=(Command="EditDefault",Desc="<Class=ClassName>")
-Windows.Input:/Script/EngineSettings.ConsoleSettings:ManualAutoCompleteList:30=(Command="EditObject",Desc="<Class=ClassName> or <Name=ObjectName> or <ObjectName>")
-Windows.Input:/Script/EngineSettings.ConsoleSettings:ManualAutoCompleteList:31=(Command="ReloadCfg ",Desc="<Class/ObjectName> Reloads config variables for the specified object/class")
-Windows.Input:/Script/EngineSettings.ConsoleSettings:ManualAutoCompleteList:32=(Command="ReloadLoc ",Desc="<Class/ObjectName> Reloads localized variables for the specified object/class")
-Windows.Input:/Script/EngineSettings.ConsoleSettings:ManualAutoCompleteList:33=(Command="Set ",Desc="<ClassName> <PropertyName> <Value> Sets property to value on objectname")
-Windows.Input:/Script/EngineSettings.ConsoleSettings:ManualAutoCompleteList:34=(Command="SetNoPEC",Desc="<ClassName> <PropertyName> <Value> Sets property to value on objectname without Pre/Post Edit Change notifications")
-Windows.Input:/Script/EngineSettings.ConsoleSettings:ManualAutoCompleteList:35=(Command="Stat FPS",Desc="Shows FPS counter")
-Windows.Input:/Script/EngineSettings.ConsoleSettings:ManualAutoCompleteList:36=(Command="Stat UNIT",Desc="Shows hardware unit framerate")
-Windows.Input:/Script/EngineSettings.ConsoleSettings:ManualAutoCompleteList:37=(Command="Stat UnitGraph",Desc="Draws simple unit time graph")
-Windows.Input:/Script/EngineSettings.ConsoleSettings:ManualAutoCompleteList:38=(Command="Stat NamedEvents",Desc="Stat NamedEvents (Enables named events for external profilers)")
-Windows.Input:/Script/EngineSettings.ConsoleSettings:ManualAutoCompleteList:39=(Command="Stat StartFile",Desc="Stat StartFile (starts a stats capture, creating a new file in the Profiling directory; stop with stat StopFile to close the file)")
-Windows.Input:/Script/EngineSettings.ConsoleSettings:ManualAutoCompleteList:40=(Command="Stat StopFile",Desc="Stat StopFile (finishes a stats capture started by stat StartFile)")
-Windows.Input:/Script/EngineSettings.ConsoleSettings:ManualAutoCompleteList:41=(Command="Stat Hitches",Desc="Stat Hitches (shows an onscreen history of hitches)")
-Windows.Input:/Script/EngineSettings.ConsoleSettings:ManualAutoCompleteList:42=(Command="Stat CPULoad",Desc="Stat CPULoad (Shows CPU Utilization)")
-Windows.Input:/Script/EngineSettings.ConsoleSettings:ManualAutoCompleteList:43=(Command="Stat DUMPHITCHES",Desc="executes dumpstats on hitches - see log")
-Windows.Input:/Script/EngineSettings.ConsoleSettings:ManualAutoCompleteList:44=(Command="Stat D3D11RHI",Desc="Shows Direct3D 11 stats")
-Windows.Input:/Script/EngineSettings.ConsoleSettings:ManualAutoCompleteList:45=(Command="Stat LEVELS",Desc="Displays level streaming info")
-Windows.Input:/Script/EngineSettings.ConsoleSettings:ManualAutoCompleteList:46=(Command="Stat GAME",Desc="Displays game performance stats")
-Windows.Input:/Script/EngineSettings.ConsoleSettings:ManualAutoCompleteList:47=(Command="Stat MEMORY",Desc="Displays memory stats")
-Windows.Input:/Script/EngineSettings.ConsoleSettings:ManualAutoCompleteList:48=(Command="Stat PHYSICS",Desc="Displays physics performance stats")
-Windows.Input:/Script/EngineSettings.ConsoleSettings:ManualAutoCompleteList:49=(Command="Stat STREAMING",Desc="Displays basic texture streaming stats")
-Windows.Input:/Script/EngineSettings.ConsoleSettings:ManualAutoCompleteList:50=(Command="Stat STREAMINGDETAILS",Desc="Displays detailed texture streaming stats")
-Windows.Input:/Script/EngineSettings.ConsoleSettings:ManualAutoCompleteList:51=(Command="Stat GPU",Desc="Displays GPU stats for the frame")
-Windows.Input:/Script/EngineSettings.ConsoleSettings:ManualAutoCompleteList:52=(Command="Stat COLLISION",Desc=)
-Windows.Input:/Script/EngineSettings.ConsoleSettings:ManualAutoCompleteList:53=(Command="Stat PARTICLES",Desc=)
-Windows.Input:/Script/EngineSettings.ConsoleSettings:ManualAutoCompleteList:54=(Command="Stat SCRIPT",Desc=)
-Windows.Input:/Script/EngineSettings.ConsoleSettings:ManualAutoCompleteList:55=(Command="Stat AUDIO",Desc=)
-Windows.Input:/Script/EngineSettings.ConsoleSettings:ManualAutoCompleteList:56=(Command="Stat ANIM",Desc=)
-Windows.Input:/Script/EngineSettings.ConsoleSettings:ManualAutoCompleteList:57=(Command="Stat NET",Desc=)
-Windows.Input:/Script/EngineSettings.ConsoleSettings:ManualAutoCompleteList:58=(Command="Stat LIST",Desc="<Groups/Sets/Group> List groups of stats, saved sets, or specific stats within a specified group")
-Windows.Input:/Script/EngineSettings.ConsoleSettings:ManualAutoCompleteList:59=(Command="Stat splitscreen",Desc=)
-Windows.Input:/Script/EngineSettings.ConsoleSettings:ManualAutoCompleteList:60=(Command="MemReport",Desc="Outputs memory stats to a profile file. -Full gives more data, -Log outputs to the log")
-Windows.Input:/Script/EngineSettings.ConsoleSettings:ManualAutoCompleteList:61=(Command="ListTextures",Desc="Lists all loaded textures and their current memory footprint")
-Windows.Input:/Script/EngineSettings.ConsoleSettings:ManualAutoCompleteList:62=(Command="ListStreamingTextures",Desc="Lists info all streaming textures")
-Windows.Input:/Script/EngineSettings.ConsoleSettings:ManualAutoCompleteList:63=(Command="InvestigateTexture",Desc="Shows streaming info about the specified texture")
-Windows.Input:/Script/EngineSettings.ConsoleSettings:ManualAutoCompleteList:64=(Command="RestartLevel",Desc="Restarts the level")
-Windows.Input:/Script/EngineSettings.ConsoleSettings:ManualAutoCompleteList:65=(Command="Module List",Desc="Lists all known modules")
-Windows.Input:/Script/EngineSettings.ConsoleSettings:ManualAutoCompleteList:66=(Command="Module Load",Desc="Attempts to load the specified module name")
-Windows.Input:/Script/EngineSettings.ConsoleSettings:ManualAutoCompleteList:67=(Command="Module Unload",Desc="Unloads the specified module name")
-Windows.Input:/Script/EngineSettings.ConsoleSettings:ManualAutoCompleteList:68=(Command="Module Reload",Desc="Reloads the specified module name, unloading it first if needed")
-Windows.Input:/Script/EngineSettings.ConsoleSettings:ManualAutoCompleteList:69=(Command="Module Recompile",Desc="Attempts to recompile a module, first unloading it if needed")
-Windows.Input:/Script/EngineSettings.ConsoleSettings:ManualAutoCompleteList:70=(Command="HotReload",Desc="<UObject DLL Hot Reload> Attempts to recompile a UObject DLL and reload it on the fly")
-Windows.Input:/Script/EngineSettings.ConsoleSettings:ManualAutoCompleteList:71=(Command="ListSounds",Desc="Lists all the loaded sounds and their memory footprint")
-Windows.Input:/Script/EngineSettings.ConsoleSettings:ManualAutoCompleteList:72=(Command="ListWaves",Desc="List the WaveInstances and whether they have a source")
-Windows.Input:/Script/EngineSettings.ConsoleSettings:ManualAutoCompleteList:73=(Command="ListSoundClasses",Desc="Lists a summary of loaded sound collated by class")
-Windows.Input:/Script/EngineSettings.ConsoleSettings:ManualAutoCompleteList:74=(Command="ListAudioComponents",Desc="Dumps a detailed list of all AudioComponent objects")
-Windows.Input:/Script/EngineSettings.ConsoleSettings:ManualAutoCompleteList:75=(Command="ListSoundDurations",Desc=)
-Windows.Input:/Script/EngineSettings.ConsoleSettings:ManualAutoCompleteList:76=(Command="PlaySoundCue",Desc="Lists a summary of loaded sound collated by class")
-Windows.Input:/Script/EngineSettings.ConsoleSettings:ManualAutoCompleteList:77=(Command="PlaySoundWave",Desc=)
-Windows.Input:/Script/EngineSettings.ConsoleSettings:ManualAutoCompleteList:78=(Command="SetBaseSoundMix",Desc="<MixName>")
-Windows.Input:/Script/EngineSettings.ConsoleSettings:ManualAutoCompleteList:79=(Command="DisableLowPassFilter",Desc=)
-Windows.Input:/Script/EngineSettings.ConsoleSettings:ManualAutoCompleteList:80=(Command="DisableEQFilter",Desc=)
-Windows.Input:/Script/EngineSettings.ConsoleSettings:ManualAutoCompleteList:81=(Command="IsolateDryAudio",Desc=)
-Windows.Input:/Script/EngineSettings.ConsoleSettings:ManualAutoCompleteList:82=(Command="IsolateReverb",Desc=)
-Windows.Input:/Script/EngineSettings.ConsoleSettings:ManualAutoCompleteList:83=(Command="ResetSoundState",Desc="Resets volumes to default and removes test filters")
-Windows.Input:/Script/EngineSettings.ConsoleSettings:ManualAutoCompleteList:84=(Command="DisableAllScreenMessages",Desc="Disables all on-screen warnings/messages")
-Windows.Input:/Script/EngineSettings.ConsoleSettings:ManualAutoCompleteList:85=(Command="EnableAllScreenMessages",Desc="Enables all on-screen warnings/messages")
-Windows.Input:/Script/EngineSettings.ConsoleSettings:ManualAutoCompleteList:86=(Command="ToggleAllScreenMessages",Desc="Toggles display state of all on-screen warnings/messages")
-Windows.Input:/Script/EngineSettings.ConsoleSettings:ManualAutoCompleteList:87=(Command="ToggleAsyncCompute",Desc="Toggles AsyncCompute for platforms that have it")
-Windows.Input:/Script/EngineSettings.ConsoleSettings:ManualAutoCompleteList:88=(Command="ToggleRenderingThread",Desc="Toggles the rendering thread for platforms that have it")
-Windows.Input:/Script/EngineSettings.ConsoleSettings:ManualAutoCompleteList:89=(Command="CaptureMode",Desc="Toggles display state of all on-screen warnings/messages")
-Windows.Input:/Script/EngineSettings.ConsoleSettings:ManualAutoCompleteList:90=(Command="ShowDebug None",Desc="Toggles ShowDebug w/ current debug type selection")
-Windows.Input:/Script/EngineSettings.ConsoleSettings:ManualAutoCompleteList:91=(Command="ShowDebug Reset",Desc="Turns off ShowDebug, and clears debug type selection")
-Windows.Input:/Script/EngineSettings.ConsoleSettings:ManualAutoCompleteList:92=(Command="ShowDebug NET",Desc=)
-Windows.Input:/Script/EngineSettings.ConsoleSettings:ManualAutoCompleteList:93=(Command="ShowDebug PHYSICS",Desc=)
-Windows.Input:/Script/EngineSettings.ConsoleSettings:ManualAutoCompleteList:94=(Command="ShowDebug COLLISION",Desc=)
-Windows.Input:/Script/EngineSettings.ConsoleSettings:ManualAutoCompleteList:95=(Command="ShowDebug AI",Desc=)
-Windows.Input:/Script/EngineSettings.ConsoleSettings:ManualAutoCompleteList:96=(Command="ShowDebug CAMERA",Desc=)
-Windows.Input:/Script/EngineSettings.ConsoleSettings:ManualAutoCompleteList:97=(Command="ShowDebug WEAPON",Desc=)
-Windows.Input:/Script/EngineSettings.ConsoleSettings:ManualAutoCompleteList:98=(Command="ShowDebug ANIMATION",Desc="Toggles display state of animation debug data")
-Windows.Input:/Script/EngineSettings.ConsoleSettings:ManualAutoCompleteList:99=(Command="ShowDebug BONES",Desc="Toggles display of skeletalmesh bones")
-Windows.Input:/Script/EngineSettings.ConsoleSettings:ManualAutoCompleteList:100=(Command="ShowDebug INPUT",Desc=)
-Windows.Input:/Script/EngineSettings.ConsoleSettings:ManualAutoCompleteList:101=(Command="ShowDebug FORCEFEEDBACK",Desc="Toggles display of current force feedback values and what is contributing to that calculation")
-Windows.Input:/Script/EngineSettings.ConsoleSettings:ManualAutoCompleteList:102=(Command="ShowDebugToggleSubCategory 3DBONES",Desc="With ShowDebug Bones Toggles bone rendering between single lines and a more complex 3D model per bone")
-Windows.Input:/Script/EngineSettings.ConsoleSettings:ManualAutoCompleteList:103=(Command="ShowDebugToggleSubCategory SYNCGROUPS",Desc="With ShowDebug Animation Toggles display of sync group data")
-Windows.Input:/Script/EngineSettings.ConsoleSettings:ManualAutoCompleteList:104=(Command="ShowDebugToggleSubCategory MONTAGES",Desc="With ShowDebug Animation Toggles display of montage data")
-Windows.Input:/Script/EngineSettings.ConsoleSettings:ManualAutoCompleteList:105=(Command="ShowDebugToggleSubCategory GRAPH",Desc="With ShowDebug Animation Toggles display of animation blueprint graph")
-Windows.Input:/Script/EngineSettings.ConsoleSettings:ManualAutoCompleteList:106=(Command="ShowDebugToggleSubCategory CURVES",Desc="With ShowDebug Animation Toggles display of curve data")
-Windows.Input:/Script/EngineSettings.ConsoleSettings:ManualAutoCompleteList:107=(Command="ShowDebugToggleSubCategory NOTIFIES",Desc="With ShowDebug Animation Toggles display of notify data")
-Windows.Input:/Script/EngineSettings.ConsoleSettings:ManualAutoCompleteList:108=(Command="ShowDebugToggleSubCategory FULLGRAPH",Desc="With ShowDebug Animation Toggles graph display between active nodes only and all nodes")
-Windows.Input:/Script/EngineSettings.ConsoleSettings:ManualAutoCompleteList:109=(Command="ShowDebugToggleSubCategory FULLBLENDSPACEDISPLAY",Desc="With ShowDebug Animation Toggles display of sample blend weights on blendspaces")
-Windows.Input:/Script/EngineSettings.ConsoleSettings:ManualAutoCompleteList:110=(Command="ShowDebugForReticleTargetToggle ",Desc="<DesiredClass> Toggles 'ShowDebug' from showing debug info between reticle target actor (of subclass <DesiredClass>) and camera view target")
-Windows.Input:/Script/EngineSettings.ConsoleSettings:ManualAutoCompleteList:111=(Command="Stat SOUNDMIXES",Desc="Shows active SoundMixes")
-Windows.Input:/Script/EngineSettings.ConsoleSettings:ManualAutoCompleteList:112=(Command="Stat SOUNDWAVES",Desc="Shows active SoundWaves")
-Windows.Input:/Script/EngineSettings.ConsoleSettings:ManualAutoCompleteList:113=(Command="Stat SOUNDCUES",Desc="Shows active SoundCues")
-Windows.Input:/Script/EngineSettings.ConsoleSettings:ManualAutoCompleteList:114=(Command="Stat SOUNDS",Desc="<?> <sort=distance|class|name|waves|default> <-debug> <off> Shows active SoundCues and SoundWaves")
-Windows.Input:/Script/EngineSettings.ConsoleSettings:ManualAutoCompleteList:115=(Command="StartMovieCapture",Desc=)
-Windows.Input:/Script/EngineSettings.ConsoleSettings:ManualAutoCompleteList:116=(Command="StopMovieCapture",Desc=)
-Windows.Input:/Script/EngineSettings.ConsoleSettings:ManualAutoCompleteList:117=(Command="TraceTag",Desc="Draw traces that use the specified tag")
-Windows.Input:/Script/EngineSettings.ConsoleSettings:ManualAutoCompleteList:118=(Command="TraceTagAll",Desc="Draw all scene queries regardless of the trace tag")
-Windows.Input:/Script/EngineSettings.ConsoleSettings:ManualAutoCompleteList:119=(Command="VisLog",Desc="Launches Log Visualizer tool")
-Windows.Input:/Script/EngineSettings.ConsoleSettings:ManualAutoCompleteList:120=(Command="CycleNavDrawn",Desc="Cycles through navigation data (navmeshes for example) to draw one at a time")
-Windows.Input:/Script/EngineSettings.ConsoleSettings:ManualAutoCompleteList:121=(Command="Log ",Desc="<category> <level> Change verbosity level for a log category")
-Windows.Input:/Script/EngineSettings.ConsoleSettings:ManualAutoCompleteList:122=(Command="Log list",Desc="<search string> Search for log categories")
-Windows.Input:/Script/EngineSettings.ConsoleSettings:ManualAutoCompleteList:123=(Command="Log reset",Desc="Undo any changes to log verbosity")
-Windows.Input:/Script/EngineSettings.ConsoleSettings:ManualAutoCompleteList:124=(Command="RecordAnimation ActorName AnimName",Desc="Record animation for a specified actor to the specified file")
-Windows.Input:/Script/EngineSettings.ConsoleSettings:ManualAutoCompleteList:125=(Command="StopRecordingAnimation All",Desc="Stop all recording animations")
-Windows.Input:/Script/EngineSettings.ConsoleSettings:ManualAutoCompleteList:126=(Command="RecordSequence Filter ActorOrClassName",Desc="Record a level sequence from gameplay. Filter=<All|Actor|Class>")
-Windows.Input:/Script/EngineSettings.ConsoleSettings:ManualAutoCompleteList:127=(Command="StopRecordingSequence",Desc="Stop recording the current sequence. Only one sequence recording can be active at one time.")
-Windows.Input:/Script/EngineSettings.ConsoleSettings:ManualAutoCompleteList:128=(Command="FreezeRendering",Desc="Toggle freezing of most aspects of rendering (such as visibility calculations), useful in conjunction with ToggleDebugCamera to fly around and see how frustum and occlusion culling is working")
-Windows.Input:/Script/EngineSettings.ConsoleSettings:ManualAutoCompleteList:129=(Command="ProfileGPU",Desc="Profile one frame of rendering commands sent to the GPU")
-Windows.Input:/Script/EngineSettings.ConsoleSettings:ManualAutoCompleteList:130=(Command="Automation",Desc="Run an automation command (e.g., Automation RunTests TestName)")
-Windows.Input:/Script/EngineSettings.ConsoleSettings:BackgroundOpacityPercentage:0=85.000000
-Windows.Input:/Script/EngineSettings.ConsoleSettings:InputColor:0=(R=230,G=230,B=230,A=255)
-Windows.Input:/Script/EngineSettings.ConsoleSettings:HistoryColor:0=(R=180,G=180,B=180,A=255)
-Windows.Input:/Script/EngineSettings.ConsoleSettings:AutoCompleteCommandColor:0=(B=185,G=109,R=144,A=255)
-Windows.Input:/Script/EngineSettings.ConsoleSettings:AutoCompleteCVarColor:0=(B=86,G=158,R=86,A=255)
-Windows.Input:/Script/EngineSettings.ConsoleSettings:AutoCompleteFadedColor:0=(R=100,G=100,B=100,A=255)
 Windows.Compat:AppCompat:CPUScore1:0=1000
 Windows.Compat:AppCompat:CPUScore2:0=720
 Windows.Compat:AppCompat:CPUScore3:0=630

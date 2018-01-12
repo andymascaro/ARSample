@@ -239,8 +239,8 @@ cookeddata/arsample/content/blueprints/tanks/ponground.uasset
 cookeddata/arsample/content/blueprints/tanks/ponground.uexp
 cookeddata/arsample/content/blueprints/tanks/round.uasset
 cookeddata/arsample/content/blueprints/tanks/round.uexp
-cookeddata/arsample/content/blueprints/tanks/serviceisatlocation.uasset
-cookeddata/arsample/content/blueprints/tanks/serviceisatlocation.uexp
+cookeddata/arsample/content/blueprints/tanks/serviceisanextdestination.uasset
+cookeddata/arsample/content/blueprints/tanks/serviceisanextdestination.uexp
 cookeddata/arsample/content/blueprints/tanks/shellmaterial.uasset
 cookeddata/arsample/content/blueprints/tanks/shellmaterial.uexp
 cookeddata/arsample/content/blueprints/tanks/shellround.uasset
@@ -264,6 +264,8 @@ cookeddata/arsample/content/blueprints/tanks/tank_skeleton_1_physicsasset.uasset
 cookeddata/arsample/content/blueprints/tanks/tank_skeleton_1_physicsasset.uexp
 cookeddata/arsample/content/blueprints/tanks/tank_skeleton_1_skeleton.uasset
 cookeddata/arsample/content/blueprints/tanks/tank_skeleton_1_skeleton.uexp
+cookeddata/arsample/content/blueprints/tanks/taskclearfocus.uasset
+cookeddata/arsample/content/blueprints/tanks/taskclearfocus.uexp
 cookeddata/arsample/content/blueprints/tanks/taskgetnextloc.uasset
 cookeddata/arsample/content/blueprints/tanks/taskgetnextloc.uexp
 cookeddata/arsample/content/blueprints/tanks/taskmovetofastex.uasset
@@ -495,6 +497,8 @@ cookeddata/engine/content/editormaterials/widgetvertexcolormaterial.uasset
 cookeddata/engine/content/editormaterials/widgetvertexcolormaterial.uexp
 cookeddata/engine/content/editormaterials/assetviewer/epicquadpanorama_cc+ev1.uasset
 cookeddata/engine/content/editormaterials/assetviewer/epicquadpanorama_cc+ev1.uexp
+cookeddata/engine/content/editormaterials/assetviewer/m_skybox.uasset
+cookeddata/engine/content/editormaterials/assetviewer/m_skybox.uexp
 cookeddata/engine/content/editormaterials/camera/cinemat.uasset
 cookeddata/engine/content/editormaterials/camera/cinemat.uexp
 cookeddata/engine/content/editormaterials/camera/mi_cinemat_camerabody.uasset
@@ -553,6 +557,10 @@ cookeddata/engine/content/editormeshes/matineecam_sm.uasset
 cookeddata/engine/content/editormeshes/matineecam_sm.uexp
 cookeddata/engine/content/editormeshes/phat_floorbox.uasset
 cookeddata/engine/content/editormeshes/phat_floorbox.uexp
+cookeddata/engine/content/editormeshes/assetviewer/floor_mesh.uasset
+cookeddata/engine/content/editormeshes/assetviewer/floor_mesh.uexp
+cookeddata/engine/content/editormeshes/assetviewer/sphere_inversenormals.uasset
+cookeddata/engine/content/editormeshes/assetviewer/sphere_inversenormals.uexp
 cookeddata/engine/content/editormeshes/camera/sm_cinecam.uasset
 cookeddata/engine/content/editormeshes/camera/sm_cinecam.uexp
 cookeddata/engine/content/editormeshes/camera/sm_cranerig_arm.uasset
@@ -955,6 +963,8 @@ cookeddata/engine/content/maps/templates/thumbnails/vr-basic.uasset
 cookeddata/engine/content/maps/templates/thumbnails/vr-basic.uexp
 cookeddata/engine/content/maptemplates/sky/daylightambientcubemap.uasset
 cookeddata/engine/content/maptemplates/sky/daylightambientcubemap.uexp
+cookeddata/engine/content/maptemplates/sky/sunsetambientcubemap.uasset
+cookeddata/engine/content/maptemplates/sky/sunsetambientcubemap.uexp
 cookeddata/engine/content/mobileresources/t_mobilecontrols_texture.uasset
 cookeddata/engine/content/mobileresources/t_mobilecontrols_texture.uexp
 cookeddata/engine/content/mobileresources/t_mobilemenu2.uasset

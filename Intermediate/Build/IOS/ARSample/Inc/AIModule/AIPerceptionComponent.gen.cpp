@@ -29,6 +29,8 @@ void EmptyLinkFunctionForGeneratedCodeAIPerceptionComponent() {}
 	AIMODULE_API UFunction* Z_Construct_UFunction_UAIPerceptionComponent_GetKnownPerceivedActors();
 	AIMODULE_API UFunction* Z_Construct_UFunction_UAIPerceptionComponent_GetPerceivedActors();
 	AIMODULE_API UFunction* Z_Construct_UFunction_UAIPerceptionComponent_GetPerceivedHostileActors();
+	AIMODULE_API UFunction* Z_Construct_UFunction_UAIPerceptionComponent_GetSightConfig();
+	AIMODULE_API UClass* Z_Construct_UClass_UAISenseConfig_Sight_NoRegister();
 	AIMODULE_API UFunction* Z_Construct_UFunction_UAIPerceptionComponent_OnOwnerEndPlay();
 	ENGINE_API UEnum* Z_Construct_UEnum_Engine_EEndPlayReason();
 	AIMODULE_API UFunction* Z_Construct_UFunction_UAIPerceptionComponent_RequestStimuliListenerUpdate();
@@ -179,6 +181,7 @@ static struct FScriptStruct_AIModule_StaticRegisterNativesFActorPerceptionBluepr
 			{ "GetKnownPerceivedActors", (Native)&UAIPerceptionComponent::execGetKnownPerceivedActors },
 			{ "GetPerceivedActors", (Native)&UAIPerceptionComponent::execGetPerceivedActors },
 			{ "GetPerceivedHostileActors", (Native)&UAIPerceptionComponent::execGetPerceivedHostileActors },
+			{ "GetSightConfig", (Native)&UAIPerceptionComponent::execGetSightConfig },
 			{ "OnOwnerEndPlay", (Native)&UAIPerceptionComponent::execOnOwnerEndPlay },
 			{ "RequestStimuliListenerUpdate", (Native)&UAIPerceptionComponent::execRequestStimuliListenerUpdate },
 			{ "SetSenseEnabled", (Native)&UAIPerceptionComponent::execSetSenseEnabled },
@@ -333,6 +336,30 @@ static struct FScriptStruct_AIModule_StaticRegisterNativesFActorPerceptionBluepr
 		}
 		return ReturnFunction;
 	}
+	UFunction* Z_Construct_UFunction_UAIPerceptionComponent_GetSightConfig()
+	{
+		struct AIPerceptionComponent_eventGetSightConfig_Parms
+		{
+			UAISenseConfig_Sight* ReturnValue;
+		};
+		static UFunction* ReturnFunction = nullptr;
+		if (!ReturnFunction)
+		{
+			static const UE4CodeGen_Private::FObjectPropertyParams NewProp_ReturnValue = { UE4CodeGen_Private::EPropertyClass::Object, "ReturnValue", RF_Public|RF_Transient|RF_MarkAsNative, 0x0010000000000580, 1, nullptr, STRUCT_OFFSET(AIPerceptionComponent_eventGetSightConfig_Parms, ReturnValue), Z_Construct_UClass_UAISenseConfig_Sight_NoRegister, METADATA_PARAMS(nullptr, 0) };
+			static const UE4CodeGen_Private::FPropertyParamsBase* const PropPointers[] = {
+				(const UE4CodeGen_Private::FPropertyParamsBase*)&NewProp_ReturnValue,
+			};
+#if WITH_METADATA
+			static const UE4CodeGen_Private::FMetaDataPairParam Function_MetaDataParams[] = {
+				{ "Category", "AI|Perception" },
+				{ "ModuleRelativePath", "Classes/Perception/AIPerceptionComponent.h" },
+			};
+#endif
+			static const UE4CodeGen_Private::FFunctionParams FuncParams = { (UObject*(*)())Z_Construct_UClass_UAIPerceptionComponent, "GetSightConfig", RF_Public|RF_Transient|RF_MarkAsNative, nullptr, (EFunctionFlags)0x04020401, sizeof(AIPerceptionComponent_eventGetSightConfig_Parms), PropPointers, ARRAY_COUNT(PropPointers), 0, 0, METADATA_PARAMS(Function_MetaDataParams, ARRAY_COUNT(Function_MetaDataParams)) };
+			UE4CodeGen_Private::ConstructUFunction(ReturnFunction, FuncParams);
+		}
+		return ReturnFunction;
+	}
 	UFunction* Z_Construct_UFunction_UAIPerceptionComponent_OnOwnerEndPlay()
 	{
 		struct AIPerceptionComponent_eventOnOwnerEndPlay_Parms
@@ -429,6 +456,7 @@ static struct FScriptStruct_AIModule_StaticRegisterNativesFActorPerceptionBluepr
 				{ &Z_Construct_UFunction_UAIPerceptionComponent_GetKnownPerceivedActors, "GetKnownPerceivedActors" }, // 3787441356
 				{ &Z_Construct_UFunction_UAIPerceptionComponent_GetPerceivedActors, "GetPerceivedActors" }, // 817002608
 				{ &Z_Construct_UFunction_UAIPerceptionComponent_GetPerceivedHostileActors, "GetPerceivedHostileActors" }, // 3172769743
+				{ &Z_Construct_UFunction_UAIPerceptionComponent_GetSightConfig, "GetSightConfig" }, // 2941579799
 				{ &Z_Construct_UFunction_UAIPerceptionComponent_OnOwnerEndPlay, "OnOwnerEndPlay" }, // 3467293444
 				{ &Z_Construct_UFunction_UAIPerceptionComponent_RequestStimuliListenerUpdate, "RequestStimuliListenerUpdate" }, // 2966608883
 				{ &Z_Construct_UFunction_UAIPerceptionComponent_SetSenseEnabled, "SetSenseEnabled" }, // 3232300496
@@ -512,7 +540,7 @@ static struct FScriptStruct_AIModule_StaticRegisterNativesFActorPerceptionBluepr
 		}
 		return OuterClass;
 	}
-	IMPLEMENT_CLASS(UAIPerceptionComponent, 1196463074);
+	IMPLEMENT_CLASS(UAIPerceptionComponent, 2845969928);
 	static FCompiledInDefer Z_CompiledInDefer_UClass_UAIPerceptionComponent(Z_Construct_UClass_UAIPerceptionComponent, &UAIPerceptionComponent::StaticClass, TEXT("/Script/AIModule"), TEXT("UAIPerceptionComponent"), false, nullptr, nullptr, nullptr);
 	DEFINE_VTABLE_PTR_HELPER_CTOR(UAIPerceptionComponent);
 PRAGMA_ENABLE_DEPRECATION_WARNINGS

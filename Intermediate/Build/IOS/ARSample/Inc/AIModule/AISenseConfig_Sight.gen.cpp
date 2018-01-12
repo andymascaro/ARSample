@@ -83,7 +83,7 @@ void EmptyLinkFunctionForGeneratedCodeAISenseConfig_Sight() {}
 				{ "UIMin", "0.000000" },
 			};
 #endif
-			static const UE4CodeGen_Private::FFloatPropertyParams NewProp_LoseSightRadius = { UE4CodeGen_Private::EPropertyClass::Float, "LoseSightRadius", RF_Public|RF_Transient|RF_MarkAsNative, 0x0010000000014015, 1, nullptr, STRUCT_OFFSET(UAISenseConfig_Sight, LoseSightRadius), METADATA_PARAMS(NewProp_LoseSightRadius_MetaData, ARRAY_COUNT(NewProp_LoseSightRadius_MetaData)) };
+			static const UE4CodeGen_Private::FFloatPropertyParams NewProp_LoseSightRadius = { UE4CodeGen_Private::EPropertyClass::Float, "LoseSightRadius", RF_Public|RF_Transient|RF_MarkAsNative, 0x0010000000004005, 1, nullptr, STRUCT_OFFSET(UAISenseConfig_Sight, LoseSightRadius), METADATA_PARAMS(NewProp_LoseSightRadius_MetaData, ARRAY_COUNT(NewProp_LoseSightRadius_MetaData)) };
 #if WITH_METADATA
 			static const UE4CodeGen_Private::FMetaDataPairParam NewProp_SightRadius_MetaData[] = {
 				{ "Category", "Sense" },
@@ -93,7 +93,7 @@ void EmptyLinkFunctionForGeneratedCodeAISenseConfig_Sight() {}
 				{ "UIMin", "0.000000" },
 			};
 #endif
-			static const UE4CodeGen_Private::FFloatPropertyParams NewProp_SightRadius = { UE4CodeGen_Private::EPropertyClass::Float, "SightRadius", RF_Public|RF_Transient|RF_MarkAsNative, 0x0010000000014015, 1, nullptr, STRUCT_OFFSET(UAISenseConfig_Sight, SightRadius), METADATA_PARAMS(NewProp_SightRadius_MetaData, ARRAY_COUNT(NewProp_SightRadius_MetaData)) };
+			static const UE4CodeGen_Private::FFloatPropertyParams NewProp_SightRadius = { UE4CodeGen_Private::EPropertyClass::Float, "SightRadius", RF_Public|RF_Transient|RF_MarkAsNative, 0x0010000000004005, 1, nullptr, STRUCT_OFFSET(UAISenseConfig_Sight, SightRadius), METADATA_PARAMS(NewProp_SightRadius_MetaData, ARRAY_COUNT(NewProp_SightRadius_MetaData)) };
 #if WITH_METADATA
 			static const UE4CodeGen_Private::FMetaDataPairParam NewProp_Implementation_MetaData[] = {
 				{ "Category", "Sense" },
@@ -127,7 +127,7 @@ void EmptyLinkFunctionForGeneratedCodeAISenseConfig_Sight() {}
 		}
 		return OuterClass;
 	}
-	IMPLEMENT_CLASS(UAISenseConfig_Sight, 1489231655);
+	IMPLEMENT_CLASS(UAISenseConfig_Sight, 2252977056);
 	static FCompiledInDefer Z_CompiledInDefer_UClass_UAISenseConfig_Sight(Z_Construct_UClass_UAISenseConfig_Sight, &UAISenseConfig_Sight::StaticClass, TEXT("/Script/AIModule"), TEXT("UAISenseConfig_Sight"), false, nullptr, nullptr, nullptr);
 	DEFINE_VTABLE_PTR_HELPER_CTOR(UAISenseConfig_Sight);
 PRAGMA_ENABLE_DEPRECATION_WARNINGS

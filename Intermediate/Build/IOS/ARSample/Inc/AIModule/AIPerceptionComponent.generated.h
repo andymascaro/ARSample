@@ -12,6 +12,7 @@ class AActor;
 struct FAIStimulus;
 class UAISense;
 struct FActorPerceptionBlueprintInfo;
+class UAISenseConfig_Sight;
 #ifdef AIMODULE_AIPerceptionComponent_generated_h
 #error "AIPerceptionComponent.generated.h already included, missing '#pragma once' in AIPerceptionComponent.h"
 #endif
@@ -119,6 +120,14 @@ static inline void FPerceptionUpdatedDelegate_DelegateWrapper(const FMulticastSc
 		P_NATIVE_END; \
 	} \
  \
+	DECLARE_FUNCTION(execGetSightConfig) \
+	{ \
+		P_FINISH; \
+		P_NATIVE_BEGIN; \
+		*(UAISenseConfig_Sight**)Z_Param__Result=this->GetSightConfig(); \
+		P_NATIVE_END; \
+	} \
+ \
 	DECLARE_FUNCTION(execOnOwnerEndPlay) \
 	{ \
 		P_GET_OBJECT(AActor,Z_Param_Actor); \
@@ -196,6 +205,14 @@ static inline void FPerceptionUpdatedDelegate_DelegateWrapper(const FMulticastSc
 		P_FINISH; \
 		P_NATIVE_BEGIN; \
 		this->RequestStimuliListenerUpdate(); \
+		P_NATIVE_END; \
+	} \
+ \
+	DECLARE_FUNCTION(execGetSightConfig) \
+	{ \
+		P_FINISH; \
+		P_NATIVE_BEGIN; \
+		*(UAISenseConfig_Sight**)Z_Param__Result=this->GetSightConfig(); \
 		P_NATIVE_END; \
 	} \
  \

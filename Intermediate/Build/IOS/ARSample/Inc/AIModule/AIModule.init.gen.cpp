@@ -37,8 +37,8 @@ void EmptyLinkFunctionForGeneratedCodeAIModule_init() {}
 			static const UE4CodeGen_Private::FPackageParams PackageParams = {
 				"/Script/AIModule",
 				PKG_CompiledIn | 0x00000000,
-				0x07399371,
-				0x9769353A,
+				0x4B9D1422,
+				0x690E0C63,
 				SingletonFuncArray, ARRAY_COUNT(SingletonFuncArray),
 				METADATA_PARAMS(nullptr, 0)
 			};

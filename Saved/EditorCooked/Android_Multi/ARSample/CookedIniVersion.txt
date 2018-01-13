@@ -183,6 +183,64 @@ Windows.Engine:WebSockets.LibWebSockets:ThreadMinimumSleepTimeInSeconds:0=0.0
 Windows.Engine:Ping:StackSize:0=1048576
 Windows.Engine:Voice:bEnabled:0=false
 Windows.Engine:Voice:bDuckingOptOut:0=true
+Windows.Engine:/Script/Engine.Engine:bAllowMatureLanguage:0=false
+Windows.Engine:/Script/Engine.Engine:GameEngine:0=/Script/Engine.GameEngine
+Windows.Engine:/Script/Engine.Engine:EditorEngine:0=/Script/UnrealEd.EditorEngine
+Windows.Engine:/Script/Engine.Engine:UnrealEdEngine:0=/Script/UnrealEd.UnrealEdEngine
+Windows.Engine:/Script/Engine.Engine:DefaultMaterialName:0=/Engine/EngineMaterials/WorldGridMaterial.WorldGridMaterial
+Windows.Engine:/Script/Engine.Engine:DefaultLightFunctionMaterialName:0=/Engine/EngineMaterials/DefaultLightFunctionMaterial.DefaultLightFunctionMaterial
+Windows.Engine:/Script/Engine.Engine:DefaultDeferredDecalMaterialName:0=/Engine/EngineMaterials/DefaultDeferredDecalMaterial.DefaultDeferredDecalMaterial
+Windows.Engine:/Script/Engine.Engine:DefaultPostProcessMaterialName:0=/Engine/EngineMaterials/DefaultPostProcessMaterial.DefaultPostProcessMaterial
+Windows.Engine:/Script/Engine.Engine:TextureStreamingBoundsMaterialName:0=/Engine/EditorMaterials/Utilities/TextureStreamingBounds_MATInst.TextureStreamingBounds_MATInst
+Windows.Engine:/Script/Engine.Engine:bAllowHostMigration:0=false
+Windows.Engine:/Script/Engine.Engine:HostMigrationTimeout:0=15
+Windows.Engine:/Script/Engine.Engine:bSubtitlesEnabled:0=True
+Windows.Engine:/Script/Engine.Engine:bSubtitlesForcedOff:0=false
+Windows.Engine:/Script/Engine.Engine:DefaultSoundName:0=/Engine/EngineSounds/WhiteNoise.WhiteNoise
+Windows.Engine:/Script/Engine.Engine:MaximumLoopIterationCount:0=1000000
+Windows.Engine:/Script/Engine.Engine:bCanBlueprintsTickByDefault:0=true
+Windows.Engine:/Script/Engine.Engine:bOptimizeAnimBlueprintMemberVariableAccess:0=true
+Windows.Engine:/Script/Engine.Engine:CameraRotationThreshold:0=45.0
+Windows.Engine:/Script/Engine.Engine:CameraTranslationThreshold:0=10000
+Windows.Engine:/Script/Engine.Engine:PrimitiveProbablyVisibleTime:0=8.0
+Windows.Engine:/Script/Engine.Engine:MaxOcclusionPixelsFraction:0=0.1
+Windows.Engine:/Script/Engine.Engine:bDisablePhysXHardwareSupport:0=True
+Windows.Engine:/Script/Engine.Engine:bPauseOnLossOfFocus:0=false
+Windows.Engine:/Script/Engine.Engine:MaxParticleResize:0=0
+Windows.Engine:/Script/Engine.Engine:MaxParticleResizeWarn:0=0
+Windows.Engine:/Script/Engine.Engine:DisplayGamma:0=2.2
+Windows.Engine:/Script/Engine.Engine:MinDesiredFrameRate:0=35.000000
+Windows.Engine:/Script/Engine.Engine:InitialButtonRepeatDelay:0=0.2
+Windows.Engine:/Script/Engine.Engine:ButtonRepeatDelay:0=0.1
+Windows.Engine:/Script/Engine.Engine:NetDriverDefinitions:0=(DefName="GameNetDriver",DriverClassName="/Script/OnlineSubsystemUtils.IpNetDriver",DriverClassNameFallback="/Script/OnlineSubsystemUtils.IpNetDriver")
+Windows.Engine:/Script/Engine.Engine:NetDriverDefinitions:1=(DefName="DemoNetDriver",DriverClassName="/Script/Engine.DemoNetDriver",DriverClassNameFallback="/Script/Engine.DemoNetDriver")
+Windows.Engine:/Script/Engine.Engine:SerializationOutOfBoundsErrorMessage:0=NSLOCTEXT("","SerializationOutOfBoundsErrorMessage","Corrupt data found, please verify your installation.")
+Windows.Engine:/Script/Engine.Engine:SerializationOutOfBoundsErrorMessageCaption:0=NSLOCTEXT("","SerializationOutOfBoundsErrorMessageCaption","Serialization Error  Action Needed")
+Windows.Engine:/Script/Engine.Engine:bSmoothFrameRate:0=true
+Windows.Engine:/Script/Engine.Engine:SmoothedFrameRateRange:0=(LowerBound=(Type="ERangeBoundTypesInclusive",Value=22),UpperBound=(Type="ERangeBoundTypesExclusive",Value=62))
+Windows.Engine:/Script/Engine.Engine:bCheckForMultiplePawnsSpawnedInAFrame:0=false
+Windows.Engine:/Script/Engine.Engine:NumPawnsAllowedToBeSpawnedInAFrame:0=2
+Windows.Engine:/Script/Engine.Engine:DurationOfErrorsAndWarningsOnHUD:0=0
+Windows.Engine:/Script/Engine.Engine:NearClipPlane:0=20.000000
+Windows.Engine:/Script/Engine.Engine:bUseStreamingPause:0=false
+Windows.Engine:/Script/Engine.Engine:MatineeTrackRedirects:0=(TargetClassName="/Script/Engine.CameraActor",OldFieldName="PostProcessSettings.EyeAdaptationLowPercent",NewFieldName="CameraComponent.PostProcessSettings.AutoExposureLowPercent")
+Windows.Engine:/Script/Engine.Engine:MatineeTrackRedirects:1=(TargetClassName="/Script/Engine.CameraActor",OldFieldName="PostProcessSettings.EyeAdaptationHighPercent",NewFieldName="CameraComponent.PostProcessSettings.AutoExposureHighPercent")
+Windows.Engine:/Script/Engine.Engine:MatineeTrackRedirects:2=(TargetClassName="/Script/Engine.CameraActor",OldFieldName="PostProcessSettings.EyeAdaptationMinBrightness",NewFieldName="CameraComponent.PostProcessSettings.AutoExposureMinBrightness")
+Windows.Engine:/Script/Engine.Engine:MatineeTrackRedirects:3=(TargetClassName="/Script/Engine.CameraActor",OldFieldName="PostProcessSettings.EyeAdaptationMaxBrightness",NewFieldName="CameraComponent.PostProcessSettings.AutoExposureMaxBrightness")
+Windows.Engine:/Script/Engine.Engine:MatineeTrackRedirects:4=(TargetClassName="/Script/Engine.CameraActor",OldFieldName="PostProcessSettings.EyeAdaptionSpeedDown",NewFieldName="CameraComponent.PostProcessSettings.AutoExposureSpeedDown")
+Windows.Engine:/Script/Engine.Engine:MatineeTrackRedirects:5=(TargetClassName="/Script/Engine.CameraActor",OldFieldName="PostProcessSettings.EyeAdaptionSpeedUp",NewFieldName="CameraComponent.PostProcessSettings.AutoExposureSpeedUp")
+Windows.Engine:/Script/Engine.Engine:MatineeTrackRedirects:6=(TargetClassName="/Script/Engine.CameraActor",OldFieldName="PostProcessSettings.ExposureOffset",NewFieldName="CameraComponent.PostProcessSettings.AutoExposureBias")
+Windows.Engine:/Script/Engine.Engine:MatineeTrackRedirects:7=(TargetClassName="/Script/Engine.PostprocessVolume",OldFieldName="Settings.EyeAdaptationLowPercent",NewFieldName="Settings.AutoExposureLowPercent")
+Windows.Engine:/Script/Engine.Engine:MatineeTrackRedirects:8=(TargetClassName="/Script/Engine.PostprocessVolume",OldFieldName="Settings.EyeAdaptationHighPercent",NewFieldName="Settings.AutoExposureHighPercent")
+Windows.Engine:/Script/Engine.Engine:MatineeTrackRedirects:9=(TargetClassName="/Script/Engine.PostprocessVolume",OldFieldName="Settings.EyeAdaptationMinBrightness",NewFieldName="Settings.AutoExposureMinBrightness")
+Windows.Engine:/Script/Engine.Engine:MatineeTrackRedirects:10=(TargetClassName="/Script/Engine.PostprocessVolume",OldFieldName="Settings.EyeAdaptationMaxBrightness",NewFieldName="Settings.AutoExposureMaxBrightness")
+Windows.Engine:/Script/Engine.Engine:MatineeTrackRedirects:11=(TargetClassName="/Script/Engine.PostprocessVolume",OldFieldName="Settings.EyeAdaptionSpeedDown",NewFieldName="Settings.AutoExposureSpeedDown")
+Windows.Engine:/Script/Engine.Engine:MatineeTrackRedirects:12=(TargetClassName="/Script/Engine.PostprocessVolume",OldFieldName="Settings.EyeAdaptionSpeedUp",NewFieldName="Settings.AutoExposureSpeedUp")
+Windows.Engine:/Script/Engine.Engine:MatineeTrackRedirects:13=(TargetClassName="/Script/Engine.PostprocessVolume",OldFieldName="Settings.ExposureOffset",NewFieldName="Settings.AutoExposureBias")
+Windows.Engine:/Script/Engine.Engine:MatineeTrackRedirects:14=(TargetClassName="/Script/Engine.CameraActor",OldFieldName="FOVAngle",NewFieldName="CameraComponent.FieldOfView")
+Windows.Engine:/Script/Engine.Engine:MatineeTrackRedirects:15=(TargetClassName="/Script/Engine.CameraActor",OldFieldName="AspectRatio",NewFieldName="CameraComponent.AspectRatio")
+Windows.Engine:/Script/Engine.Engine:MatineeTrackRedirects:16=(TargetClassName="/Script/Engine.CameraActor",OldFieldName="bConstrainAspectRatio",NewFieldName="CameraComponent.bConstrainAspectRatio")
+Windows.Engine:/Script/Engine.Engine:MatineeTrackRedirects:17=(TargetClassName="/Script/Engine.CameraActor",OldFieldName="PostProcessSettings.",NewFieldName="CameraComponent.PostProcessSettings.")
 Windows.Engine:/Script/Engine.Engine:ConsoleClassName:0=/Script/Engine.Console
 Windows.Engine:/Script/Engine.Engine:GameViewportClientClassName:0=/Script/Engine.GameViewportClient
 Windows.Engine:/Script/Engine.Engine:LocalPlayerClassName:0=/Script/Engine.LocalPlayer
@@ -195,18 +253,12 @@ Windows.Engine:/Script/Engine.Engine:DefaultBlueprintBaseClassName:0=/Script/Eng
 Windows.Engine:/Script/Engine.Engine:GameUserSettingsClassName:0=/Script/Engine.GameUserSettings
 Windows.Engine:/Script/Engine.Engine:AIControllerClassName:0=/Script/AIModule.AIController
 Windows.Engine:/Script/Engine.Engine:AssetManagerClassName:0=/Script/Engine.AssetManager
-Windows.Engine:/Script/Engine.Engine:bAllowMatureLanguage:0=false
-Windows.Engine:/Script/Engine.Engine:GameEngine:0=/Script/Engine.GameEngine
-Windows.Engine:/Script/Engine.Engine:EditorEngine:0=/Script/UnrealEd.EditorEngine
-Windows.Engine:/Script/Engine.Engine:UnrealEdEngine:0=/Script/UnrealEd.UnrealEdEngine
 Windows.Engine:/Script/Engine.Engine:TinyFontName:0=/Engine/EngineFonts/RobotoTiny.RobotoTiny
 Windows.Engine:/Script/Engine.Engine:SmallFontName:0=/Engine/EngineFonts/Roboto.Roboto
 Windows.Engine:/Script/Engine.Engine:MediumFontName:0=/Engine/EngineFonts/Roboto.Roboto
 Windows.Engine:/Script/Engine.Engine:LargeFontName:0=/Engine/EngineFonts/Roboto.Roboto
 Windows.Engine:/Script/Engine.Engine:SubtitleFontName:0=/Engine/EngineFonts/Roboto.Roboto
 Windows.Engine:/Script/Engine.Engine:WireframeMaterialName:0=/Engine/EngineDebugMaterials/WireframeMaterial.WireframeMaterial
-Windows.Engine:/Script/Engine.Engine:DefaultMaterialName:0=/Engine/EngineMaterials/WorldGridMaterial.WorldGridMaterial
-Windows.Engine:/Script/Engine.Engine:DefaultLightFunctionMaterialName:0=/Engine/EngineMaterials/DefaultLightFunctionMaterial.DefaultLightFunctionMaterial
 Windows.Engine:/Script/Engine.Engine:DefaultTextureName:0=/Engine/EngineResources/DefaultTexture.DefaultTexture
 Windows.Engine:/Script/Engine.Engine:DefaultDiffuseTextureName:0=/Engine/EngineMaterials/DefaultDiffuse.DefaultDiffuse
 Windows.Engine:/Script/Engine.Engine:DefaultBSPVertexTextureName:0=/Engine/EditorResources/BSPVertex.BSPVertex
@@ -239,12 +291,7 @@ Windows.Engine:/Script/Engine.Engine:InvalidLightmapSettingsMaterialName:0=/Engi
 Windows.Engine:/Script/Engine.Engine:PreviewShadowsIndicatorMaterialName:0=/Engine/EditorMaterials/PreviewShadowIndicatorMaterial.PreviewShadowIndicatorMaterial
 Windows.Engine:/Script/Engine.Engine:EditorBrushMaterialName:0=/Engine/EngineMaterials/EditorBrushMaterial.EditorBrushMaterial
 Windows.Engine:/Script/Engine.Engine:DefaultPhysMaterialName:0=/Engine/EngineMaterials/DefaultPhysicalMaterial.DefaultPhysicalMaterial
-Windows.Engine:/Script/Engine.Engine:DefaultDeferredDecalMaterialName:0=/Engine/EngineMaterials/DefaultDeferredDecalMaterial.DefaultDeferredDecalMaterial
-Windows.Engine:/Script/Engine.Engine:DefaultPostProcessMaterialName:0=/Engine/EngineMaterials/DefaultPostProcessMaterial.DefaultPostProcessMaterial
-Windows.Engine:/Script/Engine.Engine:TextureStreamingBoundsMaterialName:0=/Engine/EditorMaterials/Utilities/TextureStreamingBounds_MATInst.TextureStreamingBounds_MATInst
 Windows.Engine:/Script/Engine.Engine:ArrowMaterialName:0=/Engine/EditorMaterials/GizmoMaterial.GizmoMaterial
-Windows.Engine:/Script/Engine.Engine:bAllowHostMigration:0=false
-Windows.Engine:/Script/Engine.Engine:HostMigrationTimeout:0=15
 Windows.Engine:/Script/Engine.Engine:ParticleEventManagerClassPath:0=/Script/Engine.ParticleEventManager
 Windows.Engine:/Script/Engine.Engine:LightingOnlyBrightness:0=(R=0.3,G=0.3,B=0.3,A=1.0)
 Windows.Engine:/Script/Engine.Engine:ShaderComplexityColors:0=(R=0.0,G=1.0,B=0.127,A=1.0)
@@ -309,16 +356,6 @@ Windows.Engine:/Script/Engine.Engine:HLODColorationColors:5=(R=0.0,G=1.0,B=1.0,A
 Windows.Engine:/Script/Engine.Engine:HLODColorationColors:6=(R=0.5,G=0.5,B=0.5,A=1.0) ; grey
 Windows.Engine:/Script/Engine.Engine:MaxPixelShaderAdditiveComplexityCount:0=2000
 Windows.Engine:/Script/Engine.Engine:MaxES2PixelShaderAdditiveComplexityCount:0=600
-Windows.Engine:/Script/Engine.Engine:bSubtitlesEnabled:0=True
-Windows.Engine:/Script/Engine.Engine:bSubtitlesForcedOff:0=false
-Windows.Engine:/Script/Engine.Engine:DefaultSoundName:0=/Engine/EngineSounds/WhiteNoise.WhiteNoise
-Windows.Engine:/Script/Engine.Engine:MaximumLoopIterationCount:0=1000000
-Windows.Engine:/Script/Engine.Engine:bCanBlueprintsTickByDefault:0=true
-Windows.Engine:/Script/Engine.Engine:bOptimizeAnimBlueprintMemberVariableAccess:0=true
-Windows.Engine:/Script/Engine.Engine:CameraRotationThreshold:0=45.0
-Windows.Engine:/Script/Engine.Engine:CameraTranslationThreshold:0=10000
-Windows.Engine:/Script/Engine.Engine:PrimitiveProbablyVisibleTime:0=8.0
-Windows.Engine:/Script/Engine.Engine:MaxOcclusionPixelsFraction:0=0.1
 Windows.Engine:/Script/Engine.Engine:MinLightMapDensity:0=0.0
 Windows.Engine:/Script/Engine.Engine:IdealLightMapDensity:0=0.2
 Windows.Engine:/Script/Engine.Engine:MaxLightMapDensity:0=0.8
@@ -327,49 +364,12 @@ Windows.Engine:/Script/Engine.Engine:RenderLightMapDensityColorScale:0=1.0
 Windows.Engine:/Script/Engine.Engine:bRenderLightMapDensityGrayscale:0=false
 Windows.Engine:/Script/Engine.Engine:LightMapDensityVertexMappedColor:0=(R=0.65,G=0.65,B=0.25,A=1.0)
 Windows.Engine:/Script/Engine.Engine:LightMapDensitySelectedColor:0=(R=1.0,G=0.2,B=1.0,A=1.0)
-Windows.Engine:/Script/Engine.Engine:bDisablePhysXHardwareSupport:0=True
-Windows.Engine:/Script/Engine.Engine:bPauseOnLossOfFocus:0=false
-Windows.Engine:/Script/Engine.Engine:MaxParticleResize:0=0
-Windows.Engine:/Script/Engine.Engine:MaxParticleResizeWarn:0=0
 Windows.Engine:/Script/Engine.Engine:NetClientTicksPerSecond:0=200
 Windows.Engine:/Script/Engine.Engine:StatColorMappings:0=(StatName="AverageFPS",ColorMap=((In=15.0,Out=(R=255)),(In=30,Out=(R=255,G=255)),(In=45.0,Out=(G=255))))
 Windows.Engine:/Script/Engine.Engine:StatColorMappings:1=(StatName="Frametime",ColorMap=((In=1.0,Out=(G=255)),(In=25.0,Out=(G=255)),(In=29.0,Out=(R=255,G=255)),(In=33.0,Out=(R=255))))
 Windows.Engine:/Script/Engine.Engine:StatColorMappings:2=(StatName="Streaming fudge factor",ColorMap=((In=0.0,Out=(G=255)),(In=1.0,Out=(G=255)),(In=2.5,Out=(R=255,G=255)),(In=5.0,Out=(R=255)),(In=10.0,Out=(R=255))))
-Windows.Engine:/Script/Engine.Engine:DisplayGamma:0=2.2
-Windows.Engine:/Script/Engine.Engine:MinDesiredFrameRate:0=35.000000
-Windows.Engine:/Script/Engine.Engine:InitialButtonRepeatDelay:0=0.2
-Windows.Engine:/Script/Engine.Engine:ButtonRepeatDelay:0=0.1
-Windows.Engine:/Script/Engine.Engine:NetDriverDefinitions:0=(DefName="GameNetDriver",DriverClassName="/Script/OnlineSubsystemUtils.IpNetDriver",DriverClassNameFallback="/Script/OnlineSubsystemUtils.IpNetDriver")
-Windows.Engine:/Script/Engine.Engine:NetDriverDefinitions:1=(DefName="DemoNetDriver",DriverClassName="/Script/Engine.DemoNetDriver",DriverClassNameFallback="/Script/Engine.DemoNetDriver")
-Windows.Engine:/Script/Engine.Engine:SerializationOutOfBoundsErrorMessage:0=NSLOCTEXT("","SerializationOutOfBoundsErrorMessage","Corrupt data found, please verify your installation.")
-Windows.Engine:/Script/Engine.Engine:SerializationOutOfBoundsErrorMessageCaption:0=NSLOCTEXT("","SerializationOutOfBoundsErrorMessageCaption","Serialization Error  Action Needed")
-Windows.Engine:/Script/Engine.Engine:bSmoothFrameRate:0=true
-Windows.Engine:/Script/Engine.Engine:SmoothedFrameRateRange:0=(LowerBound=(Type="ERangeBoundTypesInclusive",Value=22),UpperBound=(Type="ERangeBoundTypesExclusive",Value=62))
-Windows.Engine:/Script/Engine.Engine:bCheckForMultiplePawnsSpawnedInAFrame:0=false
-Windows.Engine:/Script/Engine.Engine:NumPawnsAllowedToBeSpawnedInAFrame:0=2
 Windows.Engine:/Script/Engine.Engine:DefaultSelectedMaterialColor:0=(R=0.84,G=0.92,B=0.02,A=1.0)
 Windows.Engine:/Script/Engine.Engine:bEnableOnScreenDebugMessages:0=true
-Windows.Engine:/Script/Engine.Engine:DurationOfErrorsAndWarningsOnHUD:0=0
-Windows.Engine:/Script/Engine.Engine:NearClipPlane:0=20.000000
-Windows.Engine:/Script/Engine.Engine:bUseStreamingPause:0=false
-Windows.Engine:/Script/Engine.Engine:MatineeTrackRedirects:0=(TargetClassName="/Script/Engine.CameraActor",OldFieldName="PostProcessSettings.EyeAdaptationLowPercent",NewFieldName="CameraComponent.PostProcessSettings.AutoExposureLowPercent")
-Windows.Engine:/Script/Engine.Engine:MatineeTrackRedirects:1=(TargetClassName="/Script/Engine.CameraActor",OldFieldName="PostProcessSettings.EyeAdaptationHighPercent",NewFieldName="CameraComponent.PostProcessSettings.AutoExposureHighPercent")
-Windows.Engine:/Script/Engine.Engine:MatineeTrackRedirects:2=(TargetClassName="/Script/Engine.CameraActor",OldFieldName="PostProcessSettings.EyeAdaptationMinBrightness",NewFieldName="CameraComponent.PostProcessSettings.AutoExposureMinBrightness")
-Windows.Engine:/Script/Engine.Engine:MatineeTrackRedirects:3=(TargetClassName="/Script/Engine.CameraActor",OldFieldName="PostProcessSettings.EyeAdaptationMaxBrightness",NewFieldName="CameraComponent.PostProcessSettings.AutoExposureMaxBrightness")
-Windows.Engine:/Script/Engine.Engine:MatineeTrackRedirects:4=(TargetClassName="/Script/Engine.CameraActor",OldFieldName="PostProcessSettings.EyeAdaptionSpeedDown",NewFieldName="CameraComponent.PostProcessSettings.AutoExposureSpeedDown")
-Windows.Engine:/Script/Engine.Engine:MatineeTrackRedirects:5=(TargetClassName="/Script/Engine.CameraActor",OldFieldName="PostProcessSettings.EyeAdaptionSpeedUp",NewFieldName="CameraComponent.PostProcessSettings.AutoExposureSpeedUp")
-Windows.Engine:/Script/Engine.Engine:MatineeTrackRedirects:6=(TargetClassName="/Script/Engine.CameraActor",OldFieldName="PostProcessSettings.ExposureOffset",NewFieldName="CameraComponent.PostProcessSettings.AutoExposureBias")
-Windows.Engine:/Script/Engine.Engine:MatineeTrackRedirects:7=(TargetClassName="/Script/Engine.PostprocessVolume",OldFieldName="Settings.EyeAdaptationLowPercent",NewFieldName="Settings.AutoExposureLowPercent")
-Windows.Engine:/Script/Engine.Engine:MatineeTrackRedirects:8=(TargetClassName="/Script/Engine.PostprocessVolume",OldFieldName="Settings.EyeAdaptationHighPercent",NewFieldName="Settings.AutoExposureHighPercent")
-Windows.Engine:/Script/Engine.Engine:MatineeTrackRedirects:9=(TargetClassName="/Script/Engine.PostprocessVolume",OldFieldName="Settings.EyeAdaptationMinBrightness",NewFieldName="Settings.AutoExposureMinBrightness")
-Windows.Engine:/Script/Engine.Engine:MatineeTrackRedirects:10=(TargetClassName="/Script/Engine.PostprocessVolume",OldFieldName="Settings.EyeAdaptationMaxBrightness",NewFieldName="Settings.AutoExposureMaxBrightness")
-Windows.Engine:/Script/Engine.Engine:MatineeTrackRedirects:11=(TargetClassName="/Script/Engine.PostprocessVolume",OldFieldName="Settings.EyeAdaptionSpeedDown",NewFieldName="Settings.AutoExposureSpeedDown")
-Windows.Engine:/Script/Engine.Engine:MatineeTrackRedirects:12=(TargetClassName="/Script/Engine.PostprocessVolume",OldFieldName="Settings.EyeAdaptionSpeedUp",NewFieldName="Settings.AutoExposureSpeedUp")
-Windows.Engine:/Script/Engine.Engine:MatineeTrackRedirects:13=(TargetClassName="/Script/Engine.PostprocessVolume",OldFieldName="Settings.ExposureOffset",NewFieldName="Settings.AutoExposureBias")
-Windows.Engine:/Script/Engine.Engine:MatineeTrackRedirects:14=(TargetClassName="/Script/Engine.CameraActor",OldFieldName="FOVAngle",NewFieldName="CameraComponent.FieldOfView")
-Windows.Engine:/Script/Engine.Engine:MatineeTrackRedirects:15=(TargetClassName="/Script/Engine.CameraActor",OldFieldName="AspectRatio",NewFieldName="CameraComponent.AspectRatio")
-Windows.Engine:/Script/Engine.Engine:MatineeTrackRedirects:16=(TargetClassName="/Script/Engine.CameraActor",OldFieldName="bConstrainAspectRatio",NewFieldName="CameraComponent.bConstrainAspectRatio")
-Windows.Engine:/Script/Engine.Engine:MatineeTrackRedirects:17=(TargetClassName="/Script/Engine.CameraActor",OldFieldName="PostProcessSettings.",NewFieldName="CameraComponent.PostProcessSettings.")
 Windows.Engine:CoreUObject.Metadata:MetadataRedirects:0=(OldKey="K2Protected", NewKey="BlueprintProtected")
 Windows.Engine:CoreUObject.Metadata:MetadataRedirects:1=(OldKey="K2UnsafeForConstructionScripts", NewKey="UnsafeDuringActorConstruction")
 Windows.Engine:CoreUObject.Metadata:MetadataRedirects:2=(OldKey="KismetType", NewKey="BlueprintType")
@@ -950,6 +950,7 @@ Windows.Engine:/Script/Engine.CollisionProfile:DefaultChannelResponses:0=(Channe
 Windows.Engine:/Script/Engine.CollisionProfile:DefaultChannelResponses:1=(Channel=ECC_GameTraceChannel2,Name="CollisionRound",DefaultResponse=ECR_Block,bTraceType=False,bStaticObject=False)
 Windows.Engine:/Script/Engine.CollisionProfile:DefaultChannelResponses:2=(Channel=ECC_GameTraceChannel3,Name="Friendly",DefaultResponse=ECR_Ignore,bTraceType=False,bStaticObject=False)
 Windows.Engine:/Script/Engine.CollisionProfile:DefaultChannelResponses:3=(Channel=ECC_GameTraceChannel4,Name="Shell",DefaultResponse=ECR_Block,bTraceType=True,bStaticObject=False)
+Windows.Engine:/Script/Engine.CollisionProfile:DefaultChannelResponses:4=(Channel=ECC_GameTraceChannel5,Name="Barrel",DefaultResponse=ECR_Block,bTraceType=True,bStaticObject=False)
 Windows.Engine:/Script/Engine.CollisionProfile:ProfileRedirects:0=(OldName="BlockingVolume",NewName="InvisibleWall")
 Windows.Engine:/Script/Engine.CollisionProfile:ProfileRedirects:1=(OldName="InterpActor",NewName="IgnoreOnlyPawn")
 Windows.Engine:/Script/Engine.CollisionProfile:ProfileRedirects:2=(OldName="StaticMeshComponent",NewName="BlockAllDynamic")
@@ -1461,50 +1462,56 @@ Windows.Input:/Script/Engine.InputSettings:AxisMappings:4=(AxisName="MoveForward
 Windows.Input:/Script/Engine.InputSettings:AxisMappings:5=(AxisName="MoveRight",Key=D,Scale=1.000000)
 Windows.Input:/Script/Engine.InputSettings:ConsoleKey:0=None
 Windows.Input:/Script/Engine.InputSettings:ConsoleKeys:0=Tilde
-Windows.Input:/Script/Engine.Console:HistoryBuffer:0=r.ShadowQuality 2
-Windows.Input:/Script/Engine.Console:HistoryBuffer:1=r.Shadow.CSM.TransitionScale 50
-Windows.Input:/Script/Engine.Console:HistoryBuffer:2=r.Shadow.CSMSplitPenumbraScale 1
-Windows.Input:/Script/Engine.Console:HistoryBuffer:3=r.Shadow.CSMSplitPenumbraScale 100
-Windows.Input:/Script/Engine.Console:HistoryBuffer:4=r.Shadow.CSM.TransitionScale 500
-Windows.Input:/Script/Engine.Console:HistoryBuffer:5=r.Shadow.CSM.TransitionScale .1
-Windows.Input:/Script/Engine.Console:HistoryBuffer:6=r.Shadow.CSM.TransitionScale .0001
-Windows.Input:/Script/Engine.Console:HistoryBuffer:7=r.Shadow.CSM.TransitionScale 100000
-Windows.Input:/Script/Engine.Console:HistoryBuffer:8=r.Shadow.CSM.TransitionScale 1
-Windows.Input:/Script/Engine.Console:HistoryBuffer:9=r.Shadow.CSM.TransitionScale 5
-Windows.Input:/Script/Engine.Console:HistoryBuffer:10=r.ShadowQuality 3
-Windows.Input:/Script/Engine.Console:HistoryBuffer:11=r.ShadowQuality 5
-Windows.Input:/Script/Engine.Console:HistoryBuffer:12=r.Shadow.CSM.MaxCascades 4
-Windows.Input:/Script/Engine.Console:HistoryBuffer:13=r.Shadow.CSMDepthBias
-Windows.Input:/Script/Engine.Console:HistoryBuffer:14=r.Shadow.CSM.MaxCascades
-Windows.Input:/Script/Engine.Console:HistoryBuffer:15=r.Shadow.CSM.MaxMobileCascades
-Windows.Input:/Script/Engine.Console:HistoryBuffer:16=r.Shadow.CSM.MaxMobileCascades 4
-Windows.Input:/Script/Engine.Console:HistoryBuffer:17=r.Shadow.CSM.MaxCascades 5
-Windows.Input:/Script/Engine.Console:HistoryBuffer:18=r.Shadow.CSM.MaxCascades 50
-Windows.Input:/Script/Engine.Console:HistoryBuffer:19=r.Shadow.CSM.MaxCascades 2
-Windows.Input:/Script/Engine.Console:HistoryBuffer:20=r.Shadow.CSM.MaxCascades 1
-Windows.Input:/Script/Engine.Console:HistoryBuffer:21=r.Shadow.CSM.MaxMobileCascades 1
-Windows.Input:/Script/Engine.Console:HistoryBuffer:22=r.Shadow.CSM.MaxMobileCascades 2
-Windows.Input:/Script/Engine.Console:HistoryBuffer:23=r.Shadow.CSM.MaxMobileCascades 50
-Windows.Input:/Script/Engine.Console:HistoryBuffer:24=r.ShadowQuality 4
-Windows.Input:/Script/Engine.Console:HistoryBuffer:25=r.ShadowQuality 0
-Windows.Input:/Script/Engine.Console:HistoryBuffer:26=r.ShadowQuality 1
-Windows.Input:/Script/Engine.Console:HistoryBuffer:27=showflag.rendering
-Windows.Input:/Script/Engine.Console:HistoryBuffer:28=showflag.game
-Windows.Input:/Script/Engine.Console:HistoryBuffer:29=show Game
-Windows.Input:/Script/Engine.Console:HistoryBuffer:30=show debug
-Windows.Input:/Script/Engine.Console:HistoryBuffer:31=stat game
-Windows.Input:/Script/Engine.Console:HistoryBuffer:32=stat fps
-Windows.Input:/Script/Engine.Console:HistoryBuffer:33=ce dummy .2
-Windows.Input:/Script/Engine.Console:HistoryBuffer:34=ce dummy 3
-Windows.Input:/Script/Engine.Console:HistoryBuffer:35=show nav
-Windows.Input:/Script/Engine.Console:HistoryBuffer:36=ce dummy 1.5
-Windows.Input:/Script/Engine.Console:HistoryBuffer:37=ce dummy 8
-Windows.Input:/Script/Engine.Console:HistoryBuffer:38=show Collision
-Windows.Input:/Script/Engine.Console:HistoryBuffer:39=show Navigation
-Windows.Input:/Script/Engine.Console:HistoryBuffer:40=ce dummy 1
-Windows.Input:/Script/Engine.Console:HistoryBuffer:41=ce killBtn
-Windows.Input:/Script/Engine.Console:HistoryBuffer:42=ce dummy .5
-Windows.Input:/Script/Engine.Console:HistoryBuffer:43=ce dummy 2
+Windows.Input:/Script/Engine.Console:HistoryBuffer:0=r.Shadow.CSM.TransitionScale 100000
+Windows.Input:/Script/Engine.Console:HistoryBuffer:1=r.Shadow.CSM.TransitionScale 1
+Windows.Input:/Script/Engine.Console:HistoryBuffer:2=r.Shadow.CSM.TransitionScale 5
+Windows.Input:/Script/Engine.Console:HistoryBuffer:3=r.ShadowQuality 3
+Windows.Input:/Script/Engine.Console:HistoryBuffer:4=r.ShadowQuality 5
+Windows.Input:/Script/Engine.Console:HistoryBuffer:5=r.Shadow.CSM.MaxCascades 4
+Windows.Input:/Script/Engine.Console:HistoryBuffer:6=r.Shadow.CSMDepthBias
+Windows.Input:/Script/Engine.Console:HistoryBuffer:7=r.Shadow.CSM.MaxCascades
+Windows.Input:/Script/Engine.Console:HistoryBuffer:8=r.Shadow.CSM.MaxMobileCascades
+Windows.Input:/Script/Engine.Console:HistoryBuffer:9=r.Shadow.CSM.MaxMobileCascades 4
+Windows.Input:/Script/Engine.Console:HistoryBuffer:10=r.Shadow.CSM.MaxCascades 5
+Windows.Input:/Script/Engine.Console:HistoryBuffer:11=r.Shadow.CSM.MaxCascades 50
+Windows.Input:/Script/Engine.Console:HistoryBuffer:12=r.Shadow.CSM.MaxCascades 2
+Windows.Input:/Script/Engine.Console:HistoryBuffer:13=r.Shadow.CSM.MaxCascades 1
+Windows.Input:/Script/Engine.Console:HistoryBuffer:14=r.Shadow.CSM.MaxMobileCascades 1
+Windows.Input:/Script/Engine.Console:HistoryBuffer:15=r.Shadow.CSM.MaxMobileCascades 2
+Windows.Input:/Script/Engine.Console:HistoryBuffer:16=r.Shadow.CSM.MaxMobileCascades 50
+Windows.Input:/Script/Engine.Console:HistoryBuffer:17=r.ShadowQuality 4
+Windows.Input:/Script/Engine.Console:HistoryBuffer:18=r.ShadowQuality 0
+Windows.Input:/Script/Engine.Console:HistoryBuffer:19=r.ShadowQuality 1
+Windows.Input:/Script/Engine.Console:HistoryBuffer:20=showflag.rendering
+Windows.Input:/Script/Engine.Console:HistoryBuffer:21=showflag.game
+Windows.Input:/Script/Engine.Console:HistoryBuffer:22=show Game
+Windows.Input:/Script/Engine.Console:HistoryBuffer:23=show debug
+Windows.Input:/Script/Engine.Console:HistoryBuffer:24=stat game
+Windows.Input:/Script/Engine.Console:HistoryBuffer:25=stat fps
+Windows.Input:/Script/Engine.Console:HistoryBuffer:26=ce dummy .2
+Windows.Input:/Script/Engine.Console:HistoryBuffer:27=ce dummy 3
+Windows.Input:/Script/Engine.Console:HistoryBuffer:28=show nav
+Windows.Input:/Script/Engine.Console:HistoryBuffer:29=ce dummy 1.5
+Windows.Input:/Script/Engine.Console:HistoryBuffer:30=ce dummy 8
+Windows.Input:/Script/Engine.Console:HistoryBuffer:31=ce dummy .5
+Windows.Input:/Script/Engine.Console:HistoryBuffer:32=show Navigation
+Windows.Input:/Script/Engine.Console:HistoryBuffer:33=show ShaderComplexityWithQuadOverdraw
+Windows.Input:/Script/Engine.Console:HistoryBuffer:34=viewmode
+Windows.Input:/Script/Engine.Console:HistoryBuffer:35=ce dummy 1
+Windows.Input:/Script/Engine.Console:HistoryBuffer:36=viewmode LODColoration
+Windows.Input:/Script/Engine.Console:HistoryBuffer:37=viewmode normal
+Windows.Input:/Script/Engine.Console:HistoryBuffer:38=viewmode 0
+Windows.Input:/Script/Engine.Console:HistoryBuffer:39=r.MaterialQualityLevel 0
+Windows.Input:/Script/Engine.Console:HistoryBuffer:40=r.MaterialQualityLevel 1
+Windows.Input:/Script/Engine.Console:HistoryBuffer:41=r.MaterialQualityLevel 4
+Windows.Input:/Script/Engine.Console:HistoryBuffer:42=r.Shadow.DistanceScale .5
+Windows.Input:/Script/Engine.Console:HistoryBuffer:43=r.Shadow.DistanceScale .1
+Windows.Input:/Script/Engine.Console:HistoryBuffer:44=ce dummy 4
+Windows.Input:/Script/Engine.Console:HistoryBuffer:45=show ShaderComplexity
+Windows.Input:/Script/Engine.Console:HistoryBuffer:46=r.Shadow.DistanceScale .3
+Windows.Input:/Script/Engine.Console:HistoryBuffer:47=show Collision
+Windows.Input:/Script/Engine.Console:HistoryBuffer:48=ce killBtn
+Windows.Input:/Script/Engine.Console:HistoryBuffer:49=ce dummy 2
 Windows.Input:/Script/Engine.Console:HistoryBot:0=-1
 Windows.Input:/Script/Engine.PlayerInput:DebugExecBindings:0=(Key=F11,Command="LevelEditor.ToggleImmersive")
 Windows.Input:/Script/Engine.PlayerInput:DebugExecBindings:1=(Key=F11,Command="MainFrame.ToggleFullscreen",Shift=True)
